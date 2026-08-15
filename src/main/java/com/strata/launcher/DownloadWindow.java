@@ -44,6 +44,7 @@ public class DownloadWindow extends Stage {
         barFill.setArcHeight(4);
 
         barBg.getChildren().add(barFill);
+        StackPane.setAlignment(barFill, Pos.CENTER_LEFT);
         barBg.widthProperty().addListener((obs, o, n) -> barFill.setWidth(0));
 
         Text percentText = new Text("0%");

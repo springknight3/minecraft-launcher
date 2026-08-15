@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -17,51 +18,69 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipFile;
 
 public class GameExecutor {
 
     private static final HttpClient HTTP = HttpClient.newHttpClient();
     private static final String VERSION_MANIFEST = "https://launchermeta.mojang.com/mc/game/version_manifest_v2.json";
-    private static final Path CACHE_DIR = Paths.get(InstanceManager.HOME, ".strata", "cache");
+
+    private static Path getCacheDir(Instance instance) {
+        return Paths.get(InstanceManager.INSTANCE_PATH, instance.getName(), "cache");
+    }
+
+    private static String getOS() {
+        String os = System.getProperty("os.name").toLowerCase();
+        if (os.contains("win")) return "windows";
+        if (os.contains("mac")) return "osx";
+        return "linux";
+    }
 
     public interface ProgressCallback {
         void onProgress(String status, int percent);
     }
 
     public void downloadInstance(Instance instance, ProgressCallback callback) throws Exception {
+        Path cacheDir = getCacheDir(instance);
         callback.onProgress("Fetching version manifest...", 0);
         String versionUrl = getVersionUrl(instance.getVersion());
         if (versionUrl == null) throw new RuntimeException("Version not found: " + instance.getVersion());
 
         callback.onProgress("Downloading version JSON...", 5);
         String versionJson = download(versionUrl);
-        Path versionJsonPath = CACHE_DIR.resolve("versions").resolve(instance.getVersion() + ".json");
+        Path versionJsonPath = cacheDir.resolve("versions").resolve(instance.getVersion() + ".json");
         Files.createDirectories(versionJsonPath.getParent());
         Files.writeString(versionJsonPath, versionJson);
 
         String clientUrl = getClientUrl(versionJson);
-        Path clientJar = CACHE_DIR.resolve("versions").resolve(instance.getVersion() + ".jar");
+        Path clientJar = cacheDir.resolve("versions").resolve(instance.getVersion() + ".jar");
         downloadFile(clientUrl, clientJar, callback, "Client JAR", 10, 35);
 
         callback.onProgress("Downloading libraries...", 35);
         List<String[]> libraries = extractLibraries(versionJson);
-        downloadLibraries(libraries, callback, 35, 70);
+        libraries.addAll(extractNativeLibraries(versionJson));
+        downloadLibraries(libraries, cacheDir, callback, 35, 70);
 
         callback.onProgress("Downloading asset index...", 70);
         String assetIndexId = extractNestedString(versionJson, "assetIndex", "id");
         String assetIndexUrl = extractNestedString(versionJson, "assetIndex", "url");
         if (assetIndexId != null && assetIndexUrl != null) {
-            Path assetIndexPath = CACHE_DIR.resolve("assetIndexes").resolve(assetIndexId + ".json");
+            Path assetIndexPath = cacheDir.resolve("assetIndexes").resolve(assetIndexId + ".json");
             downloadFile(assetIndexUrl, assetIndexPath, callback, "Asset index", 70, 75);
+            Path assetIndexInAssets = cacheDir.resolve("assets").resolve("indexes").resolve(assetIndexId + ".json");
+            Files.createDirectories(assetIndexInAssets.getParent());
+            Files.copy(assetIndexPath, assetIndexInAssets, StandardCopyOption.REPLACE_EXISTING);
             String assetIndexJson = Files.readString(assetIndexPath);
-            downloadAssets(assetIndexJson, callback, 75, 95);
+            downloadAssets(assetIndexJson, cacheDir, callback, 75, 95);
         }
 
         callback.onProgress("Done!", 100);
     }
 
     public void launch(Instance instance, ProgressCallback callback) throws Exception {
-        Path versionJsonPath = CACHE_DIR.resolve("versions").resolve(instance.getVersion() + ".json");
+        Path cacheDir = getCacheDir(instance);
+        Path versionJsonPath = cacheDir.resolve("versions").resolve(instance.getVersion() + ".json");
         if (!Files.exists(versionJsonPath)) {
             downloadInstance(instance, callback);
         }
@@ -70,11 +89,11 @@ public class GameExecutor {
         String mainClass = InstanceManager.extractString(versionJson, "mainClass");
         if (mainClass == null) throw new RuntimeException("No mainClass found in version JSON");
 
-        Path clientJar = CACHE_DIR.resolve("versions").resolve(instance.getVersion() + ".jar");
+        Path clientJar = cacheDir.resolve("versions").resolve(instance.getVersion() + ".jar");
         List<String[]> libraryDefs = extractLibraries(versionJson);
         List<Path> libraryPaths = new ArrayList<>();
         for (String[] lib : libraryDefs) {
-            Path p = CACHE_DIR.resolve("libraries").resolve(lib[1]);
+            Path p = cacheDir.resolve("libraries").resolve(lib[1]);
             if (Files.exists(p)) libraryPaths.add(p);
         }
 
@@ -82,7 +101,17 @@ public class GameExecutor {
         Path gameDir = Paths.get(InstanceManager.INSTANCE_PATH, instance.getName());
         Files.createDirectories(gameDir);
 
-        String assetsDir = CACHE_DIR.resolve("assets").toString();
+        Path nativesDir = gameDir.resolve("natives");
+        Files.createDirectories(nativesDir);
+        List<String[]> nativeDefs = extractNativeLibraries(versionJson);
+        for (String[] nativeLib : nativeDefs) {
+            Path jarPath = cacheDir.resolve("libraries").resolve(nativeLib[1]);
+            if (Files.exists(jarPath)) {
+                extractNativesFromJar(jarPath, nativesDir);
+            }
+        }
+
+        String assetsDir = cacheDir.resolve("assets").toString();
         String assetIndexId = extractNestedString(versionJson, "assetIndex", "id");
 
         String accessToken = UUID.randomUUID().toString();
@@ -97,12 +126,14 @@ public class GameExecutor {
         if (assetIndexId != null) { gameArgs.add("--assetIndex"); gameArgs.add(assetIndexId); }
         gameArgs.add("--accessToken"); gameArgs.add(accessToken);
         gameArgs.add("--uuid"); gameArgs.add(uuid);
-        gameArgs.add("--userType"); gameArgs.add("mojang");
+        gameArgs.add("--userType"); gameArgs.add("legacy");
+        gameArgs.add("--userProperties"); gameArgs.add("{}");
 
         List<String> cmd = new ArrayList<>();
         cmd.add(instance.getJavaPath());
         cmd.add("-Xms512M");
         cmd.add("-Xmx" + instance.getMaxMemory() + "M");
+        cmd.add("-Djava.library.path=" + nativesDir.toAbsolutePath());
         cmd.add("-cp");
         cmd.add(classpath);
         cmd.addAll(gameArgs);
@@ -122,7 +153,7 @@ public class GameExecutor {
         return cp.toString();
     }
 
-    private void downloadLibraries(List<String[]> libraries, ProgressCallback callback, int startPct, int endPct) throws Exception {
+    private void downloadLibraries(List<String[]> libraries, Path cacheDir, ProgressCallback callback, int startPct, int endPct) throws Exception {
         int total = libraries.size();
         if (total == 0) return;
 
@@ -135,7 +166,7 @@ public class GameExecutor {
             String path = lib[1];
             futures.add(executor.submit(() -> {
                 try {
-                    Path dest = CACHE_DIR.resolve("libraries").resolve(path);
+                    Path dest = cacheDir.resolve("libraries").resolve(path);
                     if (!Files.exists(dest)) {
                         downloadFile(url, dest, (s, p) -> {
                             int done = completed.get();
@@ -156,8 +187,8 @@ public class GameExecutor {
         executor.shutdown();
     }
 
-    private void downloadAssets(String indexJson, ProgressCallback callback, int startPct, int endPct) throws Exception {
-        Path objectsDir = CACHE_DIR.resolve("assets").resolve("objects");
+    private void downloadAssets(String indexJson, Path cacheDir, ProgressCallback callback, int startPct, int endPct) throws Exception {
+        Path objectsDir = cacheDir.resolve("assets").resolve("objects");
         List<String[]> entries = parseAssetEntries(indexJson);
         int total = entries.size();
         if (total == 0) return;
@@ -282,6 +313,98 @@ public class GameExecutor {
             }
         }
         return libs;
+    }
+
+    private List<String[]> extractNativeLibraries(String versionJson) {
+        List<String[]> libs = new ArrayList<>();
+        String os = getOS();
+        String arch = System.getProperty("os.arch");
+        String archSuffix = arch.equals("aarch64") || arch.equals("arm64") ? "arm64" : "64";
+
+        int libIdx = versionJson.indexOf("\"libraries\"");
+        if (libIdx == -1) return libs;
+        int arrStart = versionJson.indexOf('[', libIdx);
+        int depth = 0;
+        int entryStart = -1;
+        for (int i = arrStart; i < versionJson.length(); i++) {
+            char c = versionJson.charAt(i);
+            if (c == '{') {
+                if (depth == 0) entryStart = i;
+                depth++;
+            } else if (c == '}') {
+                depth--;
+                if (depth == 0 && entryStart != -1) {
+                    String obj = versionJson.substring(entryStart, i + 1);
+
+                    int nativesIdx = obj.indexOf("\"natives\"");
+                    if (nativesIdx != -1) {
+                        int osIdx = obj.indexOf("\"" + os + "\"", nativesIdx);
+                        if (osIdx != -1) {
+                            int colonIdx = obj.indexOf(':', osIdx);
+                            int valStart = obj.indexOf('"', colonIdx + 1) + 1;
+                            int valEnd = obj.indexOf('"', valStart);
+                            if (valStart > 0 && valEnd > valStart) {
+                                String classifierName = obj.substring(valStart, valEnd);
+                                classifierName = classifierName.replace("${arch}", archSuffix);
+
+                                int classIdx = obj.indexOf("\"classifiers\"");
+                                if (classIdx != -1) {
+                                    int classKeyIdx = obj.indexOf("\"" + classifierName + "\"", classIdx);
+                                    if (classKeyIdx != -1) {
+                                        int classBraceIdx = obj.indexOf('{', classKeyIdx);
+                                        int classBraceEnd = obj.indexOf('}', classBraceIdx);
+                                        if (classBraceIdx != -1 && classBraceEnd != -1) {
+                                            String classObj = obj.substring(classBraceIdx, classBraceEnd + 1);
+                                            String url = null;
+                                            String path = null;
+                                            int urlIdx2 = classObj.indexOf("\"url\":");
+                                            int pathIdx2 = classObj.indexOf("\"path\":");
+                                            if (urlIdx2 != -1) {
+                                                int s = classObj.indexOf('"', urlIdx2 + 6) + 1;
+                                                int e = classObj.indexOf('"', s);
+                                                if (s > 0 && e > s) url = classObj.substring(s, e);
+                                            }
+                                            if (pathIdx2 != -1) {
+                                                int s = classObj.indexOf('"', pathIdx2 + 7) + 1;
+                                                int e = classObj.indexOf('"', s);
+                                                if (s > 0 && e > s) path = classObj.substring(s, e);
+                                            }
+                                            if (url != null && path != null) {
+                                                libs.add(new String[]{url, path});
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    entryStart = -1;
+                }
+            }
+        }
+        return libs;
+    }
+
+    private void extractNativesFromJar(Path jarPath, Path destDir) {
+        try (ZipFile zip = new ZipFile(jarPath.toFile())) {
+            var entries = zip.entries();
+            while (entries.hasMoreElements()) {
+                ZipEntry entry = entries.nextElement();
+                if (entry.isDirectory()) continue;
+                String name = entry.getName();
+                if (name.startsWith("META-INF/")) continue;
+                if (name.endsWith(".so") || name.endsWith(".dll") ||
+                    name.endsWith(".dylib") || name.endsWith(".jnilib")) {
+                    Path dest = destDir.resolve(name.substring(name.lastIndexOf('/') + 1));
+                    try (InputStream in = zip.getInputStream(entry)) {
+                        Files.copy(in, dest, StandardCopyOption.REPLACE_EXISTING);
+                    }
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private String getVersionUrl(String version) throws Exception {
