@@ -1,0 +1,7 @@
+strata_tests 16 0.028396
+strata_m3_tests 13 0.00312594
+strata_m4_tests 10 0.0922893
+strata_m5_tests 8 0.0437544
+strata_m6_tests 9 0.00529452
+strata_m7_tests 5 0.417489
+---

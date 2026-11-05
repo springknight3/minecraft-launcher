@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.stratalauncher.core.auth.AccountManagerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-01T23:19:32.123Z" hostname="arch" time="0.386">
+  <properties/>
+  <testcase name="returnsCachedMicrosoftAccessTokenUntilItIsNearExpiry()" classname="net.stratalauncher.core.auth.AccountManagerTest" time="0.323"/>
+  <testcase name="persistsOfflineAccountsAndActiveSelection()" classname="net.stratalauncher.core.auth.AccountManagerTest" time="0.012"/>
+  <testcase name="storesMicrosoftTokensOnlyInCredentialStoreAndRemovesThemWithAccount()" classname="net.stratalauncher.core.auth.AccountManagerTest" time="0.009"/>
+  <testcase name="rejectsInvalidOfflineNames()" classname="net.stratalauncher.core.auth.AccountManagerTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

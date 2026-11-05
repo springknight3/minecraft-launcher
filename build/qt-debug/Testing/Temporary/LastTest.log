@@ -1,0 +1,32 @@
+Start testing: Nov 02 17:38 CST
+----------------------------------------------------------
+6/6 Testing: strata_m7_tests
+6/6 Test: strata_m7_tests
+Command: "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m7_tests"
+Directory: /home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests
+"strata_m7_tests" start time: Nov 02 17:38 CST
+Output:
+----------------------------------------------------------
+********* Start testing of M7AuthTests *********
+Config: Using QtTest library 6.11.1, Qt 6.11.1 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 16.1.1 20260430), arch unknown
+PASS   : M7AuthTests::initTestCase()
+PASS   : M7AuthTests::migratesExistingOfflineProfile()
+PASS   : M7AuthTests::persistsAndSelectsMultipleOfflineAccounts()
+PASS   : M7AuthTests::rejectsMalformedAccountRecords()
+PASS   : M7AuthTests::loadsJavaCompatibleCompactOfflineUuid()
+PASS   : M7AuthTests::persistsClientIdWithoutTokens()
+PASS   : M7AuthTests::completesDeviceCodeFlowAndProfileExchange()
+PASS   : M7AuthTests::storesMicrosoftTokensOutsideAccountMetadata()
+PASS   : M7AuthTests::cancelsDeviceCodeFlow()
+PASS   : M7AuthTests::cleanupTestCase()
+Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 2029ms
+********* Finished testing of M7AuthTests *********
+<end of output>
+Test time =   2.09 sec
+----------------------------------------------------------
+Test Passed.
+"strata_m7_tests" end time: Nov 02 17:38 CST
+"strata_m7_tests" time elapsed: 00:00:02
+----------------------------------------------------------
+
+End testing: Nov 02 17:38 CST

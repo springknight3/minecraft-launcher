@@ -1,0 +1,270 @@
+{
+	"BUILD_DIR" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen",
+	"CMAKE_BINARY_DIR" : "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/eli/Projects/minecraft-launcher/cpp/core",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/eli/Projects/minecraft-launcher/cpp/core/CMakeLists.txt",
+		"/usr/share/cmake/Modules/FindLibArchive.cmake",
+		"/usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake/Modules/FindPackageMessage.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/eli/Projects/minecraft-launcher",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "strata_core_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/Paths.h",
+			"Mu",
+			"EWIEGA46WW/moc_Paths.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/ThemeSettings.h",
+			"Mu",
+			"EWIEGA46WW/moc_ThemeSettings.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/AccountManager.h",
+			"Mu",
+			"RDF3ATUBBW/moc_AccountManager.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/AuthSettings.h",
+			"Mu",
+			"RDF3ATUBBW/moc_AuthSettings.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuthService.h",
+			"Mu",
+			"RDF3ATUBBW/moc_MicrosoftAuthService.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/NativeCredentialStore.h",
+			"Mu",
+			"RDF3ATUBBW/moc_NativeCredentialStore.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/OfflineAccountStore.h",
+			"Mu",
+			"RDF3ATUBBW/moc_OfflineAccountStore.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/download/DownloadManager.h",
+			"Mu",
+			"WU5H7VG4RY/moc_DownloadManager.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/instance/Instance.h",
+			"Mu",
+			"EW53F5DC2L/moc_Instance.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/instance/InstanceManager.h",
+			"Mu",
+			"EW53F5DC2L/moc_InstanceManager.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/launch/GameLauncher.h",
+			"Mu",
+			"XNGMMFK5DP/moc_GameLauncher.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/launch/GameProcess.h",
+			"Mu",
+			"XNGMMFK5DP/moc_GameProcess.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/logging/LauncherLogging.h",
+			"Mu",
+			"SHPYQPRM5Q/moc_LauncherLogging.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/mojang/MinecraftInstaller.h",
+			"Mu",
+			"TZTMTHLLYZ/moc_MinecraftInstaller.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/mojang/MojangManifestClient.h",
+			"Mu",
+			"TZTMTHLLYZ/moc_MojangManifestClient.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/runtime/JavaRuntimeManager.h",
+			"Mu",
+			"BP4HXTY4JZ/moc_JavaRuntimeManager.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/settings/InstanceSettings.h",
+			"Mu",
+			"YPB6MEUM2W/moc_InstanceSettings.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_DBUS_LIB", "QT_NETWORK_LIB" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/eli/Projects/minecraft-launcher/cpp/core",
+		"/usr/include/qt6/QtCore",
+		"/usr/include/qt6",
+		"/usr/lib/qt6/mkspecs/linux-g++",
+		"/usr/include/qt6/QtNetwork",
+		"/usr/include/qt6/QtDBus",
+		"/usr/include",
+		"/usr/include/c++/16",
+		"/usr/include/c++/16/x86_64-pc-linux-gnu",
+		"/usr/include/c++/16/backward",
+		"/usr/lib/gcc/x86_64-pc-linux-gnu/16/include",
+		"/usr/local/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-std=c++20",
+		"-w",
+		"-dM",
+		"-E",
+		"/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 11,
+	"SETTINGS_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/Paths.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/ThemeSettings.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/AccountManager.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/AuthSettings.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuthService.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/NativeCredentialStore.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/OfflineAccountStore.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/download/DownloadManager.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/instance/Instance.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/instance/InstanceManager.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/launch/GameLauncher.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/launch/GameProcess.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/logging/LauncherLogging.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/mojang/MinecraftInstaller.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/mojang/MojangManifestClient.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/runtime/JavaRuntimeManager.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/settings/InstanceSettings.cpp",
+			"Mu",
+			null
+		]
+	],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

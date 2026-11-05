@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.stratalauncher.ui.instances.InstanceListViewTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-11-01T23:19:33.973Z" hostname="arch" time="0.178">
+  <properties/>
+  <testcase name="onlyRecognizesExplicitMinecraftClientReadyMarkers()" classname="net.stratalauncher.ui.instances.InstanceListViewTest" time="0.177"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

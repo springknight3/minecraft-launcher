@@ -1,0 +1,37 @@
+# Additional clean files
+cmake_minimum_required(VERSION 3.16)
+
+if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "Debug")
+  file(REMOVE_RECURSE
+  "cpp/app/CMakeFiles/stratalauncher_autogen.dir/AutogenUsed.txt"
+  "cpp/app/CMakeFiles/stratalauncher_autogen.dir/ParseCache.txt"
+  "cpp/app/stratalauncher_autogen"
+  "cpp/core/CMakeFiles/strata_core_autogen.dir/AutogenUsed.txt"
+  "cpp/core/CMakeFiles/strata_core_autogen.dir/ParseCache.txt"
+  "cpp/core/strata_core_autogen"
+  "cpp/tests/CMakeFiles/strata_m3_tests_autogen.dir/AutogenUsed.txt"
+  "cpp/tests/CMakeFiles/strata_m3_tests_autogen.dir/ParseCache.txt"
+  "cpp/tests/CMakeFiles/strata_m4_tests_autogen.dir/AutogenUsed.txt"
+  "cpp/tests/CMakeFiles/strata_m4_tests_autogen.dir/ParseCache.txt"
+  "cpp/tests/CMakeFiles/strata_m5_tests_autogen.dir/AutogenUsed.txt"
+  "cpp/tests/CMakeFiles/strata_m5_tests_autogen.dir/ParseCache.txt"
+  "cpp/tests/CMakeFiles/strata_m6_tests_autogen.dir/AutogenUsed.txt"
+  "cpp/tests/CMakeFiles/strata_m6_tests_autogen.dir/ParseCache.txt"
+  "cpp/tests/CMakeFiles/strata_m7_tests_autogen.dir/AutogenUsed.txt"
+  "cpp/tests/CMakeFiles/strata_m7_tests_autogen.dir/ParseCache.txt"
+  "cpp/tests/CMakeFiles/strata_process_fixture_autogen.dir/AutogenUsed.txt"
+  "cpp/tests/CMakeFiles/strata_process_fixture_autogen.dir/ParseCache.txt"
+  "cpp/tests/CMakeFiles/strata_tests_autogen.dir/AutogenUsed.txt"
+  "cpp/tests/CMakeFiles/strata_tests_autogen.dir/ParseCache.txt"
+  "cpp/tests/strata_m3_tests_autogen"
+  "cpp/tests/strata_m4_tests_autogen"
+  "cpp/tests/strata_m5_tests_autogen"
+  "cpp/tests/strata_m6_tests_autogen"
+  "cpp/tests/strata_m7_tests_autogen"
+  "cpp/tests/strata_process_fixture_autogen"
+  "cpp/tests/strata_tests_autogen"
+  "cpp/ui/CMakeFiles/strata_ui_autogen.dir/AutogenUsed.txt"
+  "cpp/ui/CMakeFiles/strata_ui_autogen.dir/ParseCache.txt"
+  "cpp/ui/strata_ui_autogen"
+  )
+endif()

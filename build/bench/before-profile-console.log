@@ -1,0 +1,2874 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavafx.pulseLogger=true -Dprism.verbose=true -Xlog:gc:file=build/bench/profile-gc.log:time,uptime,level,tags -XX:StartFlightRecording=filename=build/bench/before-profile.jfr,settings=profile,dumponexit=true
+[0.571s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0.571s][info][jfr,startup] 
+[0.571s][info][jfr,startup] Use jcmd 597894 JFR.dump name=1 to copy recording data to file.
+Nov 01, 2026 4:44:10 PM net.stratalauncher.LauncherBootstrap main
+INFO: Effective prism.vsync: false (source: default)
+Nov 01, 2026 4:44:10 PM com.sun.javafx.application.PlatformImpl startup
+WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @4e15c2b'
+Prism pipeline init order: es2 sw 
+Using Double Precision Marlin Rasterizer
+Using dirty region optimizations
+Not using texture mask for primitives
+Not forcing power of 2 sizes for textures
+Using hardware CLAMP_TO_ZERO mode
+Opting in for HiDPI pixel scaling
+Prism pipeline name = com.sun.prism.es2.ES2Pipeline
+Loading ES2 native library ... prism_es2
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by com.sun.glass.utils.NativeLibLoader in an unnamed module (file:/home/eli/Projects/minecraft-launcher/build/install/stratalauncher/lib/javafx-graphics-21.0.8-linux.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+	succeeded.
+GLFactory using com.sun.prism.es2.X11GLFactory
+(X) Got class = class com.sun.prism.es2.ES2Pipeline
+Initialized prism pipeline: com.sun.prism.es2.ES2Pipeline
+Maximum supported texture size: 16384
+Maximum texture size clamped to 4096
+Non power of two texture support = true
+Maximum number of vertex attributes = 16
+Maximum number of uniform vertex components = 16384
+Maximum number of uniform fragment components = 16384
+Maximum number of varying components = 128
+Maximum number of texture units usable in a vertex shader = 32
+Maximum number of texture units usable in a fragment shader = 32
+Graphics Vendor: Intel
+       Renderer: Mesa Intel(R) HD Graphics 4600 (HSW GT2)
+        Version: 4.6 (Compatibility Profile) Mesa 26.1.6-arch1.1
+Setting PULSE_DURATION to 60 hz
+ vsync: false vpipe: true
+ES2ResourceFactory: Prism - createStockShader: FillPgram_Color.frag
+ES2ResourceFactory: Prism - createStockShader: FillPgram_LinearGradient_PAD.frag
+ES2ResourceFactory: Prism - createStockShader: FillRoundRect_Color.frag
+ES2ResourceFactory: Prism - createStockShader: DrawRoundRect_Color.frag
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::allocateMemory has been called by com.sun.marlin.OffHeapArray (file:/home/eli/Projects/minecraft-launcher/build/install/stratalauncher/lib/javafx-graphics-21.0.8-linux.jar)
+WARNING: Please consider reporting this to the maintainers of class com.sun.marlin.OffHeapArray
+WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+new alphas with length = 4096
+ES2ResourceFactory: Prism - createStockShader: Texture_Color.frag
+ES2ResourceFactory: Prism - createStockShader: Mask_TextureSuper.frag
+ES2ResourceFactory: Prism - createStockShader: FillRoundRect_LinearGradient_PAD.frag
+ES2ResourceFactory: Prism - createStockShader: Solid_TextureRGB.frag
+
+
+PULSE: 1 [0ms:322ms]
+T37 (9 +2ms): CSS Pass
+T37 (11 +7ms): Layout Pass
+T37 (19 +3ms): Update bounds
+T37 (23 +0ms): Waiting for previous rendering
+T37 (23 +10ms): Copy state to render graph
+T34 (69 +249ms): Painting
+T34 (319 +3ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 37
+	Nodes visited during render: 40
+	Rendering region background image to cache: 1
+
+
+PULSE: 2 [326ms:54ms]
+T37 (12 +0ms): CSS Pass
+T37 (12 +1ms): Layout Pass
+T37 (13 +0ms): Update bounds
+T37 (14 +0ms): Waiting for previous rendering
+T37 (14 +0ms): Copy state to render graph
+T34 (25 +22ms): Painting
+T34 (47 +7ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 37
+	Nodes visited during render: 40
+
+
+PULSE: 3 [15ms:40ms] Required No Rendering
+T37 (0 +0ms): CSS Pass
+
+
+PULSE: 4 [16ms:24ms] Required No Rendering
+T37 (-15 +16ms): Layout Pass
+T37 (0 +0ms): CSS Pass
+
+[5 16ms:8ms][6 15ms:0ms][7 15ms:0ms][8 16ms:0ms]
+
+PULSE: 9 [16ms:270ms]
+T37 (-16 +261ms): Layout Pass
+T37 (245 +0ms): CSS Pass
+T37 (245 +12ms): Layout Pass
+T37 (258 +1ms): Update bounds
+T37 (260 +0ms): Waiting for previous rendering
+T37 (260 +3ms): Copy state to render graph
+T34 (267 +0ms): Dirty Opts Computed
+T34 (267 +1ms): Painting
+T34 (269 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 27
+	Nodes visited during render: 31
+new alphas with length = 8192
+ES2ResourceFactory: Prism - createStockShader: FillCircle_Color.frag
+new alphas with length = 12288
+
+
+PULSE: 10 [264ms:100ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +6ms): Layout Pass
+T37 (6 +0ms): Update bounds
+T37 (7 +0ms): Waiting for previous rendering
+T37 (7 +0ms): Copy state to render graph
+T34 (13 +0ms): Dirty Opts Computed
+T34 (13 +83ms): Painting
+T34 (97 +3ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 104
+	Nodes visited during render: 112
+
+
+PULSE: 11 [16ms:169ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +2ms): Layout Pass
+T37 (3 +0ms): Update bounds
+T37 (3 +84ms): Waiting for previous rendering
+T37 (88 +0ms): Copy state to render graph
+T34 (101 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (101 +11ms): Render Roots Discovered
+T34 (112 +54ms): Painting
+T34 (167 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 12 [90ms:132ms]
+T37 (1 +0ms): CSS Pass
+T37 (1 +9ms): Layout Pass
+T37 (10 +0ms): Update bounds
+T37 (10 +70ms): Waiting for previous rendering
+T37 (80 +1ms): Copy state to render graph
+T34 (90 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (90 +0ms): Render Roots Discovered
+T34 (90 +40ms): Painting
+T34 (131 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 13 [82ms:95ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +1ms): Layout Pass
+T37 (1 +0ms): Update bounds
+T37 (2 +48ms): Waiting for previous rendering
+T37 (51 +0ms): Copy state to render graph
+T34 (56 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (56 +0ms): Render Roots Discovered
+T34 (56 +34ms): Painting
+T34 (91 +3ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 14 [52ms:85ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +43ms): Waiting for previous rendering
+T37 (43 +0ms): Copy state to render graph
+T34 (53 +0ms): Dirty Opts Computed
+T34 : 5 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:248.0, minY:135.0, maxX:342.0, maxY:175.0} (w:94.0, h:40.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 1: RectBounds { minX:352.0, minY:134.0, maxX:470.0, maxY:176.0} (w:118.0, h:42.0)
+T34 : Render Root Path 1: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 2: RectBounds { minX:248.0, minY:190.0, maxX:1868.0, maxY:942.0} (w:1620.0, h:752.0)
+T34 : Render Root Path 2: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 3: RectBounds { minX:248.0, minY:956.0, maxX:343.0, maxY:996.0} (w:95.0, h:40.0)
+T34 : Render Root Path 3: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 4: RectBounds { minX:357.0, minY:966.0, maxX:796.0, maxY:986.0} (w:439.0, h:20.0)
+T34 : Render Root Path 4: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (53 +0ms): Render Roots Discovered
+T34 (54 +0ms): Painting
+T34 (54 +0ms): Painting
+T34 (55 +27ms): Painting
+T34 (82 +0ms): Painting
+T34 (83 +0ms): Painting
+T34 (83 +1ms): Presenting
+Counters:
+	Nodes rendered: 96
+	Nodes visited during render: 142
+
+
+PULSE: 15 [48ms:75ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +36ms): Waiting for previous rendering
+T37 (37 +0ms): Copy state to render graph
+T34 (42 +0ms): Dirty Opts Computed
+T34 : 3 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:248.0, minY:190.0, maxX:1868.0, maxY:942.0} (w:1620.0, h:752.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 1: RectBounds { minX:248.0, minY:956.0, maxX:343.0, maxY:996.0} (w:95.0, h:40.0)
+T34 : Render Root Path 1: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 2: RectBounds { minX:357.0, minY:966.0, maxX:796.0, maxY:986.0} (w:439.0, h:20.0)
+T34 : Render Root Path 2: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (42 +0ms): Render Roots Discovered
+T34 (43 +28ms): Painting
+T34 (71 +0ms): Painting
+T34 (72 +1ms): Painting
+T34 (73 +2ms): Presenting
+Counters:
+	Nodes rendered: 78
+	Nodes visited during render: 106
+
+
+PULSE: 16 [38ms:47ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (1 +37ms): Waiting for previous rendering
+T37 (39 +0ms): Copy state to render graph
+T34 (45 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:357.0, minY:966.0, maxX:796.0, maxY:986.0} (w:439.0, h:20.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (45 +0ms): Render Roots Discovered
+T34 (45 +0ms): Painting
+T34 (46 +1ms): Presenting
+Counters:
+	Nodes rendered: 7
+	Nodes visited during render: 15
+
+[17 40ms:8ms][18 17ms:0ms][19 15ms:0ms][20 17ms:0ms][21 16ms:0ms][22 14ms:1ms][23 15ms:0ms][24 16ms:0ms][25 16ms:0ms][26 16ms:0ms]
+[27 16ms:0ms][28 16ms:0ms][29 16ms:0ms][30 16ms:0ms][31 16ms:0ms][32 15ms:0ms][33 16ms:0ms][34 16ms:0ms][35 16ms:0ms][36 16ms:0ms]
+[37 16ms:0ms][38 15ms:0ms][39 16ms:0ms][40 16ms:0ms][41 16ms:0ms][42 16ms:0ms][43 15ms:9ms]
+
+PULSE: 44 [16ms:21ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +0ms): Waiting for previous rendering
+T37 (0 +0ms): Copy state to render graph
+T34 (3 +0ms): Dirty Opts Computed
+T34 (3 +16ms): Painting
+T34 (19 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 32
+	Nodes visited during render: 37
+
+
+PULSE: 45 [16ms:19ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +4ms): Waiting for previous rendering
+T37 (5 +0ms): Copy state to render graph
+T34 (9 +0ms): Dirty Opts Computed
+T34 (10 +7ms): Painting
+T34 (17 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 34
+	Nodes visited during render: 38
+
+[46 15ms:12ms][47 16ms:9ms][48 16ms:8ms][49 16ms:7ms][50 16ms:10ms][51 16ms:9ms][52 16ms:10ms][53 16ms:8ms][54 15ms:10ms][55 16ms:10ms]
+[56 16ms:9ms][57 16ms:9ms][58 15ms:8ms][59 16ms:9ms][60 15ms:10ms][61 16ms:9ms][62 16ms:8ms][63 16ms:6ms][64 16ms:6ms][65 16ms:7ms]
+[66 15ms:10ms][67 16ms:9ms][68 16ms:12ms][69 15ms:9ms][70 16ms:5ms][71 16ms:4ms][72 16ms:9ms][73 16ms:6ms][74 16ms:0ms][75 16ms:0ms]
+[76 16ms:0ms][77 16ms:0ms][78 16ms:0ms][79 16ms:0ms][80 16ms:0ms][81 15ms:0ms][82 16ms:0ms][83 16ms:0ms][84 16ms:0ms][85 16ms:0ms]
+[86 16ms:0ms][87 16ms:0ms][88 16ms:0ms][89 15ms:0ms][90 16ms:0ms][91 16ms:0ms][92 16ms:0ms]
+
+PULSE: 93 [16ms:39ms]
+T37 (-15 +47ms): Layout Pass
+T37 (31 +0ms): CSS Pass
+T37 (31 +0ms): Layout Pass
+T37 (31 +0ms): Update bounds
+T37 (32 +0ms): Waiting for previous rendering
+T37 (32 +0ms): Copy state to render graph
+T34 (37 +0ms): Dirty Opts Computed
+T34 (37 +1ms): Painting
+T34 (38 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 27
+	Nodes visited during render: 31
+
+[94 33ms:11ms][95 16ms:10ms][96 16ms:7ms][97 16ms:9ms]
+
+PULSE: 98 [16ms:27ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +0ms): Waiting for previous rendering
+T37 (0 +0ms): Copy state to render graph
+T34 (6 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:244.0, minY:72.0, maxX:1887.0, maxY:1006.0} (w:1643.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (6 +0ms): Render Roots Discovered
+T34 (6 +19ms): Painting
+T34 (26 +1ms): Presenting
+Counters:
+	Nodes rendered: 75
+	Nodes visited during render: 88
+
+
+PULSE: 99 [15ms:39ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +12ms): Waiting for previous rendering
+T37 (12 +0ms): Copy state to render graph
+T34 (19 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:242.0, minY:72.0, maxX:1885.0, maxY:1006.0} (w:1643.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (19 +0ms): Render Roots Discovered
+T34 (19 +19ms): Painting
+T34 (38 +1ms): Presenting
+Counters:
+	Nodes rendered: 75
+	Nodes visited during render: 88
+
+
+PULSE: 100 [16ms:50ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +23ms): Waiting for previous rendering
+T37 (24 +0ms): Copy state to render graph
+T34 (29 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:241.0, minY:72.0, maxX:1883.0, maxY:1006.0} (w:1642.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (29 +0ms): Render Roots Discovered
+T34 (30 +18ms): Painting
+T34 (48 +1ms): Presenting
+Counters:
+	Nodes rendered: 78
+	Nodes visited during render: 90
+
+
+PULSE: 101 [25ms:49ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +24ms): Waiting for previous rendering
+T37 (25 +0ms): Copy state to render graph
+T34 (29 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:240.0, minY:72.0, maxX:1882.0, maxY:1006.0} (w:1642.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (29 +0ms): Render Roots Discovered
+T34 (30 +18ms): Painting
+T34 (48 +0ms): Presenting
+Counters:
+	Nodes rendered: 80
+	Nodes visited during render: 91
+
+
+PULSE: 102 [26ms:52ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +22ms): Waiting for previous rendering
+T37 (23 +0ms): Copy state to render graph
+T34 (28 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:239.0, minY:72.0, maxX:1881.0, maxY:1006.0} (w:1642.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (28 +0ms): Render Roots Discovered
+T34 (28 +22ms): Painting
+T34 (51 +1ms): Presenting
+Counters:
+	Nodes rendered: 80
+	Nodes visited during render: 91
+
+
+PULSE: 103 [24ms:58ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +28ms): Waiting for previous rendering
+T37 (29 +0ms): Copy state to render graph
+T34 (34 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:239.0, minY:72.0, maxX:1880.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (34 +0ms): Render Roots Discovered
+T34 (34 +22ms): Painting
+T34 (56 +1ms): Presenting
+Counters:
+	Nodes rendered: 80
+	Nodes visited during render: 91
+
+
+PULSE: 104 [29ms:68ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +29ms): Waiting for previous rendering
+T37 (29 +0ms): Copy state to render graph
+T34 (36 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1880.0, maxY:1006.0} (w:1642.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (37 +0ms): Render Roots Discovered
+T34 (37 +29ms): Painting
+T34 (67 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 105 [30ms:61ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (1 +36ms): Waiting for previous rendering
+T37 (37 +0ms): Copy state to render graph
+T34 (41 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (41 +0ms): Render Roots Discovered
+T34 (41 +18ms): Painting
+T34 (60 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 106 [38ms:49ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +23ms): Waiting for previous rendering
+T37 (24 +0ms): Copy state to render graph
+T34 (29 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (29 +0ms): Render Roots Discovered
+T34 (29 +19ms): Painting
+T34 (48 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 107 [24ms:62ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +25ms): Waiting for previous rendering
+T37 (25 +0ms): Copy state to render graph
+T34 (32 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (32 +0ms): Render Roots Discovered
+T34 (33 +27ms): Painting
+T34 (60 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 108 [26ms:62ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +36ms): Waiting for previous rendering
+T37 (36 +0ms): Copy state to render graph
+T34 (40 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (41 +0ms): Render Roots Discovered
+T34 (41 +19ms): Painting
+T34 (61 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 109 [37ms:64ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +25ms): Waiting for previous rendering
+T37 (25 +0ms): Copy state to render graph
+T34 (33 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (33 +0ms): Render Roots Discovered
+T34 (33 +29ms): Painting
+T34 (63 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 110 [26ms:67ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +38ms): Waiting for previous rendering
+T37 (38 +0ms): Copy state to render graph
+T34 (44 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (44 +0ms): Render Roots Discovered
+T34 (44 +20ms): Painting
+T34 (64 +2ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 111 [39ms:57ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +28ms): Waiting for previous rendering
+T37 (29 +0ms): Copy state to render graph
+T34 (34 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1878.0, maxY:1006.0} (w:1640.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (34 +0ms): Render Roots Discovered
+T34 (34 +20ms): Painting
+T34 (55 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 112 [29ms:53ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +28ms): Waiting for previous rendering
+T37 (28 +0ms): Copy state to render graph
+T34 (32 +0ms): Dirty Opts Computed
+T34 : 4 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:352.0, minY:134.0, maxX:470.0, maxY:176.0} (w:118.0, h:42.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 1: RectBounds { minX:248.0, minY:190.0, maxX:1868.0, maxY:942.0} (w:1620.0, h:752.0)
+T34 : Render Root Path 1: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 2: RectBounds { minX:248.0, minY:956.0, maxX:343.0, maxY:996.0} (w:95.0, h:40.0)
+T34 : Render Root Path 2: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 3: RectBounds { minX:357.0, minY:966.0, maxX:796.0, maxY:986.0} (w:439.0, h:20.0)
+T34 : Render Root Path 3: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (32 +0ms): Render Roots Discovered
+T34 (32 +1ms): Painting
+T34 (33 +17ms): Painting
+T34 (51 +0ms): Painting
+T34 (51 +0ms): Painting
+T34 (52 +1ms): Presenting
+Counters:
+	Nodes rendered: 87
+	Nodes visited during render: 124
+
+
+PULSE: 113 [29ms:52ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +25ms): Waiting for previous rendering
+T37 (25 +0ms): Copy state to render graph
+T34 (31 +0ms): Dirty Opts Computed
+T34 : 3 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:248.0, minY:190.0, maxX:1868.0, maxY:942.0} (w:1620.0, h:752.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 1: RectBounds { minX:248.0, minY:956.0, maxX:343.0, maxY:996.0} (w:95.0, h:40.0)
+T34 : Render Root Path 1: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 2: RectBounds { minX:357.0, minY:966.0, maxX:796.0, maxY:986.0} (w:439.0, h:20.0)
+T34 : Render Root Path 2: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (31 +0ms): Render Roots Discovered
+T34 (31 +17ms): Painting
+T34 (49 +0ms): Painting
+T34 (49 +0ms): Painting
+T34 (50 +1ms): Presenting
+Counters:
+	Nodes rendered: 78
+	Nodes visited during render: 106
+
+
+PULSE: 114 [26ms:35ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +26ms): Waiting for previous rendering
+T37 (26 +0ms): Copy state to render graph
+T34 (31 +0ms): Dirty Opts Computed
+T34 : 2 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:248.0, minY:956.0, maxX:343.0, maxY:996.0} (w:95.0, h:40.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 1: RectBounds { minX:357.0, minY:966.0, maxX:796.0, maxY:986.0} (w:439.0, h:20.0)
+T34 : Render Root Path 1: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (31 +0ms): Render Roots Discovered
+T34 (31 +0ms): Painting
+T34 (32 +0ms): Painting
+T34 (33 +1ms): Presenting
+Counters:
+	Nodes rendered: 15
+	Nodes visited during render: 31
+
+[115 26ms:14ms][116 16ms:0ms][117 16ms:0ms][118 16ms:0ms][119 16ms:0ms][120 16ms:0ms][121 15ms:0ms][122 16ms:0ms][123 16ms:0ms][124 16ms:0ms]
+[125 16ms:0ms][126 16ms:0ms][127 16ms:0ms][128 16ms:0ms][129 16ms:0ms][130 16ms:0ms][131 16ms:10ms][132 16ms:7ms][133 16ms:8ms][134 16ms:6ms]
+[135 16ms:8ms][136 16ms:8ms][137 16ms:11ms][138 16ms:7ms][139 16ms:7ms][140 16ms:7ms][141 16ms:7ms][142 16ms:8ms][143 16ms:8ms][144 16ms:7ms]
+[145 15ms:8ms][146 16ms:6ms][147 16ms:9ms][148 16ms:8ms][149 16ms:6ms][150 16ms:7ms][151 16ms:7ms][152 16ms:5ms][153 16ms:7ms][154 16ms:5ms]
+[155 15ms:9ms][156 16ms:7ms][157 16ms:5ms][158 16ms:5ms][159 15ms:5ms][160 16ms:8ms][161 16ms:7ms][162 16ms:0ms][163 16ms:0ms][164 15ms:0ms]
+[165 16ms:0ms][166 16ms:0ms][167 16ms:0ms][168 16ms:0ms][169 16ms:0ms][170 16ms:0ms][171 16ms:0ms][172 16ms:0ms][173 16ms:0ms][174 16ms:0ms]
+[175 16ms:0ms][176 16ms:0ms][177 16ms:0ms][178 16ms:0ms][179 16ms:0ms][180 16ms:0ms]
+
+PULSE: 181 [16ms:24ms]
+T37 (-16 +33ms): Layout Pass
+T37 (17 +0ms): CSS Pass
+T37 (17 +0ms): Layout Pass
+T37 (17 +0ms): Update bounds
+T37 (17 +0ms): Waiting for previous rendering
+T37 (17 +0ms): Copy state to render graph
+T34 (23 +0ms): Dirty Opts Computed
+T34 (23 +0ms): Painting
+T34 (24 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 27
+	Nodes visited during render: 31
+
+[182 17ms:13ms][183 16ms:5ms][184 16ms:6ms][185 16ms:6ms][186 15ms:4ms]
+
+PULSE: 187 [16ms:22ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +0ms): Waiting for previous rendering
+T37 (0 +0ms): Copy state to render graph
+T34 (4 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:244.0, minY:72.0, maxX:1887.0, maxY:1006.0} (w:1643.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (4 +0ms): Render Roots Discovered
+T34 (4 +17ms): Painting
+T34 (21 +0ms): Presenting
+Counters:
+	Nodes rendered: 75
+	Nodes visited during render: 88
+
+
+PULSE: 188 [16ms:27ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +6ms): Waiting for previous rendering
+T37 (6 +0ms): Copy state to render graph
+T34 (10 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:242.0, minY:72.0, maxX:1885.0, maxY:1006.0} (w:1643.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (10 +0ms): Render Roots Discovered
+T34 (10 +15ms): Painting
+T34 (26 +1ms): Presenting
+Counters:
+	Nodes rendered: 75
+	Nodes visited during render: 88
+
+
+PULSE: 189 [16ms:34ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +10ms): Waiting for previous rendering
+T37 (11 +0ms): Copy state to render graph
+T34 (16 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:241.0, minY:72.0, maxX:1883.0, maxY:1006.0} (w:1642.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (16 +0ms): Render Roots Discovered
+T34 (16 +15ms): Painting
+T34 (32 +1ms): Presenting
+Counters:
+	Nodes rendered: 78
+	Nodes visited during render: 90
+
+
+PULSE: 190 [16ms:41ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +17ms): Waiting for previous rendering
+T37 (18 +0ms): Copy state to render graph
+T34 (22 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:240.0, minY:72.0, maxX:1882.0, maxY:1006.0} (w:1642.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (22 +0ms): Render Roots Discovered
+T34 (23 +16ms): Painting
+T34 (39 +2ms): Presenting
+Counters:
+	Nodes rendered: 80
+	Nodes visited during render: 91
+
+
+PULSE: 191 [18ms:48ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +23ms): Waiting for previous rendering
+T37 (23 +0ms): Copy state to render graph
+T34 (28 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:240.0, minY:72.0, maxX:1881.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (28 +0ms): Render Roots Discovered
+T34 (28 +18ms): Painting
+T34 (46 +1ms): Presenting
+Counters:
+	Nodes rendered: 80
+	Nodes visited during render: 91
+
+
+PULSE: 192 [23ms:47ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +24ms): Waiting for previous rendering
+T37 (25 +0ms): Copy state to render graph
+T34 (28 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:239.0, minY:72.0, maxX:1881.0, maxY:1006.0} (w:1642.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (28 +0ms): Render Roots Discovered
+T34 (28 +16ms): Painting
+T34 (45 +2ms): Presenting
+Counters:
+	Nodes rendered: 80
+	Nodes visited during render: 91
+
+
+PULSE: 193 [25ms:45ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +22ms): Waiting for previous rendering
+T37 (22 +0ms): Copy state to render graph
+T34 (27 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1880.0, maxY:1006.0} (w:1642.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (27 +0ms): Render Roots Discovered
+T34 (27 +16ms): Painting
+T34 (44 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 194 [23ms:47ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +22ms): Waiting for previous rendering
+T37 (23 +0ms): Copy state to render graph
+T34 (28 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (28 +0ms): Render Roots Discovered
+T34 (28 +16ms): Painting
+T34 (45 +2ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 195 [23ms:50ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +24ms): Waiting for previous rendering
+T37 (24 +0ms): Copy state to render graph
+T34 (28 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (28 +0ms): Render Roots Discovered
+T34 (28 +19ms): Painting
+T34 (48 +2ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 196 [25ms:50ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +25ms): Waiting for previous rendering
+T37 (25 +0ms): Copy state to render graph
+T34 (29 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (30 +0ms): Render Roots Discovered
+T34 (30 +18ms): Painting
+T34 (48 +2ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 197 [26ms:46ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +24ms): Waiting for previous rendering
+T37 (25 +0ms): Copy state to render graph
+T34 (28 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (28 +0ms): Render Roots Discovered
+T34 (28 +15ms): Painting
+T34 (44 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 198 [25ms:48ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +20ms): Waiting for previous rendering
+T37 (21 +0ms): Copy state to render graph
+T34 (25 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (25 +0ms): Render Roots Discovered
+T34 (25 +20ms): Painting
+T34 (46 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 199 [21ms:51ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +26ms): Waiting for previous rendering
+T37 (27 +0ms): Copy state to render graph
+T34 (32 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (32 +0ms): Render Roots Discovered
+T34 (32 +17ms): Painting
+T34 (50 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 200 [27ms:48ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +24ms): Waiting for previous rendering
+T37 (24 +0ms): Copy state to render graph
+T34 (29 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (29 +0ms): Render Roots Discovered
+T34 (29 +16ms): Painting
+T34 (46 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 201 [24ms:49ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +23ms): Waiting for previous rendering
+T37 (23 +0ms): Copy state to render graph
+T34 (29 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (29 +0ms): Render Roots Discovered
+T34 (30 +17ms): Painting
+T34 (47 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 202 [24ms:45ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +25ms): Waiting for previous rendering
+T37 (26 +0ms): Copy state to render graph
+T34 (30 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (30 +0ms): Render Roots Discovered
+T34 (30 +13ms): Painting
+T34 (44 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 203 [26ms:47ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +19ms): Waiting for previous rendering
+T37 (19 +0ms): Copy state to render graph
+T34 (23 +0ms): Dirty Opts Computed
+T34 : 5 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:248.0, minY:135.0, maxX:342.0, maxY:175.0} (w:94.0, h:40.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 1: RectBounds { minX:352.0, minY:134.0, maxX:470.0, maxY:176.0} (w:118.0, h:42.0)
+T34 : Render Root Path 1: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 2: RectBounds { minX:248.0, minY:190.0, maxX:1868.0, maxY:942.0} (w:1620.0, h:752.0)
+T34 : Render Root Path 2: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 3: RectBounds { minX:248.0, minY:956.0, maxX:343.0, maxY:996.0} (w:95.0, h:40.0)
+T34 : Render Root Path 3: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 4: RectBounds { minX:357.0, minY:966.0, maxX:796.0, maxY:986.0} (w:439.0, h:20.0)
+T34 : Render Root Path 4: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (23 +0ms): Render Roots Discovered
+T34 (24 +0ms): Painting
+T34 (24 +0ms): Painting
+T34 (24 +19ms): Painting
+T34 (44 +0ms): Painting
+T34 (44 +0ms): Painting
+T34 (45 +1ms): Presenting
+Counters:
+	Nodes rendered: 96
+	Nodes visited during render: 142
+
+
+PULSE: 204 [20ms:47ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +27ms): Waiting for previous rendering
+T37 (27 +0ms): Copy state to render graph
+T34 (32 +0ms): Dirty Opts Computed
+T34 : 4 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:352.0, minY:134.0, maxX:470.0, maxY:176.0} (w:118.0, h:42.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 1: RectBounds { minX:248.0, minY:190.0, maxX:1868.0, maxY:942.0} (w:1620.0, h:752.0)
+T34 : Render Root Path 1: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 2: RectBounds { minX:248.0, minY:956.0, maxX:343.0, maxY:996.0} (w:95.0, h:40.0)
+T34 : Render Root Path 2: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 3: RectBounds { minX:357.0, minY:966.0, maxX:796.0, maxY:986.0} (w:439.0, h:20.0)
+T34 : Render Root Path 3: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (32 +0ms): Render Roots Discovered
+T34 (33 +0ms): Painting
+T34 (33 +12ms): Painting
+T34 (45 +0ms): Painting
+T34 (46 +0ms): Painting
+T34 (46 +1ms): Presenting
+Counters:
+	Nodes rendered: 87
+	Nodes visited during render: 124
+
+
+PULSE: 205 [28ms:40ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +19ms): Waiting for previous rendering
+T37 (20 +0ms): Copy state to render graph
+T34 (24 +0ms): Dirty Opts Computed
+T34 : 3 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:248.0, minY:190.0, maxX:1868.0, maxY:942.0} (w:1620.0, h:752.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 1: RectBounds { minX:248.0, minY:956.0, maxX:343.0, maxY:996.0} (w:95.0, h:40.0)
+T34 : Render Root Path 1: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 2: RectBounds { minX:357.0, minY:966.0, maxX:796.0, maxY:986.0} (w:439.0, h:20.0)
+T34 : Render Root Path 2: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (24 +0ms): Render Roots Discovered
+T34 (24 +13ms): Painting
+T34 (38 +0ms): Painting
+T34 (38 +0ms): Painting
+T34 (38 +1ms): Presenting
+Counters:
+	Nodes rendered: 78
+	Nodes visited during render: 106
+
+
+PULSE: 206 [20ms:30ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +20ms): Waiting for previous rendering
+T37 (20 +0ms): Copy state to render graph
+T34 (27 +0ms): Dirty Opts Computed
+T34 : 2 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:248.0, minY:956.0, maxX:343.0, maxY:996.0} (w:95.0, h:40.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 1: RectBounds { minX:357.0, minY:966.0, maxX:796.0, maxY:986.0} (w:439.0, h:20.0)
+T34 : Render Root Path 1: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (27 +0ms): Render Roots Discovered
+T34 (28 +0ms): Painting
+T34 (29 +0ms): Painting
+T34 (29 +1ms): Presenting
+Counters:
+	Nodes rendered: 15
+	Nodes visited during render: 31
+
+[207 21ms:17ms][208 16ms:9ms][209 16ms:0ms][210 16ms:0ms][211 15ms:0ms][212 16ms:0ms][213 16ms:0ms][214 15ms:0ms][215 16ms:0ms][216 16ms:0ms]
+[217 16ms:0ms][218 16ms:0ms][219 16ms:0ms][220 16ms:0ms][221 16ms:0ms][222 16ms:0ms][223 16ms:0ms][224 16ms:6ms][225 16ms:5ms][226 16ms:5ms]
+[227 16ms:7ms][228 15ms:8ms][229 16ms:7ms][230 16ms:7ms][231 16ms:6ms][232 16ms:7ms][233 16ms:7ms][234 16ms:5ms][235 16ms:7ms][236 16ms:7ms]
+[237 15ms:8ms][238 16ms:7ms][239 16ms:6ms][240 16ms:9ms][241 16ms:7ms][242 16ms:4ms][243 16ms:5ms][244 16ms:5ms][245 16ms:6ms][246 16ms:6ms]
+[247 16ms:6ms][248 16ms:4ms][249 16ms:5ms][250 16ms:9ms][251 16ms:5ms][252 16ms:5ms][253 15ms:4ms][254 16ms:4ms][255 16ms:0ms][256 16ms:0ms]
+[257 16ms:0ms][258 16ms:0ms][259 16ms:0ms][260 15ms:0ms][261 16ms:0ms][262 16ms:0ms][263 16ms:0ms][264 16ms:0ms][265 16ms:0ms][266 16ms:0ms]
+[267 16ms:0ms][268 16ms:0ms][269 16ms:0ms][270 16ms:0ms][271 16ms:0ms][272 15ms:0ms][273 16ms:0ms]
+
+PULSE: 274 [16ms:35ms]
+T37 (-16 +43ms): Layout Pass
+T37 (27 +0ms): CSS Pass
+T37 (27 +0ms): Layout Pass
+T37 (27 +0ms): Update bounds
+T37 (27 +0ms): Waiting for previous rendering
+T37 (27 +0ms): Copy state to render graph
+T34 (34 +0ms): Dirty Opts Computed
+T34 (34 +0ms): Painting
+T34 (35 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 27
+	Nodes visited during render: 31
+
+[275 29ms:11ms][276 15ms:6ms][277 16ms:6ms][278 16ms:6ms][279 16ms:14ms][280 16ms:14ms][281 16ms:10ms]
+
+PULSE: 282 [16ms:63ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +0ms): Waiting for previous rendering
+T37 (0 +0ms): Copy state to render graph
+T34 (4 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:241.0, minY:72.0, maxX:1883.0, maxY:1006.0} (w:1642.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (4 +0ms): Render Roots Discovered
+T34 (4 +6ms): Painting
+T34 (11 +52ms): Presenting
+Counters:
+	Nodes rendered: 78
+	Nodes visited during render: 90
+
+
+PULSE: 283 [16ms:57ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +47ms): Waiting for previous rendering
+T37 (48 +0ms): Copy state to render graph
+T34 (51 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:240.0, minY:72.0, maxX:1882.0, maxY:1006.0} (w:1642.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (51 +0ms): Render Roots Discovered
+T34 (51 +4ms): Painting
+T34 (55 +1ms): Presenting
+Counters:
+	Nodes rendered: 80
+	Nodes visited during render: 91
+
+
+PULSE: 284 [48ms:19ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +8ms): Waiting for previous rendering
+T37 (8 +0ms): Copy state to render graph
+T34 (11 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:239.0, minY:72.0, maxX:1881.0, maxY:1006.0} (w:1642.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (11 +0ms): Render Roots Discovered
+T34 (11 +6ms): Painting
+T34 (18 +1ms): Presenting
+Counters:
+	Nodes rendered: 80
+	Nodes visited during render: 91
+
+
+PULSE: 285 [16ms:18ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +3ms): Waiting for previous rendering
+T37 (3 +0ms): Copy state to render graph
+T34 (9 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1880.0, maxY:1006.0} (w:1642.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (9 +0ms): Render Roots Discovered
+T34 (9 +6ms): Painting
+T34 (16 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+[286 16ms:17ms][287 16ms:13ms][288 15ms:15ms][289 16ms:11ms][290 16ms:10ms][291 16ms:12ms][292 16ms:11ms][293 16ms:11ms][294 16ms:11ms][295 16ms:15ms]
+[296 16ms:9ms][297 16ms:11ms][298 16ms:12ms][299 16ms:15ms][300 16ms:16ms]
+
+PULSE: 301 [16ms:19ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +0ms): Waiting for previous rendering
+T37 (0 +0ms): Copy state to render graph
+T34 (6 +0ms): Dirty Opts Computed
+T34 : 4 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:352.0, minY:134.0, maxX:470.0, maxY:176.0} (w:118.0, h:42.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 1: RectBounds { minX:248.0, minY:190.0, maxX:1868.0, maxY:942.0} (w:1620.0, h:752.0)
+T34 : Render Root Path 1: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 2: RectBounds { minX:248.0, minY:956.0, maxX:343.0, maxY:996.0} (w:95.0, h:40.0)
+T34 : Render Root Path 2: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 3: RectBounds { minX:357.0, minY:966.0, maxX:796.0, maxY:986.0} (w:439.0, h:20.0)
+T34 : Render Root Path 3: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (7 +0ms): Render Roots Discovered
+T34 (7 +0ms): Painting
+T34 (8 +7ms): Painting
+T34 (15 +0ms): Painting
+T34 (16 +0ms): Painting
+T34 (16 +2ms): Presenting
+Counters:
+	Nodes rendered: 87
+	Nodes visited during render: 124
+
+[302 16ms:13ms][303 16ms:14ms][304 16ms:10ms][305 16ms:8ms][306 15ms:3ms][307 16ms:5ms][308 16ms:0ms][309 16ms:0ms][310 16ms:0ms][311 16ms:0ms]
+[312 16ms:0ms][313 16ms:0ms][314 16ms:0ms][315 16ms:0ms][316 16ms:0ms][317 16ms:0ms][318 15ms:0ms][319 16ms:0ms][320 16ms:0ms][321 16ms:0ms]
+[322 16ms:0ms][323 16ms:9ms][324 15ms:6ms][325 16ms:7ms][326 16ms:6ms][327 16ms:3ms][328 16ms:3ms][329 16ms:9ms][330 16ms:8ms][331 16ms:10ms]
+[332 16ms:8ms][333 15ms:8ms][334 16ms:11ms][335 16ms:9ms][336 16ms:10ms][337 15ms:14ms][338 16ms:11ms][339 16ms:11ms][340 16ms:11ms][341 16ms:10ms]
+[342 16ms:11ms]
+
+PULSE: 343 [16ms:62ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +0ms): Waiting for previous rendering
+T37 (0 +0ms): Copy state to render graph
+T34 (58 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (58 +0ms): Render Roots Discovered
+T34 (59 +1ms): Painting
+T34 (60 +1ms): Presenting
+Counters:
+	Nodes rendered: 14
+	Nodes visited during render: 20
+
+
+PULSE: 344 [23ms:47ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +39ms): Waiting for previous rendering
+T37 (39 +0ms): Copy state to render graph
+T34 (45 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (45 +0ms): Render Roots Discovered
+T34 (45 +0ms): Painting
+T34 (45 +1ms): Presenting
+Counters:
+	Nodes rendered: 14
+	Nodes visited during render: 20
+
+[345 40ms:15ms][346 15ms:8ms][347 16ms:11ms][348 16ms:10ms][349 16ms:8ms][350 16ms:9ms][351 16ms:10ms][352 16ms:0ms][353 16ms:0ms][354 16ms:0ms]
+[355 16ms:0ms][356 16ms:0ms][357 16ms:0ms][358 16ms:0ms][359 16ms:0ms][360 16ms:0ms][361 16ms:0ms][362 16ms:0ms][363 16ms:0ms][364 16ms:0ms]
+[365 16ms:0ms][366 16ms:0ms][367 16ms:0ms][368 16ms:0ms][369 16ms:0ms][370 16ms:0ms]
+
+PULSE: 371 [16ms:18ms]
+T37 (-16 +29ms): Layout Pass
+T37 (13 +0ms): CSS Pass
+T37 (13 +0ms): Layout Pass
+T37 (13 +0ms): Update bounds
+T37 (13 +0ms): Waiting for previous rendering
+T37 (13 +0ms): Copy state to render graph
+T34 (17 +0ms): Dirty Opts Computed
+T34 (17 +0ms): Painting
+T34 (17 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 27
+	Nodes visited during render: 31
+
+[372 15ms:8ms][373 16ms:9ms][374 15ms:5ms][375 16ms:7ms][376 15ms:6ms][377 16ms:12ms][378 16ms:13ms][379 16ms:14ms][380 16ms:12ms][381 16ms:12ms]
+[382 15ms:10ms][383 16ms:10ms][384 16ms:16ms][385 16ms:13ms][386 15ms:13ms][387 16ms:14ms][388 16ms:13ms][389 16ms:14ms][390 16ms:12ms][391 16ms:8ms]
+[392 16ms:11ms][393 16ms:8ms][394 16ms:12ms][395 16ms:11ms][396 16ms:11ms][397 16ms:11ms][398 16ms:8ms][399 16ms:12ms][400 16ms:13ms][401 16ms:15ms]
+[402 16ms:11ms]
+
+PULSE: 403 [16ms:22ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +0ms): Waiting for previous rendering
+T37 (0 +0ms): Copy state to render graph
+T34 (14 +0ms): Dirty Opts Computed
+T34 : 3 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:248.0, minY:190.0, maxX:1868.0, maxY:942.0} (w:1620.0, h:752.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 1: RectBounds { minX:248.0, minY:956.0, maxX:343.0, maxY:996.0} (w:95.0, h:40.0)
+T34 : Render Root Path 1: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 : Dirty Region 2: RectBounds { minX:357.0, minY:966.0, maxX:796.0, maxY:986.0} (w:439.0, h:20.0)
+T34 : Render Root Path 2: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (14 +0ms): Render Roots Discovered
+T34 (15 +5ms): Painting
+T34 (20 +0ms): Painting
+T34 (20 +0ms): Painting
+T34 (21 +1ms): Presenting
+Counters:
+	Nodes rendered: 78
+	Nodes visited during render: 106
+
+[404 16ms:13ms][405 15ms:5ms][406 16ms:6ms][407 16ms:0ms][408 16ms:0ms][409 16ms:0ms][410 16ms:0ms][411 16ms:0ms][412 16ms:0ms][413 16ms:0ms]
+[414 16ms:0ms][415 16ms:0ms][416 16ms:0ms][417 16ms:0ms][418 15ms:0ms][419 16ms:0ms][420 16ms:0ms][421 16ms:0ms][422 16ms:12ms][423 15ms:3ms]
+[424 16ms:8ms][425 15ms:5ms][426 16ms:6ms][427 16ms:5ms][428 16ms:5ms][429 16ms:6ms][430 16ms:7ms][431 16ms:7ms][432 16ms:6ms][433 16ms:7ms]
+[434 15ms:6ms][435 16ms:7ms][436 16ms:5ms][437 16ms:7ms][438 15ms:5ms][439 16ms:6ms][440 15ms:4ms][441 16ms:4ms][442 16ms:4ms][443 16ms:8ms]
+[444 16ms:5ms][445 16ms:5ms][446 16ms:4ms][447 16ms:4ms][448 16ms:6ms][449 16ms:4ms][450 16ms:5ms][451 16ms:3ms][452 16ms:5ms][453 16ms:0ms]
+[454 16ms:0ms][455 16ms:0ms][456 16ms:0ms][457 16ms:0ms][458 16ms:0ms][459 16ms:0ms][460 16ms:0ms][461 16ms:0ms][462 16ms:0ms][463 16ms:0ms]
+[464 16ms:0ms][465 15ms:0ms][466 16ms:0ms][467 16ms:0ms][468 16ms:0ms][469 16ms:0ms][470 16ms:0ms][471 16ms:0ms]
+
+PULSE: 472 [16ms:23ms]
+T37 (-16 +33ms): Layout Pass
+T37 (17 +0ms): CSS Pass
+T37 (17 +0ms): Layout Pass
+T37 (17 +0ms): Update bounds
+T37 (17 +0ms): Waiting for previous rendering
+T37 (17 +0ms): Copy state to render graph
+T34 (22 +0ms): Dirty Opts Computed
+T34 (22 +0ms): Painting
+T34 (23 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 27
+	Nodes visited during render: 31
+
+[473 18ms:12ms][474 16ms:8ms][475 16ms:5ms][476 16ms:5ms][477 16ms:9ms][478 16ms:11ms][479 16ms:12ms][480 16ms:12ms][481 16ms:10ms][482 16ms:11ms]
+[483 16ms:8ms][484 16ms:8ms][485 16ms:9ms][486 16ms:9ms][487 16ms:8ms][488 15ms:8ms][489 16ms:7ms][490 15ms:9ms][491 16ms:10ms][492 15ms:13ms]
+[493 16ms:11ms][494 16ms:10ms][495 16ms:11ms][496 16ms:9ms][497 16ms:12ms][498 16ms:14ms][499 16ms:9ms][500 16ms:11ms][501 16ms:10ms][502 16ms:12ms]
+[503 16ms:12ms][504 16ms:14ms][505 15ms:5ms][506 16ms:7ms][507 16ms:4ms][508 15ms:0ms][509 16ms:0ms][510 16ms:0ms][511 16ms:0ms][512 16ms:0ms]
+[513 16ms:0ms][514 16ms:0ms][515 16ms:0ms][516 16ms:0ms][517 16ms:0ms][518 16ms:0ms][519 16ms:0ms][520 16ms:0ms][521 16ms:0ms][522 16ms:0ms]
+[523 16ms:6ms][524 16ms:4ms][525 16ms:4ms][526 16ms:9ms][527 15ms:9ms][528 16ms:8ms][529 16ms:7ms][530 16ms:7ms][531 15ms:5ms][532 16ms:5ms]
+[533 16ms:6ms][534 16ms:4ms][535 16ms:5ms][536 16ms:4ms][537 15ms:3ms][538 16ms:7ms][539 16ms:6ms][540 16ms:7ms][541 16ms:8ms][542 15ms:6ms]
+[543 16ms:4ms][544 16ms:8ms][545 16ms:7ms][546 16ms:6ms][547 16ms:5ms][548 16ms:8ms][549 16ms:7ms][550 16ms:4ms][551 16ms:7ms][552 16ms:6ms]
+[553 16ms:6ms][554 16ms:0ms][555 16ms:0ms][556 16ms:0ms][557 16ms:0ms][558 16ms:0ms][559 16ms:0ms][560 16ms:0ms][561 16ms:0ms][562 16ms:0ms]
+[563 16ms:0ms][564 16ms:0ms][565 15ms:0ms][566 16ms:0ms][567 16ms:0ms][568 16ms:0ms][569 16ms:0ms][570 16ms:0ms][571 16ms:0ms][572 16ms:0ms]
+
+PULSE: 573 [15ms:25ms]
+T37 (-15 +35ms): Layout Pass
+T37 (19 +0ms): CSS Pass
+T37 (19 +0ms): Layout Pass
+T37 (19 +0ms): Update bounds
+T37 (19 +0ms): Waiting for previous rendering
+T37 (19 +0ms): Copy state to render graph
+T34 (23 +0ms): Dirty Opts Computed
+T34 (23 +0ms): Painting
+T34 (23 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 27
+	Nodes visited during render: 31
+
+[574 20ms:8ms][575 16ms:6ms][576 16ms:5ms][577 16ms:4ms][578 16ms:9ms][579 16ms:11ms][580 16ms:11ms][581 16ms:14ms][582 16ms:15ms][583 16ms:9ms]
+[584 16ms:12ms][585 16ms:9ms][586 16ms:9ms][587 16ms:15ms][588 16ms:12ms]
+
+PULSE: 589 [15ms:30ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +0ms): Waiting for previous rendering
+T37 (0 +0ms): Copy state to render graph
+T34 (23 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (23 +0ms): Render Roots Discovered
+T34 (23 +5ms): Painting
+T34 (29 +0ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 590 [16ms:26ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +14ms): Waiting for previous rendering
+T37 (14 +0ms): Copy state to render graph
+T34 (17 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (18 +0ms): Render Roots Discovered
+T34 (18 +6ms): Painting
+T34 (24 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 591 [15ms:21ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +10ms): Waiting for previous rendering
+T37 (10 +0ms): Copy state to render graph
+T34 (15 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (15 +0ms): Render Roots Discovered
+T34 (15 +3ms): Painting
+T34 (19 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+
+PULSE: 592 [16ms:18ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +5ms): Waiting for previous rendering
+T37 (6 +0ms): Copy state to render graph
+T34 (11 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:238.0, minY:72.0, maxX:1879.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (11 +0ms): Render Roots Discovered
+T34 (12 +5ms): Painting
+T34 (17 +1ms): Presenting
+Counters:
+	Nodes rendered: 81
+	Nodes visited during render: 92
+
+[593 16ms:15ms][594 16ms:11ms][595 16ms:12ms][596 16ms:14ms][597 16ms:12ms][598 16ms:13ms][599 16ms:15ms][600 15ms:14ms][601 16ms:13ms][602 16ms:8ms]
+[603 16ms:10ms][604 16ms:8ms][605 16ms:8ms][606 16ms:6ms][607 16ms:4ms][608 16ms:4ms][609 16ms:0ms][610 16ms:0ms][611 16ms:0ms][612 16ms:0ms]
+[613 16ms:0ms][614 16ms:0ms][615 16ms:0ms][616 16ms:0ms][617 16ms:0ms][618 16ms:0ms][619 16ms:0ms][620 16ms:0ms][621 16ms:0ms][622 16ms:0ms]
+[623 16ms:0ms][624 16ms:7ms][625 16ms:5ms][626 16ms:6ms][627 16ms:7ms][628 16ms:6ms][629 16ms:6ms][630 16ms:7ms][631 16ms:7ms][632 16ms:8ms]
+[633 16ms:9ms][634 16ms:5ms][635 16ms:6ms][636 16ms:5ms][637 16ms:5ms][638 16ms:6ms][639 16ms:4ms][640 16ms:4ms][641 16ms:9ms][642 16ms:9ms]
+[643 16ms:5ms][644 16ms:8ms][645 16ms:8ms][646 16ms:6ms][647 16ms:6ms][648 16ms:5ms][649 16ms:8ms][650 16ms:6ms][651 16ms:8ms][652 16ms:6ms]
+[653 16ms:7ms][654 16ms:9ms][655 16ms:0ms][656 15ms:0ms][657 16ms:0ms][658 16ms:0ms][659 16ms:0ms][660 16ms:0ms][661 16ms:0ms][662 16ms:0ms]
+[663 16ms:0ms][664 16ms:0ms][665 16ms:0ms][666 16ms:0ms][667 16ms:0ms][668 16ms:0ms][669 16ms:0ms][670 16ms:0ms][671 16ms:0ms][672 16ms:0ms]
+[673 16ms:0ms][674 16ms:8ms][675 15ms:4ms][676 16ms:4ms][677 16ms:6ms][678 16ms:5ms][679 16ms:6ms][680 16ms:11ms][681 16ms:11ms][682 16ms:11ms]
+[683 16ms:11ms][684 16ms:8ms][685 16ms:7ms][686 16ms:9ms][687 16ms:8ms][688 16ms:7ms][689 16ms:9ms][690 16ms:9ms][691 16ms:9ms][692 16ms:9ms]
+[693 16ms:9ms][694 16ms:10ms][695 16ms:6ms][696 16ms:11ms][697 16ms:8ms][698 16ms:11ms][699 16ms:8ms][700 16ms:10ms][701 15ms:11ms][702 16ms:7ms]
+[703 16ms:10ms][704 16ms:8ms][705 16ms:9ms][706 16ms:9ms][707 16ms:6ms][708 16ms:4ms][709 16ms:6ms][710 16ms:0ms][711 16ms:0ms][712 16ms:0ms]
+[713 16ms:0ms][714 16ms:0ms][715 16ms:0ms][716 16ms:0ms][717 15ms:0ms][718 16ms:0ms][719 16ms:0ms][720 16ms:0ms][721 16ms:0ms][722 16ms:0ms]
+[723 16ms:0ms][724 16ms:9ms][725 16ms:5ms][726 16ms:5ms][727 16ms:5ms][728 16ms:5ms][729 16ms:6ms][730 16ms:8ms][731 16ms:6ms][732 16ms:4ms]
+[733 16ms:4ms][734 16ms:7ms][735 16ms:5ms][736 16ms:4ms][737 16ms:8ms][738 16ms:7ms][739 16ms:7ms][740 16ms:8ms][741 16ms:6ms][742 16ms:8ms]
+[743 16ms:7ms][744 16ms:9ms][745 16ms:9ms][746 16ms:5ms][747 16ms:8ms][748 16ms:8ms][749 15ms:5ms][750 16ms:3ms][751 16ms:8ms][752 16ms:7ms]
+[753 16ms:5ms][754 16ms:6ms][755 16ms:0ms][756 16ms:0ms][757 16ms:0ms][758 16ms:0ms][759 16ms:0ms][760 16ms:0ms][761 16ms:0ms][762 16ms:0ms]
+[763 16ms:0ms][764 15ms:0ms][765 16ms:0ms][766 15ms:0ms][767 16ms:0ms][768 16ms:0ms][769 16ms:0ms][770 16ms:0ms][771 16ms:0ms][772 16ms:0ms]
+[773 16ms:0ms]
+
+PULSE: 774 [16ms:41ms]
+T37 (-16 +28ms): Layout Pass
+T37 (11 +0ms): CSS Pass
+T37 (11 +0ms): Layout Pass
+T37 (11 +0ms): Update bounds
+T37 (12 +0ms): Waiting for previous rendering
+T37 (12 +0ms): Copy state to render graph
+T34 (17 +0ms): Dirty Opts Computed
+T34 (17 +0ms): Painting
+T34 (17 +24ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 27
+	Nodes visited during render: 31
+
+
+PULSE: 775 [15ms:29ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +25ms): Waiting for previous rendering
+T37 (26 +0ms): Copy state to render graph
+T34 (28 +0ms): Dirty Opts Computed
+T34 (28 +0ms): Painting
+T34 (28 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 34
+	Nodes visited during render: 42
+
+[776 26ms:7ms][777 16ms:5ms][778 16ms:8ms][779 16ms:10ms][780 16ms:11ms][781 16ms:11ms][782 16ms:8ms][783 16ms:10ms][784 16ms:12ms][785 16ms:13ms]
+[786 16ms:11ms][787 16ms:8ms][788 16ms:10ms][789 16ms:6ms][790 16ms:9ms][791 16ms:9ms][792 16ms:13ms][793 16ms:8ms][794 16ms:9ms][795 16ms:10ms]
+[796 16ms:9ms][797 16ms:10ms][798 16ms:9ms][799 16ms:9ms][800 16ms:12ms][801 16ms:10ms][802 16ms:9ms][803 16ms:12ms][804 15ms:9ms][805 16ms:12ms]
+[806 16ms:7ms][807 16ms:6ms][808 16ms:5ms][809 16ms:5ms][810 16ms:0ms][811 16ms:0ms][812 16ms:0ms][813 16ms:0ms][814 16ms:0ms][815 16ms:0ms]
+[816 16ms:0ms][817 16ms:0ms][818 16ms:0ms][819 16ms:0ms][820 16ms:0ms][821 16ms:0ms][822 16ms:0ms][823 16ms:0ms][824 16ms:10ms][825 15ms:9ms]
+[826 16ms:4ms][827 16ms:8ms][828 16ms:11ms][829 16ms:10ms][830 16ms:12ms][831 16ms:11ms][832 16ms:9ms][833 16ms:6ms][834 16ms:5ms][835 16ms:6ms]
+
+PULSE: 836 [16ms:20ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +0ms): Waiting for previous rendering
+T37 (0 +0ms): Copy state to render graph
+T34 (7 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:239.0, minY:72.0, maxX:1880.0, maxY:1006.0} (w:1641.0, h:934.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (7 +0ms): Render Roots Discovered
+T34 (7 +0ms): Painting
+T34 (8 +12ms): Presenting
+Counters:
+	Nodes rendered: 13
+	Nodes visited during render: 19
+
+[837 16ms:12ms][838 16ms:5ms][839 16ms:7ms][840 16ms:7ms][841 16ms:8ms][842 15ms:5ms][843 16ms:6ms][844 16ms:5ms][845 16ms:5ms][846 16ms:5ms]
+[847 16ms:6ms][848 15ms:6ms][849 16ms:6ms][850 16ms:6ms][851 16ms:6ms][852 15ms:7ms][853 16ms:6ms][854 16ms:5ms][855 16ms:0ms][856 16ms:0ms]
+[857 16ms:0ms][858 15ms:0ms][859 16ms:0ms][860 16ms:0ms][861 16ms:0ms][862 16ms:0ms][863 16ms:0ms][864 15ms:0ms][865 16ms:0ms][866 16ms:0ms]
+[867 16ms:0ms][868 16ms:1ms][869 15ms:0ms][870 16ms:0ms][871 16ms:0ms][872 16ms:0ms][873 16ms:0ms][874 16ms:1ms][875 16ms:0ms][876 16ms:0ms]
+[877 16ms:0ms][878 16ms:0ms][879 16ms:0ms]
+
+PULSE: 880 [16ms:573ms]
+T37 (-16 +548ms): Layout Pass
+T37 (532 +0ms): CSS Pass
+T37 (533 +12ms): Layout Pass
+T37 (546 +5ms): Update bounds
+T37 (551 +0ms): Waiting for previous rendering
+T37 (551 +15ms): Copy state to render graph
+T34 (571 +0ms): Dirty Opts Computed
+T34 (571 +0ms): Painting
+T34 (572 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+
+PULSE: 881 [567ms:60ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (1 +0ms): Update bounds
+T37 (1 +4ms): Waiting for previous rendering
+T37 (6 +0ms): Copy state to render graph
+T34 (8 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:398.0, minY:132.0, maxX:1498.0, maxY:910.0} (w:1100.0, h:778.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (8 +0ms): Render Roots Discovered
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow shape path for null
+T34 : Slow background path for null
+T34 : Slow shape path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 (8 +49ms): Painting
+T34 (57 +2ms): Presenting
+Counters:
+	CacheFilter rebuilding: 1
+	Cached region background image used: 9
+	Cached region shape image used: 8
+	NGRegion renderBackgroundShape slow path: 2
+	NGRegion renderBackgrounds slow path: 11
+	Nodes rendered: 214
+	Nodes visited during render: 252
+	Rendering region background image to cache: 4
+	Rendering region shape image to cache: 2
+
+
+PULSE: 882 [15ms:85ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +44ms): Waiting for previous rendering
+T37 (44 +0ms): Copy state to render graph
+T34 (50 +3ms): Dirty Opts Computed
+T34 : 5 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:705.0, minY:630.0, maxX:717.0, maxY:643.0} (w:12.0, h:13.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 : Dirty Region 1: RectBounds { minX:735.0, minY:630.0, maxX:747.0, maxY:643.0} (w:12.0, h:13.0)
+T34 : Render Root Path 1: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 : Dirty Region 2: RectBounds { minX:765.0, minY:630.0, maxX:777.0, maxY:643.0} (w:12.0, h:13.0)
+T34 : Render Root Path 2: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 : Dirty Region 3: RectBounds { minX:795.0, minY:630.0, maxX:807.0, maxY:643.0} (w:12.0, h:13.0)
+T34 : Render Root Path 3: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 : Dirty Region 4: RectBounds { minX:823.0, minY:630.0, maxX:839.0, maxY:643.0} (w:16.0, h:13.0)
+T34 : Render Root Path 4: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 (54 +0ms): Render Roots Discovered
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 (54 +26ms): Painting
+T34 (81 +0ms): Painting
+T34 (82 +0ms): Painting
+T34 (82 +0ms): Painting
+T34 (82 +0ms): Painting
+T34 (83 +2ms): Presenting
+Counters:
+	CacheFilter rebuilding: 1
+	Cached region background image used: 9
+	Cached region shape image used: 8
+	NGRegion renderBackgrounds slow path: 8
+	Nodes rendered: 214
+	Nodes visited during render: 281
+
+
+PULSE: 883 [44ms:54ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +39ms): Waiting for previous rendering
+T37 (40 +0ms): Copy state to render graph
+T34 (45 +0ms): Dirty Opts Computed
+T34 : 5 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:705.0, minY:630.0, maxX:717.0, maxY:643.0} (w:12.0, h:13.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 : Dirty Region 1: RectBounds { minX:735.0, minY:630.0, maxX:747.0, maxY:643.0} (w:12.0, h:13.0)
+T34 : Render Root Path 1: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 : Dirty Region 2: RectBounds { minX:765.0, minY:630.0, maxX:777.0, maxY:643.0} (w:12.0, h:13.0)
+T34 : Render Root Path 2: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 : Dirty Region 3: RectBounds { minX:795.0, minY:630.0, maxX:807.0, maxY:643.0} (w:12.0, h:13.0)
+T34 : Render Root Path 3: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 : Dirty Region 4: RectBounds { minX:823.0, minY:630.0, maxX:839.0, maxY:643.0} (w:16.0, h:13.0)
+T34 : Render Root Path 4: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 (46 +0ms): Render Roots Discovered
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 (47 +4ms): Painting
+T34 (52 +0ms): Painting
+T34 (52 +0ms): Painting
+T34 (52 +0ms): Painting
+T34 (52 +0ms): Painting
+T34 (52 +1ms): Presenting
+Counters:
+	CacheFilter rebuilding: 1
+	Cached region background image used: 9
+	Cached region shape image used: 8
+	NGRegion renderBackgrounds slow path: 8
+	Nodes rendered: 214
+	Nodes visited during render: 281
+
+
+PULSE: 884 [41ms:21ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +1ms): Update bounds
+T37 (1 +11ms): Waiting for previous rendering
+T37 (13 +0ms): Copy state to render graph
+T34 (16 +0ms): Dirty Opts Computed
+T34 : 5 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:705.0, minY:630.0, maxX:717.0, maxY:643.0} (w:12.0, h:13.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 : Dirty Region 1: RectBounds { minX:735.0, minY:630.0, maxX:747.0, maxY:643.0} (w:12.0, h:13.0)
+T34 : Render Root Path 1: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 : Dirty Region 2: RectBounds { minX:765.0, minY:630.0, maxX:777.0, maxY:643.0} (w:12.0, h:13.0)
+T34 : Render Root Path 2: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 : Dirty Region 3: RectBounds { minX:795.0, minY:630.0, maxX:807.0, maxY:643.0} (w:12.0, h:13.0)
+T34 : Render Root Path 3: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 : Dirty Region 4: RectBounds { minX:823.0, minY:630.0, maxX:839.0, maxY:643.0} (w:16.0, h:13.0)
+T34 : Render Root Path 4: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 (16 +0ms): Render Roots Discovered
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 (16 +2ms): Painting
+T34 (19 +0ms): Painting
+T34 (19 +0ms): Painting
+T34 (19 +0ms): Painting
+T34 (20 +0ms): Painting
+T34 (20 +1ms): Presenting
+Counters:
+	CacheFilter rebuilding: 1
+	Cached region background image used: 9
+	Cached region shape image used: 8
+	NGRegion renderBackgrounds slow path: 8
+	Nodes rendered: 214
+	Nodes visited during render: 281
+
+[885 16ms:16ms][886 16ms:11ms][887 15ms:13ms][888 16ms:15ms][889 15ms:11ms][890 16ms:12ms][891 16ms:14ms][892 16ms:13ms]
+
+PULSE: 893 [16ms:19ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +1ms): Update bounds
+T37 (1 +0ms): Waiting for previous rendering
+T37 (1 +0ms): Copy state to render graph
+T34 (9 +0ms): Dirty Opts Computed
+T34 : 5 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:705.0, minY:630.0, maxX:717.0, maxY:643.0} (w:12.0, h:13.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 : Dirty Region 1: RectBounds { minX:735.0, minY:630.0, maxX:747.0, maxY:643.0} (w:12.0, h:13.0)
+T34 : Render Root Path 1: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 : Dirty Region 2: RectBounds { minX:765.0, minY:630.0, maxX:777.0, maxY:643.0} (w:12.0, h:13.0)
+T34 : Render Root Path 2: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 : Dirty Region 3: RectBounds { minX:795.0, minY:630.0, maxX:807.0, maxY:643.0} (w:12.0, h:13.0)
+T34 : Render Root Path 3: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 : Dirty Region 4: RectBounds { minX:823.0, minY:630.0, maxX:839.0, maxY:643.0} (w:16.0, h:13.0)
+T34 : Render Root Path 4: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@4cd18830, com.sun.javafx.sg.prism.NGRegion@5e57e210, com.sun.javafx.sg.prism.NGRegion@1cab310f]
+T34 (10 +0ms): Render Roots Discovered
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 (10 +5ms): Painting
+T34 (15 +0ms): Painting
+T34 (15 +0ms): Painting
+T34 (16 +0ms): Painting
+T34 (16 +0ms): Painting
+T34 (17 +2ms): Presenting
+Counters:
+	CacheFilter rebuilding: 1
+	Cached region background image used: 9
+	Cached region shape image used: 8
+	NGRegion renderBackgrounds slow path: 8
+	Nodes rendered: 214
+	Nodes visited during render: 281
+
+[894 16ms:15ms][895 15ms:8ms][896 16ms:14ms][897 16ms:12ms][898 15ms:11ms][899 16ms:10ms][900 16ms:13ms][901 16ms:13ms][902 15ms:9ms][903 16ms:8ms]
+[904 16ms:8ms][905 16ms:8ms][906 16ms:9ms][907 16ms:12ms][908 16ms:7ms][909 16ms:7ms][910 16ms:5ms][911 15ms:8ms][912 16ms:10ms][913 16ms:11ms]
+[914 16ms:6ms][915 16ms:8ms][916 16ms:11ms][917 16ms:0ms][918 16ms:0ms][919 15ms:0ms][920 16ms:0ms][921 16ms:0ms]
+
+PULSE: 922 [16ms:155ms]
+T37 (-16 +152ms): Layout Pass
+T37 (136 +0ms): CSS Pass
+T37 (136 +7ms): Layout Pass
+T37 (143 +2ms): Update bounds
+T37 (145 +0ms): Waiting for previous rendering
+T37 (145 +5ms): Copy state to render graph
+T34 (154 +0ms): Dirty Opts Computed
+T34 (154 +0ms): Painting
+T34 (154 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[923 151ms:12ms][924 16ms:9ms][925 16ms:9ms][926 16ms:7ms][927 16ms:7ms][928 16ms:8ms][929 16ms:9ms][930 16ms:9ms][931 16ms:10ms][932 16ms:6ms]
+[933 16ms:8ms][934 16ms:9ms][935 16ms:9ms][936 16ms:10ms][937 16ms:7ms][938 16ms:9ms][939 16ms:9ms][940 16ms:7ms][941 16ms:8ms][942 16ms:0ms]
+[943 16ms:0ms][944 15ms:0ms][945 16ms:0ms][946 16ms:0ms][947 16ms:0ms][948 16ms:0ms][949 15ms:0ms][950 16ms:0ms][951 16ms:0ms][952 16ms:0ms]
+[953 16ms:0ms][954 16ms:0ms][955 16ms:0ms][956 16ms:0ms][957 16ms:0ms][958 16ms:0ms][959 15ms:0ms][960 16ms:0ms][961 16ms:0ms][962 16ms:0ms]
+[963 16ms:8ms][964 16ms:0ms][965 16ms:0ms][966 16ms:0ms][967 16ms:0ms][968 15ms:0ms]
+
+PULSE: 969 [16ms:219ms]
+T37 (-16 +215ms): Layout Pass
+T37 (199 +0ms): CSS Pass
+T37 (199 +6ms): Layout Pass
+T37 (206 +1ms): Update bounds
+T37 (207 +0ms): Waiting for previous rendering
+T37 (207 +5ms): Copy state to render graph
+T34 (218 +0ms): Dirty Opts Computed
+T34 (218 +0ms): Painting
+T34 (218 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+
+PULSE: 970 [213ms:18ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +6ms): Waiting for previous rendering
+T37 (6 +0ms): Copy state to render graph
+T34 (11 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:398.0, minY:133.0, maxX:1498.0, maxY:910.0} (w:1100.0, h:777.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (11 +0ms): Render Roots Discovered
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 (11 +4ms): Painting
+T34 (16 +1ms): Presenting
+Counters:
+	CacheFilter rebuilding: 1
+	Cached region background image used: 9
+	Cached region shape image used: 8
+	NGRegion renderBackgrounds slow path: 9
+	Nodes rendered: 214
+	Nodes visited during render: 252
+
+[971 16ms:13ms]
+
+PULSE: 972 [19ms:19ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (1 +0ms): Waiting for previous rendering
+T37 (1 +0ms): Copy state to render graph
+T34 (14 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:398.0, minY:132.0, maxX:1498.0, maxY:893.0} (w:1100.0, h:761.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (14 +0ms): Render Roots Discovered
+T34 : Slow background path for null
+T34 (14 +2ms): Painting
+T34 (17 +2ms): Presenting
+Counters:
+	NGRegion renderBackgrounds slow path: 1
+	Nodes rendered: 35
+	Nodes visited during render: 41
+
+[973 13ms:17ms][974 17ms:9ms][975 15ms:10ms][976 16ms:7ms][977 16ms:9ms][978 16ms:10ms][979 16ms:11ms][980 16ms:9ms][981 16ms:11ms][982 16ms:12ms]
+[983 16ms:11ms][984 16ms:6ms][985 16ms:9ms][986 16ms:0ms][987 16ms:0ms][988 15ms:0ms][989 16ms:0ms][990 15ms:0ms][991 16ms:0ms][992 16ms:0ms]
+[993 16ms:0ms][994 16ms:0ms][995 16ms:0ms][996 16ms:0ms][997 16ms:0ms][998 15ms:0ms][999 16ms:0ms][1000 16ms:0ms][1001 16ms:0ms][1002 15ms:0ms]
+[1003 16ms:0ms][1004 16ms:0ms][1005 16ms:0ms][1006 16ms:0ms][1007 16ms:0ms][1008 16ms:0ms][1009 15ms:0ms][1010 16ms:5ms][1011 16ms:0ms][1012 16ms:0ms]
+[1013 16ms:0ms][1014 16ms:0ms][1015 15ms:0ms]
+
+PULSE: 1016 [16ms:87ms]
+T37 (-16 +89ms): Layout Pass
+T37 (73 +0ms): CSS Pass
+T37 (73 +5ms): Layout Pass
+T37 (79 +1ms): Update bounds
+T37 (80 +0ms): Waiting for previous rendering
+T37 (80 +2ms): Copy state to render graph
+T34 (86 +0ms): Dirty Opts Computed
+T34 (86 +0ms): Painting
+T34 (86 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1017 84ms:10ms][1018 15ms:6ms][1019 16ms:6ms][1020 15ms:6ms][1021 16ms:6ms][1022 16ms:11ms][1023 16ms:6ms][1024 16ms:7ms][1025 16ms:8ms][1026 16ms:6ms]
+[1027 16ms:6ms][1028 16ms:6ms][1029 16ms:7ms][1030 16ms:7ms][1031 16ms:8ms][1032 16ms:8ms][1033 16ms:7ms][1034 16ms:7ms][1035 16ms:9ms][1036 16ms:6ms]
+[1037 16ms:7ms][1038 16ms:7ms][1039 16ms:8ms][1040 16ms:0ms][1041 16ms:0ms][1042 15ms:0ms][1043 16ms:0ms][1044 16ms:0ms][1045 16ms:0ms][1046 16ms:0ms]
+[1047 16ms:0ms][1048 15ms:0ms][1049 16ms:0ms][1050 15ms:0ms][1051 16ms:0ms][1052 16ms:0ms][1053 16ms:0ms][1054 16ms:0ms][1055 16ms:0ms][1056 16ms:0ms]
+[1057 16ms:7ms][1058 16ms:0ms][1059 16ms:0ms][1060 16ms:0ms][1061 16ms:0ms][1062 16ms:0ms]
+
+PULSE: 1063 [16ms:79ms]
+T37 (-16 +84ms): Layout Pass
+T37 (68 +0ms): CSS Pass
+T37 (69 +2ms): Layout Pass
+T37 (71 +0ms): Update bounds
+T37 (72 +0ms): Waiting for previous rendering
+T37 (72 +1ms): Copy state to render graph
+T34 (78 +0ms): Dirty Opts Computed
+T34 (78 +0ms): Painting
+T34 (78 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1064 74ms:10ms][1065 16ms:4ms][1066 16ms:4ms][1067 16ms:6ms][1068 16ms:5ms][1069 16ms:6ms][1070 16ms:6ms][1071 16ms:7ms][1072 16ms:6ms][1073 15ms:6ms]
+[1074 16ms:5ms][1075 16ms:5ms][1076 16ms:9ms][1077 16ms:7ms][1078 16ms:9ms][1079 16ms:4ms][1080 16ms:6ms][1081 16ms:10ms][1082 15ms:4ms][1083 16ms:7ms]
+[1084 16ms:9ms][1085 16ms:8ms][1086 16ms:7ms][1087 16ms:0ms][1088 16ms:0ms][1089 16ms:0ms][1090 16ms:0ms][1091 16ms:0ms][1092 16ms:0ms][1093 16ms:0ms]
+[1094 16ms:0ms][1095 16ms:0ms][1096 16ms:0ms][1097 16ms:0ms][1098 16ms:0ms][1099 16ms:0ms][1100 16ms:0ms][1101 15ms:0ms][1102 16ms:0ms][1103 16ms:0ms]
+[1104 15ms:9ms][1105 16ms:0ms][1106 16ms:0ms][1107 16ms:0ms][1108 16ms:0ms][1109 16ms:0ms]
+
+PULSE: 1110 [16ms:93ms]
+T37 (-16 +97ms): Layout Pass
+T37 (81 +0ms): CSS Pass
+T37 (81 +3ms): Layout Pass
+T37 (84 +1ms): Update bounds
+T37 (85 +0ms): Waiting for previous rendering
+T37 (85 +2ms): Copy state to render graph
+T34 (92 +0ms): Dirty Opts Computed
+T34 (92 +0ms): Painting
+T34 (92 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1111 88ms:11ms][1112 16ms:4ms][1113 16ms:6ms][1114 16ms:6ms][1115 16ms:8ms][1116 16ms:6ms][1117 16ms:6ms][1118 16ms:5ms][1119 16ms:5ms][1120 16ms:5ms]
+[1121 16ms:8ms][1122 16ms:5ms][1123 16ms:5ms][1124 16ms:8ms][1125 16ms:8ms][1126 15ms:8ms][1127 16ms:6ms][1128 16ms:5ms][1129 16ms:9ms][1130 16ms:10ms]
+[1131 16ms:7ms][1132 16ms:8ms][1133 16ms:6ms][1134 16ms:0ms][1135 16ms:0ms][1136 16ms:0ms][1137 16ms:0ms][1138 16ms:0ms][1139 16ms:0ms][1140 16ms:0ms]
+[1141 16ms:0ms][1142 16ms:0ms][1143 16ms:0ms][1144 16ms:0ms][1145 16ms:0ms][1146 16ms:0ms][1147 16ms:0ms][1148 16ms:0ms][1149 16ms:0ms][1150 16ms:0ms]
+[1151 16ms:6ms][1152 16ms:0ms][1153 16ms:0ms][1154 16ms:0ms][1155 16ms:0ms][1156 16ms:0ms]
+
+PULSE: 1157 [16ms:68ms]
+T37 (-16 +72ms): Layout Pass
+T37 (55 +0ms): CSS Pass
+T37 (55 +3ms): Layout Pass
+T37 (59 +0ms): Update bounds
+T37 (59 +0ms): Waiting for previous rendering
+T37 (59 +1ms): Copy state to render graph
+T34 (66 +0ms): Dirty Opts Computed
+T34 (66 +0ms): Painting
+T34 (66 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1158 61ms:14ms][1159 16ms:5ms][1160 16ms:7ms][1161 16ms:6ms][1162 16ms:6ms][1163 16ms:5ms][1164 16ms:6ms][1165 16ms:5ms][1166 16ms:8ms][1167 16ms:6ms]
+[1168 16ms:7ms][1169 15ms:7ms][1170 16ms:6ms][1171 16ms:4ms][1172 16ms:5ms][1173 16ms:7ms][1174 16ms:5ms][1175 16ms:7ms][1176 16ms:5ms][1177 16ms:5ms]
+[1178 16ms:5ms][1179 16ms:7ms][1180 16ms:7ms][1181 15ms:5ms][1182 16ms:0ms][1183 16ms:0ms][1184 16ms:0ms][1185 15ms:0ms][1186 16ms:0ms][1187 16ms:0ms]
+[1188 16ms:0ms][1189 16ms:0ms][1190 16ms:0ms][1191 16ms:0ms][1192 16ms:0ms][1193 16ms:0ms][1194 16ms:0ms][1195 16ms:0ms][1196 16ms:0ms][1197 16ms:0ms]
+[1198 16ms:7ms][1199 15ms:0ms][1200 16ms:0ms][1201 16ms:0ms][1202 16ms:0ms][1203 16ms:0ms]
+
+PULSE: 1204 [16ms:65ms]
+T37 (-16 +71ms): Layout Pass
+T37 (55 +0ms): CSS Pass
+T37 (55 +2ms): Layout Pass
+T37 (57 +0ms): Update bounds
+T37 (58 +0ms): Waiting for previous rendering
+T37 (58 +1ms): Copy state to render graph
+T34 (63 +0ms): Dirty Opts Computed
+T34 (63 +0ms): Painting
+T34 (64 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1205 59ms:11ms][1206 16ms:6ms][1207 16ms:8ms][1208 16ms:10ms][1209 16ms:10ms][1210 16ms:12ms][1211 16ms:7ms][1212 16ms:10ms][1213 16ms:9ms][1214 16ms:7ms]
+[1215 16ms:10ms][1216 16ms:9ms][1217 16ms:8ms][1218 16ms:9ms][1219 15ms:7ms][1220 16ms:6ms][1221 16ms:7ms][1222 16ms:7ms][1223 16ms:7ms][1224 16ms:8ms]
+[1225 16ms:7ms][1226 16ms:7ms][1227 16ms:6ms][1228 16ms:8ms][1229 16ms:0ms][1230 16ms:0ms][1231 16ms:0ms][1232 16ms:0ms][1233 16ms:0ms][1234 16ms:0ms]
+[1235 16ms:0ms][1236 16ms:0ms][1237 16ms:0ms][1238 16ms:0ms][1239 16ms:0ms][1240 16ms:0ms][1241 16ms:0ms][1242 16ms:0ms][1243 16ms:0ms][1244 16ms:0ms]
+[1245 16ms:0ms][1246 16ms:5ms][1247 15ms:0ms][1248 16ms:0ms][1249 16ms:0ms][1250 16ms:0ms][1251 16ms:0ms]
+
+PULSE: 1252 [16ms:93ms]
+T37 (-16 +98ms): Layout Pass
+T37 (82 +0ms): CSS Pass
+T37 (82 +3ms): Layout Pass
+T37 (85 +0ms): Update bounds
+T37 (86 +0ms): Waiting for previous rendering
+T37 (86 +1ms): Copy state to render graph
+T34 (91 +0ms): Dirty Opts Computed
+T34 (91 +0ms): Painting
+T34 (92 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1253 88ms:13ms][1254 16ms:6ms][1255 16ms:7ms][1256 16ms:5ms][1257 16ms:6ms][1258 16ms:7ms][1259 16ms:5ms][1260 16ms:8ms][1261 16ms:9ms][1262 16ms:9ms]
+[1263 16ms:9ms][1264 15ms:7ms][1265 16ms:8ms][1266 16ms:7ms][1267 16ms:8ms][1268 16ms:8ms][1269 16ms:9ms][1270 16ms:7ms][1271 16ms:7ms][1272 16ms:8ms]
+[1273 16ms:9ms][1274 16ms:9ms][1275 16ms:9ms][1276 16ms:0ms][1277 16ms:0ms][1278 16ms:0ms][1279 16ms:0ms][1280 16ms:0ms][1281 16ms:0ms][1282 16ms:0ms]
+[1283 16ms:0ms][1284 16ms:0ms][1285 16ms:0ms][1286 16ms:0ms][1287 16ms:0ms][1288 16ms:0ms][1289 16ms:0ms][1290 16ms:0ms][1291 16ms:0ms][1292 16ms:0ms]
+[1293 16ms:0ms][1294 16ms:4ms][1295 16ms:0ms][1296 16ms:0ms][1297 16ms:0ms][1298 16ms:0ms][1299 16ms:0ms]
+
+PULSE: 1300 [16ms:78ms]
+T37 (-16 +76ms): Layout Pass
+T37 (60 +0ms): CSS Pass
+T37 (60 +4ms): Layout Pass
+T37 (65 +2ms): Update bounds
+T37 (67 +0ms): Waiting for previous rendering
+T37 (67 +3ms): Copy state to render graph
+T34 (75 +0ms): Dirty Opts Computed
+T34 (75 +0ms): Painting
+T34 (76 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1301 70ms:15ms][1302 16ms:8ms][1303 16ms:6ms][1304 16ms:11ms][1305 16ms:7ms][1306 16ms:7ms][1307 15ms:5ms][1308 16ms:8ms][1309 16ms:9ms][1310 16ms:10ms]
+[1311 16ms:7ms][1312 15ms:10ms][1313 16ms:7ms][1314 16ms:9ms][1315 15ms:7ms][1316 16ms:8ms][1317 16ms:8ms][1318 16ms:6ms][1319 16ms:8ms][1320 16ms:8ms]
+[1321 16ms:6ms][1322 16ms:6ms][1323 16ms:6ms][1324 16ms:6ms][1325 16ms:0ms][1326 16ms:0ms][1327 16ms:0ms][1328 16ms:0ms][1329 16ms:0ms][1330 16ms:0ms]
+[1331 16ms:0ms][1332 16ms:0ms][1333 16ms:0ms][1334 15ms:0ms][1335 16ms:0ms][1336 16ms:0ms][1337 16ms:0ms][1338 16ms:0ms][1339 16ms:0ms][1340 16ms:0ms]
+[1341 16ms:5ms][1342 16ms:0ms][1343 16ms:0ms][1344 16ms:0ms][1345 16ms:0ms][1346 16ms:0ms]
+
+PULSE: 1347 [16ms:77ms]
+T37 (-16 +83ms): Layout Pass
+T37 (67 +0ms): CSS Pass
+T37 (67 +2ms): Layout Pass
+T37 (69 +0ms): Update bounds
+T37 (70 +0ms): Waiting for previous rendering
+T37 (70 +1ms): Copy state to render graph
+T34 (75 +0ms): Dirty Opts Computed
+T34 (75 +0ms): Painting
+T34 (76 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1348 72ms:13ms][1349 16ms:8ms][1350 16ms:9ms][1351 16ms:8ms][1352 15ms:7ms][1353 16ms:8ms][1354 15ms:7ms][1355 16ms:6ms][1356 16ms:7ms][1357 16ms:6ms]
+[1358 16ms:8ms][1359 16ms:6ms][1360 16ms:6ms][1361 16ms:6ms][1362 16ms:6ms][1363 16ms:5ms][1364 16ms:11ms][1365 16ms:6ms][1366 16ms:9ms][1367 16ms:9ms]
+[1368 16ms:7ms][1369 16ms:7ms][1370 16ms:8ms][1371 16ms:0ms][1372 16ms:0ms][1373 15ms:0ms][1374 16ms:0ms][1375 16ms:0ms][1376 16ms:0ms][1377 16ms:0ms]
+[1378 16ms:0ms][1379 16ms:0ms][1380 16ms:0ms][1381 16ms:0ms][1382 16ms:0ms][1383 16ms:0ms][1384 16ms:0ms][1385 16ms:0ms][1386 16ms:0ms][1387 16ms:0ms]
+[1388 15ms:0ms][1389 16ms:7ms][1390 16ms:0ms][1391 15ms:0ms][1392 16ms:0ms][1393 16ms:0ms][1394 16ms:0ms]
+
+PULSE: 1395 [16ms:77ms]
+T37 (-16 +81ms): Layout Pass
+T37 (65 +0ms): CSS Pass
+T37 (65 +2ms): Layout Pass
+T37 (68 +1ms): Update bounds
+T37 (69 +0ms): Waiting for previous rendering
+T37 (69 +2ms): Copy state to render graph
+T34 (75 +0ms): Dirty Opts Computed
+T34 (75 +0ms): Painting
+T34 (76 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1396 72ms:16ms][1397 16ms:7ms][1398 16ms:9ms][1399 16ms:10ms][1400 16ms:10ms][1401 16ms:10ms][1402 15ms:6ms][1403 16ms:8ms][1404 16ms:5ms][1405 16ms:6ms]
+[1406 16ms:5ms][1407 16ms:6ms][1408 16ms:7ms][1409 16ms:9ms][1410 16ms:5ms][1411 16ms:4ms][1412 16ms:5ms][1413 16ms:7ms][1414 15ms:7ms][1415 16ms:5ms]
+[1416 16ms:5ms][1417 16ms:5ms][1418 16ms:6ms][1419 16ms:0ms][1420 16ms:0ms][1421 16ms:0ms][1422 16ms:0ms][1423 16ms:0ms][1424 16ms:0ms][1425 16ms:0ms]
+[1426 16ms:0ms][1427 16ms:0ms][1428 16ms:0ms][1429 16ms:0ms][1430 16ms:0ms][1431 16ms:0ms][1432 16ms:0ms][1433 16ms:0ms][1434 16ms:0ms][1435 16ms:0ms]
+[1436 16ms:6ms][1437 16ms:0ms][1438 16ms:0ms][1439 16ms:0ms][1440 16ms:0ms][1441 16ms:0ms]
+
+PULSE: 1442 [16ms:81ms]
+T37 (-16 +90ms): Layout Pass
+T37 (74 +0ms): CSS Pass
+T37 (74 +1ms): Layout Pass
+T37 (75 +0ms): Update bounds
+T37 (76 +0ms): Waiting for previous rendering
+T37 (76 +0ms): Copy state to render graph
+T34 (80 +0ms): Dirty Opts Computed
+T34 (80 +0ms): Painting
+T34 (80 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1443 77ms:8ms][1444 16ms:4ms][1445 16ms:7ms][1446 16ms:6ms][1447 16ms:7ms][1448 16ms:6ms][1449 15ms:8ms][1450 16ms:5ms][1451 16ms:5ms][1452 16ms:6ms]
+[1453 16ms:10ms][1454 16ms:8ms][1455 16ms:5ms][1456 16ms:6ms][1457 16ms:10ms][1458 16ms:6ms][1459 16ms:9ms][1460 16ms:5ms][1461 16ms:6ms][1462 16ms:6ms]
+[1463 16ms:8ms][1464 16ms:7ms][1465 15ms:7ms][1466 16ms:0ms][1467 16ms:0ms][1468 16ms:0ms][1469 16ms:0ms][1470 15ms:0ms][1471 16ms:0ms][1472 16ms:0ms]
+[1473 15ms:0ms][1474 16ms:0ms][1475 16ms:0ms][1476 16ms:0ms][1477 16ms:0ms][1478 16ms:0ms][1479 16ms:0ms][1480 16ms:0ms][1481 16ms:0ms][1482 16ms:0ms]
+[1483 15ms:0ms][1484 16ms:11ms][1485 16ms:0ms][1486 16ms:0ms][1487 16ms:0ms][1488 16ms:0ms][1489 16ms:0ms]
+
+PULSE: 1490 [15ms:56ms]
+T37 (-15 +62ms): Layout Pass
+T37 (47 +0ms): CSS Pass
+T37 (47 +1ms): Layout Pass
+T37 (49 +0ms): Update bounds
+T37 (49 +0ms): Waiting for previous rendering
+T37 (49 +0ms): Copy state to render graph
+T34 (55 +0ms): Dirty Opts Computed
+T34 (55 +0ms): Painting
+T34 (55 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1491 50ms:17ms][1492 16ms:9ms][1493 15ms:6ms][1494 16ms:6ms][1495 16ms:6ms][1496 15ms:6ms][1497 16ms:9ms][1498 16ms:6ms][1499 16ms:6ms][1500 16ms:5ms]
+[1501 16ms:7ms][1502 16ms:5ms][1503 16ms:6ms][1504 16ms:6ms][1505 16ms:6ms][1506 16ms:8ms][1507 16ms:6ms][1508 16ms:6ms][1509 16ms:7ms][1510 15ms:7ms]
+[1511 16ms:6ms][1512 16ms:5ms][1513 16ms:6ms][1514 16ms:6ms][1515 16ms:5ms][1516 16ms:0ms][1517 16ms:0ms][1518 16ms:0ms][1519 16ms:0ms][1520 16ms:0ms]
+[1521 15ms:0ms][1522 16ms:0ms][1523 15ms:0ms][1524 16ms:0ms][1525 16ms:0ms][1526 16ms:0ms][1527 16ms:0ms][1528 16ms:0ms][1529 16ms:0ms][1530 16ms:0ms]
+[1531 15ms:0ms][1532 16ms:7ms][1533 16ms:0ms][1534 16ms:0ms][1535 16ms:0ms][1536 16ms:0ms][1537 15ms:0ms]
+
+PULSE: 1538 [16ms:64ms]
+T37 (-16 +72ms): Layout Pass
+T37 (56 +0ms): CSS Pass
+T37 (56 +1ms): Layout Pass
+T37 (58 +0ms): Update bounds
+T37 (58 +0ms): Waiting for previous rendering
+T37 (58 +0ms): Copy state to render graph
+T34 (63 +0ms): Dirty Opts Computed
+T34 (63 +0ms): Painting
+T34 (63 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1539 59ms:11ms][1540 16ms:4ms][1541 16ms:6ms][1542 16ms:5ms][1543 15ms:8ms][1544 16ms:6ms][1545 16ms:8ms][1546 16ms:7ms][1547 16ms:7ms][1548 16ms:8ms]
+[1549 15ms:6ms][1550 16ms:6ms][1551 16ms:6ms][1552 16ms:6ms][1553 16ms:7ms][1554 16ms:6ms][1555 16ms:5ms][1556 16ms:6ms][1557 16ms:8ms][1558 16ms:7ms]
+[1559 15ms:4ms][1560 16ms:9ms][1561 16ms:5ms][1562 16ms:7ms][1563 16ms:0ms][1564 16ms:0ms][1565 16ms:0ms][1566 15ms:0ms][1567 16ms:0ms][1568 16ms:0ms]
+[1569 16ms:0ms][1570 15ms:0ms][1571 16ms:0ms][1572 16ms:0ms][1573 16ms:0ms][1574 16ms:0ms][1575 15ms:0ms][1576 16ms:0ms][1577 16ms:0ms][1578 16ms:0ms]
+[1579 16ms:0ms][1580 16ms:6ms][1581 15ms:0ms][1582 16ms:0ms][1583 16ms:0ms][1584 16ms:0ms][1585 16ms:0ms]
+
+PULSE: 1586 [16ms:70ms]
+T37 (-15 +78ms): Layout Pass
+T37 (62 +0ms): CSS Pass
+T37 (62 +1ms): Layout Pass
+T37 (64 +0ms): Update bounds
+T37 (65 +0ms): Waiting for previous rendering
+T37 (65 +0ms): Copy state to render graph
+T34 (69 +0ms): Dirty Opts Computed
+T34 (69 +0ms): Painting
+T34 (69 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1587 66ms:9ms][1588 16ms:5ms][1589 16ms:10ms][1590 15ms:13ms][1591 16ms:8ms][1592 16ms:12ms][1593 15ms:12ms][1594 16ms:8ms][1595 16ms:9ms][1596 16ms:8ms]
+[1597 16ms:9ms][1598 16ms:11ms][1599 16ms:9ms][1600 16ms:9ms][1601 16ms:6ms][1602 16ms:7ms][1603 16ms:9ms][1604 16ms:8ms][1605 16ms:7ms][1606 16ms:7ms]
+[1607 16ms:9ms][1608 16ms:5ms][1609 16ms:6ms][1610 16ms:7ms][1611 16ms:0ms][1612 16ms:0ms][1613 15ms:0ms][1614 16ms:0ms][1615 16ms:0ms][1616 16ms:0ms]
+[1617 16ms:0ms][1618 16ms:0ms][1619 16ms:0ms][1620 16ms:0ms][1621 16ms:0ms][1622 16ms:0ms][1623 16ms:0ms][1624 16ms:0ms][1625 16ms:0ms][1626 16ms:0ms]
+[1627 16ms:0ms][1628 16ms:4ms][1629 15ms:0ms][1630 16ms:0ms][1631 16ms:0ms][1632 16ms:0ms][1633 16ms:0ms]
+
+PULSE: 1634 [16ms:45ms]
+T37 (-15 +52ms): Layout Pass
+T37 (36 +0ms): CSS Pass
+T37 (36 +2ms): Layout Pass
+T37 (38 +0ms): Update bounds
+T37 (39 +0ms): Waiting for previous rendering
+T37 (39 +1ms): Copy state to render graph
+T34 (43 +0ms): Dirty Opts Computed
+T34 (43 +0ms): Painting
+T34 (44 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1635 40ms:11ms][1636 16ms:4ms][1637 16ms:5ms][1638 16ms:6ms][1639 16ms:6ms][1640 16ms:4ms][1641 15ms:7ms][1642 16ms:6ms][1643 16ms:5ms][1644 16ms:7ms]
+[1645 15ms:3ms][1646 16ms:7ms][1647 16ms:5ms][1648 16ms:5ms][1649 16ms:4ms][1650 16ms:4ms][1651 16ms:6ms][1652 16ms:8ms][1653 16ms:7ms][1654 16ms:7ms]
+[1655 16ms:7ms][1656 16ms:8ms][1657 16ms:6ms][1658 16ms:8ms][1659 16ms:7ms][1660 15ms:0ms][1661 16ms:0ms][1662 16ms:0ms][1663 16ms:0ms][1664 16ms:0ms]
+[1665 16ms:0ms][1666 16ms:0ms][1667 16ms:0ms][1668 16ms:0ms][1669 16ms:0ms][1670 16ms:0ms][1671 16ms:0ms][1672 16ms:0ms][1673 16ms:0ms][1674 16ms:0ms]
+[1675 16ms:0ms][1676 16ms:6ms][1677 16ms:0ms][1678 16ms:0ms][1679 16ms:0ms][1680 16ms:0ms][1681 16ms:0ms]
+
+PULSE: 1682 [16ms:56ms]
+T37 (-16 +64ms): Layout Pass
+T37 (48 +0ms): CSS Pass
+T37 (48 +1ms): Layout Pass
+T37 (50 +0ms): Update bounds
+T37 (51 +0ms): Waiting for previous rendering
+T37 (51 +0ms): Copy state to render graph
+T34 (54 +0ms): Dirty Opts Computed
+T34 (54 +0ms): Painting
+T34 (55 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1683 52ms:12ms][1684 16ms:6ms][1685 16ms:9ms][1686 16ms:12ms][1687 16ms:10ms][1688 16ms:9ms][1689 16ms:9ms][1690 16ms:12ms][1691 16ms:9ms][1692 16ms:9ms]
+[1693 16ms:9ms][1694 16ms:7ms][1695 16ms:7ms][1696 16ms:9ms][1697 15ms:6ms][1698 16ms:7ms][1699 16ms:7ms][1700 15ms:8ms][1701 16ms:7ms][1702 16ms:5ms]
+[1703 16ms:7ms][1704 16ms:9ms][1705 16ms:6ms][1706 16ms:5ms][1707 15ms:8ms][1708 16ms:0ms][1709 16ms:0ms][1710 16ms:0ms][1711 16ms:0ms][1712 16ms:0ms]
+[1713 16ms:0ms][1714 15ms:0ms][1715 16ms:0ms][1716 16ms:0ms][1717 16ms:0ms][1718 16ms:0ms][1719 16ms:0ms][1720 16ms:0ms][1721 16ms:0ms][1722 16ms:0ms]
+[1723 16ms:0ms][1724 16ms:0ms][1725 16ms:0ms][1726 16ms:0ms][1727 16ms:0ms][1728 16ms:0ms][1729 16ms:0ms][1730 16ms:7ms][1731 15ms:0ms][1732 16ms:0ms]
+[1733 16ms:0ms][1734 16ms:0ms][1735 16ms:0ms]
+
+PULSE: 1736 [16ms:71ms]
+T37 (-16 +77ms): Layout Pass
+T37 (61 +0ms): CSS Pass
+T37 (61 +3ms): Layout Pass
+T37 (65 +0ms): Update bounds
+T37 (65 +0ms): Waiting for previous rendering
+T37 (66 +1ms): Copy state to render graph
+T34 (70 +0ms): Dirty Opts Computed
+T34 (70 +0ms): Painting
+T34 (70 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+
+PULSE: 1737 [67ms:42ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +1ms): Layout Pass
+T37 (1 +0ms): Update bounds
+T37 (1 +2ms): Waiting for previous rendering
+T37 (4 +0ms): Copy state to render graph
+T34 (7 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:398.0, minY:140.0, maxX:1498.0, maxY:910.0} (w:1100.0, h:770.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (7 +0ms): Render Roots Discovered
+T34 : Slow shape path for null
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 (8 +33ms): Painting
+T34 (41 +1ms): Presenting
+Counters:
+	CacheFilter rebuilding: 2
+	Cached region background image used: 3
+	Cached region shape image used: 1
+	NGRegion renderBackgroundShape slow path: 1
+	NGRegion renderBackgrounds slow path: 2
+	Nodes rendered: 133
+	Nodes visited during render: 154
+	Rendering region shape image to cache: 1
+
+
+PULSE: 1738 [16ms:36ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +26ms): Waiting for previous rendering
+T37 (27 +0ms): Copy state to render graph
+T34 (32 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:398.0, minY:139.0, maxX:1498.0, maxY:901.0} (w:1100.0, h:762.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (32 +0ms): Render Roots Discovered
+T34 : Slow background path for null
+T34 (32 +2ms): Painting
+T34 (34 +1ms): Presenting
+Counters:
+	NGRegion renderBackgrounds slow path: 1
+	Nodes rendered: 53
+	Nodes visited during render: 63
+
+[1739 27ms:15ms][1740 16ms:9ms][1741 16ms:6ms][1742 16ms:8ms][1743 16ms:6ms][1744 16ms:5ms][1745 16ms:7ms][1746 16ms:7ms][1747 16ms:7ms][1748 16ms:6ms]
+[1749 16ms:7ms][1750 16ms:5ms][1751 16ms:5ms][1752 16ms:4ms][1753 16ms:8ms][1754 16ms:5ms][1755 16ms:7ms][1756 16ms:8ms][1757 16ms:5ms][1758 16ms:6ms]
+[1759 16ms:6ms][1760 16ms:0ms][1761 16ms:0ms][1762 16ms:0ms][1763 16ms:0ms][1764 16ms:0ms][1765 16ms:0ms][1766 16ms:0ms][1767 16ms:0ms][1768 16ms:0ms]
+[1769 16ms:0ms][1770 16ms:0ms][1771 16ms:0ms][1772 16ms:0ms][1773 16ms:0ms][1774 16ms:0ms][1775 16ms:0ms][1776 16ms:0ms][1777 16ms:6ms][1778 16ms:0ms]
+[1779 16ms:0ms][1780 16ms:0ms][1781 16ms:0ms][1782 16ms:0ms]
+
+PULSE: 1783 [16ms:85ms]
+T37 (-16 +91ms): Layout Pass
+T37 (75 +0ms): CSS Pass
+T37 (75 +1ms): Layout Pass
+T37 (77 +0ms): Update bounds
+T37 (77 +0ms): Waiting for previous rendering
+T37 (77 +0ms): Copy state to render graph
+T34 (83 +0ms): Dirty Opts Computed
+T34 (83 +0ms): Painting
+T34 (83 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1784 78ms:15ms][1785 16ms:5ms][1786 16ms:5ms][1787 16ms:5ms][1788 16ms:7ms][1789 16ms:9ms][1790 15ms:7ms][1791 16ms:11ms][1792 16ms:5ms][1793 16ms:5ms]
+[1794 16ms:9ms][1795 16ms:5ms][1796 16ms:5ms][1797 16ms:9ms][1798 16ms:6ms][1799 16ms:6ms][1800 16ms:7ms][1801 16ms:5ms][1802 16ms:6ms][1803 16ms:6ms]
+[1804 16ms:7ms][1805 16ms:7ms][1806 16ms:5ms][1807 16ms:0ms][1808 16ms:0ms][1809 16ms:0ms][1810 15ms:0ms][1811 16ms:0ms][1812 16ms:0ms][1813 16ms:0ms]
+[1814 16ms:0ms][1815 15ms:0ms][1816 16ms:0ms][1817 16ms:0ms][1818 16ms:0ms][1819 16ms:0ms][1820 16ms:0ms][1821 15ms:0ms][1822 16ms:0ms][1823 16ms:0ms]
+[1824 15ms:0ms][1825 16ms:4ms][1826 15ms:0ms][1827 16ms:0ms][1828 16ms:0ms][1829 15ms:0ms][1830 16ms:0ms]
+
+PULSE: 1831 [16ms:92ms]
+T37 (-16 +101ms): Layout Pass
+T37 (85 +0ms): CSS Pass
+T37 (85 +2ms): Layout Pass
+T37 (87 +0ms): Update bounds
+T37 (88 +0ms): Waiting for previous rendering
+T37 (88 +0ms): Copy state to render graph
+T34 (91 +0ms): Dirty Opts Computed
+T34 (91 +0ms): Painting
+T34 (91 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1832 88ms:11ms][1833 16ms:5ms][1834 16ms:8ms][1835 16ms:5ms][1836 16ms:6ms][1837 16ms:6ms][1838 16ms:6ms][1839 16ms:7ms][1840 16ms:9ms][1841 16ms:6ms]
+[1842 16ms:9ms][1843 16ms:9ms][1844 16ms:9ms][1845 16ms:9ms][1846 16ms:8ms][1847 16ms:7ms][1848 16ms:7ms][1849 16ms:7ms][1850 16ms:5ms][1851 16ms:5ms]
+[1852 16ms:5ms][1853 16ms:7ms][1854 16ms:8ms][1855 16ms:0ms][1856 15ms:0ms][1857 16ms:0ms][1858 16ms:0ms][1859 16ms:0ms][1860 16ms:0ms][1861 16ms:0ms]
+[1862 16ms:0ms][1863 16ms:0ms][1864 16ms:0ms][1865 16ms:0ms][1866 16ms:0ms][1867 15ms:0ms][1868 16ms:0ms][1869 16ms:0ms][1870 16ms:0ms][1871 16ms:0ms]
+[1872 16ms:0ms][1873 16ms:5ms][1874 16ms:0ms][1875 16ms:0ms][1876 16ms:0ms][1877 16ms:0ms][1878 16ms:0ms]
+
+PULSE: 1879 [16ms:56ms]
+T37 (-15 +64ms): Layout Pass
+T37 (48 +0ms): CSS Pass
+T37 (48 +1ms): Layout Pass
+T37 (50 +0ms): Update bounds
+T37 (50 +0ms): Waiting for previous rendering
+T37 (50 +0ms): Copy state to render graph
+T34 (54 +0ms): Dirty Opts Computed
+T34 (54 +0ms): Painting
+T34 (55 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1880 51ms:13ms][1881 16ms:7ms][1882 16ms:7ms][1883 16ms:4ms][1884 16ms:6ms][1885 16ms:4ms][1886 16ms:9ms][1887 16ms:7ms][1888 16ms:10ms][1889 16ms:9ms]
+[1890 16ms:7ms][1891 16ms:11ms][1892 16ms:10ms][1893 16ms:7ms][1894 16ms:8ms][1895 16ms:6ms][1896 16ms:6ms][1897 16ms:5ms][1898 16ms:10ms][1899 16ms:5ms]
+[1900 16ms:6ms][1901 16ms:9ms][1902 16ms:7ms][1903 16ms:8ms][1904 16ms:8ms][1905 16ms:0ms][1906 16ms:0ms][1907 15ms:0ms][1908 16ms:0ms][1909 16ms:0ms]
+[1910 16ms:0ms][1911 16ms:0ms][1912 16ms:0ms][1913 16ms:0ms][1914 16ms:0ms][1915 16ms:0ms][1916 16ms:0ms][1917 16ms:0ms][1918 15ms:0ms][1919 16ms:0ms]
+[1920 16ms:0ms][1921 16ms:6ms][1922 16ms:0ms][1923 16ms:0ms][1924 16ms:0ms][1925 16ms:0ms][1926 15ms:0ms]
+
+PULSE: 1927 [16ms:43ms]
+T37 (-16 +49ms): Layout Pass
+T37 (33 +0ms): CSS Pass
+T37 (33 +3ms): Layout Pass
+T37 (36 +0ms): Update bounds
+T37 (36 +0ms): Waiting for previous rendering
+T37 (36 +1ms): Copy state to render graph
+T34 (41 +0ms): Dirty Opts Computed
+T34 (41 +0ms): Painting
+T34 (41 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1928 38ms:12ms][1929 16ms:5ms][1930 16ms:5ms][1931 16ms:6ms][1932 15ms:7ms][1933 16ms:6ms][1934 16ms:6ms][1935 16ms:6ms][1936 16ms:5ms][1937 16ms:5ms]
+[1938 16ms:6ms][1939 16ms:8ms][1940 15ms:6ms][1941 16ms:4ms][1942 16ms:4ms][1943 16ms:5ms][1944 16ms:4ms][1945 16ms:7ms][1946 16ms:4ms][1947 16ms:7ms]
+[1948 16ms:6ms][1949 16ms:6ms][1950 16ms:11ms][1951 16ms:6ms][1952 16ms:7ms][1953 16ms:0ms][1954 16ms:0ms][1955 16ms:0ms][1956 16ms:0ms][1957 16ms:0ms]
+[1958 16ms:0ms][1959 16ms:0ms][1960 16ms:0ms][1961 16ms:0ms][1962 16ms:0ms][1963 16ms:0ms][1964 16ms:0ms][1965 16ms:0ms][1966 16ms:0ms][1967 16ms:0ms]
+[1968 16ms:0ms]
+
+PULSE: 1969 [16ms:47ms]
+T37 (-16 +16ms): Layout Pass
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +0ms): Waiting for previous rendering
+T37 (0 +0ms): Copy state to render graph
+T34 (6 +0ms): Dirty Opts Computed
+T34 (6 +0ms): Painting
+T34 (6 +40ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 37
+	Nodes visited during render: 40
+
+
+PULSE: 1970 [16ms:31ms] Required No Rendering
+T37 (0 +0ms): CSS Pass
+
+[1971 16ms:15ms][1972 16ms:0ms][1973 16ms:0ms][1974 16ms:0ms]
+
+PULSE: 1975 [16ms:39ms]
+T37 (-16 +44ms): Layout Pass
+T37 (28 +0ms): CSS Pass
+T37 (28 +3ms): Layout Pass
+T37 (31 +0ms): Update bounds
+T37 (32 +0ms): Waiting for previous rendering
+T37 (32 +1ms): Copy state to render graph
+T34 (37 +0ms): Dirty Opts Computed
+T34 (38 +0ms): Painting
+T34 (38 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[1976 33ms:11ms][1977 16ms:3ms][1978 16ms:4ms][1979 16ms:5ms][1980 16ms:7ms][1981 16ms:6ms][1982 16ms:6ms][1983 16ms:6ms][1984 16ms:5ms][1985 16ms:7ms]
+[1986 16ms:6ms][1987 16ms:8ms][1988 16ms:4ms][1989 16ms:7ms][1990 15ms:7ms][1991 16ms:6ms][1992 16ms:5ms][1993 16ms:8ms][1994 16ms:4ms][1995 16ms:7ms]
+[1996 15ms:4ms][1997 16ms:5ms][1998 16ms:5ms][1999 16ms:6ms][2000 16ms:7ms][2001 16ms:5ms][2002 16ms:0ms][2003 16ms:0ms][2004 16ms:0ms][2005 16ms:0ms]
+[2006 16ms:0ms][2007 16ms:0ms][2008 16ms:0ms][2009 16ms:0ms][2010 16ms:0ms][2011 16ms:0ms][2012 16ms:0ms][2013 16ms:0ms][2014 16ms:0ms][2015 16ms:0ms]
+[2016 16ms:9ms][2017 15ms:0ms][2018 16ms:0ms][2019 16ms:0ms][2020 16ms:0ms][2021 16ms:0ms]
+
+PULSE: 2022 [16ms:86ms]
+T37 (-16 +92ms): Layout Pass
+T37 (76 +0ms): CSS Pass
+T37 (76 +4ms): Layout Pass
+T37 (80 +0ms): Update bounds
+T37 (80 +0ms): Waiting for previous rendering
+T37 (80 +0ms): Copy state to render graph
+T34 (85 +0ms): Dirty Opts Computed
+T34 (85 +0ms): Painting
+T34 (85 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[2023 81ms:13ms][2024 16ms:7ms][2025 16ms:8ms][2026 16ms:9ms][2027 16ms:7ms][2028 16ms:7ms][2029 16ms:8ms][2030 16ms:6ms][2031 16ms:7ms][2032 16ms:7ms]
+[2033 16ms:6ms][2034 16ms:6ms][2035 16ms:7ms][2036 16ms:6ms][2037 16ms:5ms][2038 16ms:4ms][2039 16ms:5ms][2040 16ms:6ms][2041 16ms:5ms][2042 16ms:6ms]
+[2043 16ms:5ms][2044 16ms:6ms][2045 16ms:6ms][2046 16ms:0ms][2047 16ms:0ms][2048 16ms:0ms][2049 16ms:0ms][2050 16ms:0ms][2051 16ms:0ms][2052 15ms:0ms]
+[2053 16ms:0ms][2054 16ms:0ms][2055 16ms:0ms][2056 16ms:0ms][2057 15ms:0ms][2058 16ms:0ms][2059 16ms:0ms][2060 16ms:0ms][2061 16ms:0ms][2062 16ms:0ms]
+[2063 16ms:8ms][2064 16ms:0ms][2065 16ms:0ms][2066 16ms:0ms][2067 16ms:0ms][2068 16ms:0ms]
+
+PULSE: 2069 [16ms:49ms]
+T37 (-16 +54ms): Layout Pass
+T37 (38 +0ms): CSS Pass
+T37 (38 +2ms): Layout Pass
+T37 (40 +0ms): Update bounds
+T37 (41 +0ms): Waiting for previous rendering
+T37 (41 +0ms): Copy state to render graph
+T34 (48 +0ms): Dirty Opts Computed
+T34 (48 +0ms): Painting
+T34 (48 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[2070 42ms:14ms][2071 15ms:4ms][2072 16ms:4ms][2073 16ms:5ms][2074 16ms:4ms][2075 16ms:6ms][2076 16ms:6ms][2077 16ms:5ms][2078 16ms:5ms][2079 16ms:6ms]
+[2080 16ms:11ms][2081 16ms:5ms][2082 16ms:5ms][2083 16ms:6ms][2084 16ms:6ms][2085 16ms:6ms][2086 16ms:6ms][2087 16ms:6ms][2088 16ms:7ms][2089 16ms:4ms]
+[2090 16ms:5ms][2091 16ms:6ms][2092 16ms:6ms][2093 16ms:6ms][2094 16ms:4ms][2095 15ms:0ms][2096 16ms:0ms][2097 16ms:0ms][2098 16ms:0ms][2099 15ms:0ms]
+[2100 16ms:0ms][2101 16ms:0ms][2102 16ms:0ms][2103 16ms:0ms][2104 16ms:0ms][2105 16ms:0ms][2106 16ms:0ms][2107 16ms:0ms][2108 16ms:0ms][2109 16ms:0ms]
+[2110 15ms:0ms][2111 16ms:4ms][2112 16ms:0ms][2113 16ms:0ms][2114 16ms:0ms][2115 16ms:0ms][2116 16ms:0ms]
+
+PULSE: 2117 [16ms:79ms]
+T37 (-16 +82ms): Layout Pass
+T37 (66 +0ms): CSS Pass
+T37 (66 +4ms): Layout Pass
+T37 (70 +0ms): Update bounds
+T37 (71 +0ms): Waiting for previous rendering
+T37 (71 +1ms): Copy state to render graph
+T34 (77 +0ms): Dirty Opts Computed
+T34 (77 +0ms): Painting
+T34 (78 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[2118 73ms:16ms][2119 15ms:8ms][2120 16ms:9ms][2121 16ms:9ms][2122 15ms:6ms][2123 16ms:7ms][2124 16ms:7ms][2125 16ms:9ms][2126 16ms:7ms][2127 16ms:7ms]
+[2128 16ms:7ms][2129 16ms:7ms][2130 15ms:8ms][2131 16ms:7ms][2132 16ms:5ms][2133 16ms:5ms][2134 16ms:5ms][2135 16ms:6ms][2136 16ms:6ms][2137 16ms:6ms]
+[2138 16ms:6ms][2139 16ms:6ms][2140 16ms:7ms][2141 16ms:0ms][2142 16ms:0ms][2143 16ms:0ms][2144 16ms:0ms][2145 16ms:0ms][2146 15ms:0ms][2147 16ms:0ms]
+[2148 16ms:0ms][2149 16ms:0ms][2150 16ms:0ms][2151 16ms:0ms][2152 16ms:0ms][2153 16ms:0ms][2154 16ms:0ms][2155 16ms:0ms][2156 16ms:0ms][2157 16ms:0ms]
+[2158 15ms:4ms][2159 16ms:0ms][2160 16ms:0ms][2161 16ms:0ms][2162 16ms:0ms][2163 16ms:0ms]
+
+PULSE: 2164 [16ms:33ms]
+T37 (-15 +43ms): Layout Pass
+T37 (27 +0ms): CSS Pass
+T37 (27 +1ms): Layout Pass
+T37 (28 +0ms): Update bounds
+T37 (28 +0ms): Waiting for previous rendering
+T37 (28 +0ms): Copy state to render graph
+T34 (32 +0ms): Dirty Opts Computed
+T34 (32 +0ms): Painting
+T34 (32 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[2165 29ms:12ms][2166 16ms:6ms][2167 16ms:6ms][2168 16ms:5ms][2169 16ms:5ms][2170 16ms:7ms][2171 16ms:6ms][2172 15ms:7ms][2173 16ms:4ms][2174 16ms:8ms]
+[2175 16ms:5ms][2176 16ms:7ms][2177 16ms:5ms][2178 16ms:5ms][2179 16ms:7ms][2180 16ms:8ms][2181 16ms:8ms][2182 16ms:5ms][2183 16ms:8ms][2184 16ms:8ms]
+[2185 16ms:4ms][2186 16ms:5ms][2187 16ms:8ms][2188 16ms:6ms][2189 16ms:9ms][2190 16ms:6ms][2191 16ms:0ms][2192 16ms:0ms][2193 16ms:0ms][2194 16ms:0ms]
+[2195 16ms:0ms][2196 15ms:0ms][2197 16ms:0ms][2198 16ms:0ms][2199 16ms:0ms][2200 16ms:0ms][2201 16ms:0ms][2202 16ms:0ms][2203 16ms:0ms][2204 16ms:0ms]
+[2205 16ms:0ms][2206 16ms:5ms][2207 16ms:0ms][2208 16ms:0ms][2209 16ms:0ms][2210 16ms:0ms][2211 16ms:0ms]
+
+PULSE: 2212 [16ms:57ms]
+T37 (-16 +65ms): Layout Pass
+T37 (48 +0ms): CSS Pass
+T37 (49 +1ms): Layout Pass
+T37 (50 +0ms): Update bounds
+T37 (51 +0ms): Waiting for previous rendering
+T37 (51 +1ms): Copy state to render graph
+T34 (55 +0ms): Dirty Opts Computed
+T34 (55 +0ms): Painting
+T34 (55 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+
+PULSE: 2213 [52ms:20ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (1 +0ms): Update bounds
+T37 (1 +3ms): Waiting for previous rendering
+T37 (4 +0ms): Copy state to render graph
+T34 (10 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:398.0, minY:141.0, maxX:1498.0, maxY:910.0} (w:1100.0, h:769.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (10 +0ms): Render Roots Discovered
+T34 : Slow background path for null
+T34 : Slow background path for null
+T34 (10 +8ms): Painting
+T34 (18 +1ms): Presenting
+Counters:
+	CacheFilter rebuilding: 2
+	Cached region background image used: 3
+	Cached region shape image used: 1
+	NGRegion renderBackgrounds slow path: 2
+	Nodes rendered: 133
+	Nodes visited during render: 154
+
+[2214 16ms:16ms][2215 16ms:6ms][2216 16ms:8ms][2217 16ms:7ms][2218 16ms:7ms][2219 16ms:9ms][2220 16ms:6ms][2221 16ms:6ms][2222 16ms:7ms][2223 16ms:7ms]
+[2224 16ms:7ms][2225 16ms:7ms][2226 16ms:7ms][2227 16ms:8ms][2228 16ms:7ms][2229 15ms:7ms][2230 16ms:6ms][2231 16ms:7ms][2232 16ms:5ms][2233 16ms:6ms]
+[2234 15ms:9ms][2235 16ms:7ms][2236 16ms:5ms][2237 16ms:0ms][2238 16ms:0ms][2239 16ms:0ms][2240 16ms:0ms][2241 16ms:0ms][2242 16ms:0ms][2243 16ms:0ms]
+[2244 16ms:0ms][2245 15ms:0ms][2246 16ms:0ms][2247 16ms:0ms][2248 16ms:0ms][2249 16ms:0ms][2250 16ms:0ms][2251 16ms:0ms][2252 16ms:0ms][2253 16ms:0ms]
+[2254 16ms:6ms][2255 16ms:0ms][2256 16ms:0ms][2257 15ms:0ms][2258 16ms:0ms][2259 16ms:0ms]
+
+PULSE: 2260 [16ms:49ms]
+T37 (-16 +54ms): Layout Pass
+T37 (37 +0ms): CSS Pass
+T37 (37 +2ms): Layout Pass
+T37 (40 +0ms): Update bounds
+T37 (40 +0ms): Waiting for previous rendering
+T37 (40 +1ms): Copy state to render graph
+T34 (47 +0ms): Dirty Opts Computed
+T34 (47 +0ms): Painting
+T34 (48 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[2261 45ms:12ms][2262 12ms:5ms][2263 16ms:5ms][2264 16ms:7ms][2265 15ms:7ms][2266 16ms:5ms][2267 16ms:7ms][2268 15ms:7ms][2269 16ms:5ms][2270 16ms:6ms]
+[2271 16ms:5ms][2272 16ms:7ms][2273 16ms:5ms][2274 16ms:4ms][2275 16ms:9ms][2276 16ms:6ms][2277 16ms:6ms][2278 16ms:7ms][2279 16ms:7ms][2280 16ms:8ms]
+[2281 16ms:7ms][2282 16ms:7ms][2283 16ms:7ms][2284 16ms:7ms][2285 16ms:5ms][2286 16ms:0ms][2287 16ms:0ms][2288 16ms:0ms][2289 15ms:0ms][2290 16ms:0ms]
+[2291 16ms:0ms][2292 16ms:0ms][2293 16ms:0ms][2294 16ms:0ms][2295 16ms:0ms][2296 16ms:0ms][2297 16ms:0ms][2298 16ms:0ms][2299 16ms:0ms][2300 16ms:0ms]
+[2301 16ms:0ms][2302 16ms:5ms][2303 16ms:0ms][2304 16ms:0ms][2305 16ms:0ms][2306 15ms:0ms][2307 16ms:0ms]
+
+PULSE: 2308 [16ms:76ms]
+T37 (-16 +81ms): Layout Pass
+T37 (65 +0ms): CSS Pass
+T37 (65 +2ms): Layout Pass
+T37 (68 +0ms): Update bounds
+T37 (69 +0ms): Waiting for previous rendering
+T37 (69 +0ms): Copy state to render graph
+T34 (75 +0ms): Dirty Opts Computed
+T34 (75 +0ms): Painting
+T34 (75 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[2309 70ms:14ms]
+
+PULSE: 2310 [15ms:41ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +0ms): Waiting for previous rendering
+T37 (0 +0ms): Copy state to render graph
+T34 (3 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:398.0, minY:138.0, maxX:1498.0, maxY:900.0} (w:1100.0, h:762.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (3 +0ms): Render Roots Discovered
+T34 : Slow background path for null
+T34 (3 +37ms): Painting
+T34 (40 +0ms): Presenting
+Counters:
+	NGRegion renderBackgrounds slow path: 1
+	Nodes rendered: 53
+	Nodes visited during render: 63
+
+
+PULSE: 2311 [16ms:30ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +25ms): Waiting for previous rendering
+T37 (25 +0ms): Copy state to render graph
+T34 (28 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:398.0, minY:136.0, maxX:1498.0, maxY:899.0} (w:1100.0, h:763.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (28 +0ms): Render Roots Discovered
+T34 : Slow background path for null
+T34 (28 +0ms): Painting
+T34 (29 +0ms): Presenting
+Counters:
+	NGRegion renderBackgrounds slow path: 1
+	Nodes rendered: 53
+	Nodes visited during render: 63
+
+[2312 25ms:9ms][2313 16ms:7ms][2314 16ms:7ms][2315 16ms:6ms][2316 16ms:6ms][2317 16ms:5ms][2318 16ms:6ms][2319 16ms:7ms][2320 16ms:8ms][2321 16ms:7ms]
+[2322 16ms:7ms][2323 16ms:7ms][2324 16ms:7ms][2325 16ms:7ms][2326 16ms:6ms][2327 16ms:7ms][2328 16ms:5ms][2329 16ms:7ms][2330 16ms:8ms][2331 16ms:7ms]
+[2332 15ms:0ms][2333 16ms:0ms][2334 16ms:0ms][2335 16ms:0ms][2336 16ms:0ms][2337 16ms:0ms][2338 16ms:0ms][2339 16ms:0ms][2340 16ms:0ms][2341 16ms:0ms]
+[2342 16ms:0ms][2343 16ms:0ms][2344 16ms:0ms][2345 16ms:0ms][2346 16ms:0ms][2347 16ms:0ms][2348 16ms:0ms][2349 15ms:5ms][2350 16ms:0ms][2351 16ms:0ms]
+[2352 16ms:0ms][2353 16ms:0ms][2354 16ms:0ms]
+
+PULSE: 2355 [16ms:70ms]
+T37 (-16 +78ms): Layout Pass
+T37 (62 +0ms): CSS Pass
+T37 (62 +2ms): Layout Pass
+T37 (64 +0ms): Update bounds
+T37 (65 +0ms): Waiting for previous rendering
+T37 (65 +1ms): Copy state to render graph
+T34 (70 +0ms): Dirty Opts Computed
+T34 (70 +0ms): Painting
+T34 (70 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[2356 66ms:12ms][2357 15ms:5ms][2358 16ms:4ms][2359 15ms:7ms][2360 16ms:6ms][2361 16ms:7ms][2362 16ms:6ms][2363 16ms:7ms][2364 16ms:6ms][2365 16ms:8ms]
+[2366 16ms:8ms][2367 16ms:10ms][2368 15ms:10ms][2369 16ms:7ms][2370 15ms:5ms][2371 16ms:5ms][2372 16ms:4ms][2373 16ms:5ms][2374 16ms:5ms][2375 16ms:5ms]
+[2376 16ms:6ms][2377 15ms:5ms][2378 16ms:5ms][2379 16ms:5ms][2380 16ms:0ms][2381 16ms:0ms][2382 16ms:0ms][2383 16ms:0ms][2384 16ms:0ms][2385 16ms:0ms]
+[2386 16ms:0ms][2387 16ms:0ms][2388 16ms:0ms][2389 16ms:0ms][2390 16ms:0ms][2391 16ms:0ms][2392 16ms:0ms][2393 16ms:0ms][2394 16ms:0ms][2395 16ms:0ms]
+[2396 16ms:0ms][2397 16ms:3ms][2398 16ms:0ms][2399 16ms:0ms][2400 16ms:0ms][2401 16ms:0ms][2402 16ms:0ms]
+
+PULSE: 2403 [16ms:36ms]
+T37 (-16 +42ms): Layout Pass
+T37 (25 +0ms): CSS Pass
+T37 (26 +2ms): Layout Pass
+T37 (28 +0ms): Update bounds
+T37 (29 +0ms): Waiting for previous rendering
+T37 (29 +1ms): Copy state to render graph
+T34 (34 +0ms): Dirty Opts Computed
+T34 (34 +0ms): Painting
+T34 (35 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[2404 30ms:14ms][2405 16ms:6ms][2406 16ms:5ms][2407 16ms:8ms][2408 16ms:6ms][2409 16ms:6ms][2410 16ms:7ms][2411 15ms:7ms][2412 16ms:5ms][2413 15ms:6ms]
+[2414 16ms:6ms][2415 16ms:7ms][2416 16ms:7ms][2417 15ms:7ms][2418 16ms:7ms][2419 15ms:8ms][2420 16ms:7ms][2421 16ms:6ms][2422 16ms:5ms][2423 16ms:7ms]
+[2424 16ms:7ms][2425 16ms:7ms][2426 16ms:7ms][2427 16ms:5ms][2428 16ms:7ms][2429 16ms:5ms][2430 16ms:0ms][2431 16ms:0ms][2432 16ms:0ms][2433 16ms:0ms]
+[2434 16ms:0ms][2435 16ms:0ms][2436 16ms:0ms][2437 16ms:0ms][2438 16ms:0ms][2439 16ms:0ms][2440 16ms:0ms][2441 16ms:0ms][2442 16ms:0ms][2443 16ms:0ms]
+[2444 16ms:0ms][2445 16ms:5ms][2446 16ms:0ms][2447 16ms:0ms][2448 16ms:0ms][2449 16ms:0ms][2450 16ms:0ms]
+
+PULSE: 2451 [16ms:59ms]
+T37 (-16 +65ms): Layout Pass
+T37 (49 +0ms): CSS Pass
+T37 (49 +1ms): Layout Pass
+T37 (51 +0ms): Update bounds
+T37 (52 +0ms): Waiting for previous rendering
+T37 (52 +0ms): Copy state to render graph
+T34 (57 +0ms): Dirty Opts Computed
+T34 (57 +0ms): Painting
+T34 (58 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[2452 53ms:13ms][2453 15ms:4ms][2454 16ms:5ms][2455 16ms:10ms][2456 15ms:5ms][2457 16ms:8ms][2458 16ms:9ms][2459 16ms:6ms][2460 16ms:8ms][2461 16ms:8ms]
+[2462 16ms:8ms][2463 16ms:5ms][2464 16ms:8ms][2465 16ms:6ms][2466 16ms:7ms][2467 16ms:6ms][2468 16ms:6ms][2469 16ms:7ms][2470 16ms:7ms][2471 16ms:7ms]
+[2472 16ms:7ms][2473 16ms:9ms][2474 16ms:6ms][2475 16ms:8ms][2476 16ms:0ms][2477 16ms:0ms][2478 15ms:0ms][2479 16ms:0ms][2480 16ms:0ms][2481 16ms:0ms]
+[2482 16ms:0ms][2483 16ms:0ms][2484 16ms:0ms][2485 16ms:0ms][2486 16ms:0ms][2487 16ms:0ms][2488 16ms:0ms][2489 16ms:0ms][2490 16ms:0ms][2491 16ms:0ms]
+[2492 16ms:0ms]
+
+PULSE: 2493 [16ms:37ms]
+T37 (-16 +17ms): Layout Pass
+T37 (1 +0ms): CSS Pass
+T37 (1 +0ms): Layout Pass
+T37 (1 +0ms): Update bounds
+T37 (1 +0ms): Waiting for previous rendering
+T37 (1 +0ms): Copy state to render graph
+T34 (5 +0ms): Dirty Opts Computed
+T34 (5 +0ms): Painting
+T34 (5 +31ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 37
+	Nodes visited during render: 40
+
+
+PULSE: 2494 [16ms:21ms] Required No Rendering
+T37 (0 +0ms): CSS Pass
+
+[2495 16ms:5ms][2496 16ms:0ms][2497 16ms:0ms][2498 16ms:0ms]
+
+PULSE: 2499 [16ms:46ms]
+T37 (-16 +54ms): Layout Pass
+T37 (38 +0ms): CSS Pass
+T37 (38 +1ms): Layout Pass
+T37 (39 +0ms): Update bounds
+T37 (40 +0ms): Waiting for previous rendering
+T37 (40 +0ms): Copy state to render graph
+T34 (44 +0ms): Dirty Opts Computed
+T34 (44 +0ms): Painting
+T34 (44 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[2500 41ms:10ms][2501 15ms:4ms][2502 16ms:5ms][2503 16ms:5ms][2504 16ms:5ms][2505 16ms:5ms][2506 15ms:4ms][2507 16ms:7ms][2508 16ms:4ms][2509 16ms:7ms]
+[2510 16ms:6ms][2511 16ms:6ms][2512 16ms:5ms][2513 16ms:6ms][2514 16ms:5ms][2515 16ms:6ms][2516 16ms:7ms][2517 16ms:6ms][2518 16ms:7ms][2519 16ms:8ms]
+[2520 15ms:6ms][2521 16ms:7ms][2522 16ms:5ms][2523 16ms:7ms][2524 16ms:6ms][2525 16ms:0ms][2526 16ms:0ms][2527 16ms:0ms][2528 16ms:0ms][2529 16ms:0ms]
+[2530 15ms:0ms][2531 16ms:0ms][2532 16ms:0ms][2533 16ms:0ms][2534 16ms:0ms][2535 16ms:0ms][2536 15ms:0ms][2537 16ms:0ms][2538 16ms:0ms][2539 16ms:0ms]
+[2540 16ms:0ms][2541 15ms:5ms][2542 16ms:0ms][2543 16ms:0ms][2544 16ms:0ms][2545 16ms:0ms][2546 16ms:0ms]
+
+PULSE: 2547 [16ms:43ms]
+T37 (-16 +53ms): Layout Pass
+T37 (37 +0ms): CSS Pass
+T37 (37 +1ms): Layout Pass
+T37 (38 +0ms): Update bounds
+T37 (39 +0ms): Waiting for previous rendering
+T37 (39 +0ms): Copy state to render graph
+T34 (42 +0ms): Dirty Opts Computed
+T34 (42 +0ms): Painting
+T34 (42 +0ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 41
+	Nodes visited during render: 44
+
+[2548 39ms:9ms][2549 16ms:6ms][2550 16ms:5ms][2551 16ms:5ms][2552 16ms:11ms][2553 16ms:7ms][2554 16ms:9ms][2555 16ms:4ms][2556 16ms:11ms][2557 15ms:6ms]
+[2558 16ms:9ms][2559 16ms:8ms][2560 16ms:7ms][2561 16ms:9ms][2562 16ms:9ms][2563 16ms:9ms][2564 16ms:9ms][2565 16ms:10ms][2566 16ms:8ms][2567 16ms:9ms]
+[2568 16ms:7ms][2569 16ms:9ms][2570 16ms:8ms][2571 16ms:9ms][2572 16ms:9ms][2573 16ms:0ms][2574 16ms:0ms][2575 15ms:0ms][2576 16ms:0ms][2577 16ms:0ms]
+[2578 16ms:0ms][2579 15ms:0ms][2580 16ms:0ms][2581 16ms:0ms][2582 16ms:0ms][2583 16ms:0ms][2584 16ms:0ms][2585 16ms:0ms][2586 16ms:0ms][2587 16ms:0ms]
+[2588 16ms:0ms][2589 16ms:0ms][2590 16ms:0ms][2591 16ms:0ms][2592 16ms:0ms][2593 16ms:0ms][2594 16ms:0ms]
+
+PULSE: 2595 [16ms:25ms]
+T37 (-16 +24ms): Layout Pass
+T37 (8 +0ms): CSS Pass
+T37 (8 +0ms): Layout Pass
+T37 (8 +0ms): Update bounds
+T37 (8 +0ms): Waiting for previous rendering
+T37 (8 +0ms): Copy state to render graph
+T34 (12 +0ms): Dirty Opts Computed
+T34 (12 +1ms): Painting
+T34 (13 +12ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 54
+	Nodes visited during render: 59
+
+[2596 16ms:9ms][2597 16ms:0ms][2598 16ms:0ms][2599 15ms:0ms][2600 16ms:0ms][2601 16ms:0ms]
+
+PULSE: 2602 [16ms:22ms]
+T37 (-16 +32ms): Layout Pass
+T37 (16 +0ms): CSS Pass
+T37 (16 +0ms): Layout Pass
+T37 (16 +0ms): Update bounds
+T37 (17 +0ms): Waiting for previous rendering
+T37 (17 +0ms): Copy state to render graph
+T34 (21 +0ms): Dirty Opts Computed
+T34 (21 +0ms): Painting
+T34 (21 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 58
+	Nodes visited during render: 63
+
+
+PULSE: 2603 [17ms:25ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +4ms): Waiting for previous rendering
+T37 (5 +0ms): Copy state to render graph
+T34 (10 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:398.0, minY:147.0, maxX:1498.0, maxY:910.0} (w:1100.0, h:763.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (10 +0ms): Render Roots Discovered
+T34 (10 +12ms): Painting
+T34 (23 +2ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 40
+	Nodes visited during render: 52
+	Rendering region background image to cache: 1
+
+
+PULSE: 2604 [16ms:29ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +9ms): Waiting for previous rendering
+T37 (9 +0ms): Copy state to render graph
+T34 (16 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:398.0, minY:144.0, maxX:1498.0, maxY:908.0} (w:1100.0, h:764.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (16 +0ms): Render Roots Discovered
+T34 (16 +11ms): Painting
+T34 (28 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 40
+	Nodes visited during render: 52
+
+
+PULSE: 2605 [16ms:22ms]
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +13ms): Waiting for previous rendering
+T37 (13 +0ms): Copy state to render graph
+T34 (18 +0ms): Dirty Opts Computed
+T34 : 1 different dirty regions to render
+T34 : Dirty Region 0: RectBounds { minX:398.0, minY:142.0, maxX:1498.0, maxY:905.0} (w:1100.0, h:763.0)
+T34 : Render Root Path 0: [com.sun.javafx.sg.prism.NGRegion@667522cc, com.sun.javafx.sg.prism.NGRegion@2852cd60]
+T34 (19 +0ms): Render Roots Discovered
+T34 (19 +0ms): Painting
+T34 (19 +2ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 40
+	Nodes visited during render: 52
+
+[2606 16ms:12ms][2607 16ms:7ms][2608 16ms:7ms][2609 16ms:9ms][2610 16ms:5ms][2611 15ms:5ms][2612 16ms:5ms][2613 16ms:5ms][2614 16ms:3ms][2615 16ms:4ms]
+[2616 16ms:7ms][2617 15ms:5ms][2618 16ms:8ms][2619 15ms:5ms][2620 16ms:5ms][2621 16ms:6ms][2622 16ms:6ms][2623 16ms:5ms][2624 16ms:6ms][2625 16ms:6ms]
+[2626 16ms:5ms][2627 16ms:7ms][2628 16ms:5ms][2629 16ms:7ms][2630 16ms:0ms][2631 16ms:0ms][2632 16ms:0ms][2633 16ms:0ms][2634 16ms:10ms][2635 15ms:0ms]
+[2636 16ms:0ms][2637 16ms:0ms][2638 16ms:0ms][2639 16ms:0ms][2640 16ms:0ms][2641 16ms:0ms][2642 16ms:0ms][2643 16ms:0ms][2644 16ms:5ms][2645 16ms:0ms]
+[2646 16ms:0ms][2647 16ms:0ms][2648 16ms:0ms][2649 16ms:0ms][2650 16ms:7ms][2651 16ms:6ms][2652 16ms:5ms][2653 16ms:5ms][2654 16ms:5ms][2655 16ms:8ms]
+[2656 16ms:7ms][2657 16ms:6ms][2658 16ms:6ms][2659 16ms:6ms][2660 16ms:6ms][2661 16ms:7ms][2662 15ms:6ms][2663 16ms:7ms][2664 16ms:8ms][2665 15ms:7ms]
+[2666 16ms:5ms][2667 16ms:6ms][2668 16ms:7ms][2669 16ms:5ms][2670 16ms:4ms][2671 16ms:6ms][2672 16ms:7ms][2673 16ms:6ms][2674 16ms:4ms][2675 16ms:5ms]
+[2676 16ms:5ms][2677 16ms:5ms][2678 16ms:0ms][2679 16ms:0ms][2680 16ms:0ms][2681 16ms:0ms][2682 16ms:6ms][2683 16ms:0ms][2684 16ms:0ms][2685 16ms:0ms]
+[2686 16ms:0ms][2687 16ms:0ms][2688 16ms:0ms][2689 16ms:0ms][2690 16ms:0ms][2691 16ms:4ms][2692 16ms:0ms][2693 16ms:0ms][2694 15ms:0ms][2695 16ms:0ms]
+[2696 16ms:0ms]
+
+PULSE: 2697 [16ms:19ms]
+T37 (-16 +26ms): Layout Pass
+T37 (10 +0ms): CSS Pass
+T37 (10 +0ms): Layout Pass
+T37 (11 +0ms): Update bounds
+T37 (11 +0ms): Waiting for previous rendering
+T37 (11 +0ms): Copy state to render graph
+T34 (16 +0ms): Dirty Opts Computed
+T34 (16 +1ms): Painting
+T34 (17 +1ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 58
+	Nodes visited during render: 63
+
+[2698 15ms:10ms][2699 16ms:6ms][2700 16ms:5ms][2701 16ms:8ms][2702 16ms:7ms][2703 16ms:4ms][2704 16ms:4ms][2705 16ms:3ms][2706 16ms:5ms][2707 16ms:7ms]
+[2708 15ms:3ms][2709 16ms:3ms][2710 16ms:3ms][2711 16ms:5ms][2712 15ms:7ms][2713 16ms:4ms][2714 16ms:5ms][2715 16ms:7ms][2716 16ms:6ms][2717 16ms:6ms]
+[2718 16ms:6ms][2719 16ms:6ms][2720 16ms:6ms][2721 16ms:7ms][2722 16ms:7ms][2723 16ms:5ms][2724 16ms:4ms][2725 16ms:0ms][2726 16ms:0ms][2727 16ms:0ms]
+[2728 16ms:0ms][2729 16ms:9ms][2730 15ms:0ms][2731 16ms:0ms][2732 16ms:0ms][2733 15ms:0ms][2734 16ms:0ms][2735 16ms:0ms][2736 16ms:0ms][2737 16ms:0ms]
+[2738 15ms:0ms][2739 16ms:7ms][2740 16ms:0ms][2741 16ms:0ms][2742 16ms:0ms][2743 16ms:0ms][2744 16ms:0ms][2745 16ms:11ms][2746 16ms:9ms][2747 16ms:6ms]
+[2748 16ms:6ms][2749 16ms:7ms][2750 16ms:6ms][2751 16ms:8ms][2752 16ms:7ms][2753 16ms:6ms][2754 16ms:6ms][2755 15ms:7ms][2756 16ms:5ms][2757 16ms:6ms]
+[2758 16ms:5ms][2759 16ms:5ms][2760 16ms:6ms][2761 16ms:6ms][2762 16ms:6ms][2763 16ms:6ms][2764 16ms:5ms][2765 16ms:5ms][2766 16ms:5ms][2767 16ms:10ms]
+[2768 16ms:4ms][2769 16ms:6ms][2770 16ms:5ms][2771 16ms:6ms][2772 16ms:5ms][2773 16ms:0ms][2774 16ms:0ms][2775 16ms:0ms][2776 16ms:0ms][2777 16ms:4ms]
+[2778 16ms:0ms][2779 16ms:0ms][2780 16ms:0ms][2781 16ms:0ms][2782 16ms:0ms][2783 16ms:0ms][2784 16ms:0ms][2785 16ms:0ms][2786 16ms:7ms][2787 15ms:0ms]
+[2788 16ms:0ms][2789 16ms:0ms][2790 16ms:0ms][2791 16ms:0ms][2792 16ms:17ms][2793 16ms:7ms][2794 15ms:4ms][2795 16ms:5ms][2796 16ms:10ms][2797 16ms:8ms]
+[2798 16ms:5ms][2799 16ms:6ms][2800 16ms:8ms][2801 16ms:7ms][2802 15ms:3ms][2803 16ms:4ms][2804 16ms:5ms][2805 16ms:5ms][2806 16ms:8ms][2807 16ms:4ms]
+[2808 16ms:4ms][2809 16ms:5ms][2810 16ms:6ms][2811 16ms:6ms][2812 16ms:5ms][2813 16ms:6ms][2814 16ms:6ms][2815 16ms:5ms][2816 16ms:6ms][2817 16ms:5ms]
+[2818 16ms:8ms][2819 16ms:4ms][2820 16ms:0ms][2821 16ms:0ms][2822 16ms:0ms][2823 16ms:0ms][2824 16ms:7ms][2825 16ms:0ms][2826 16ms:0ms][2827 15ms:0ms]
+[2828 16ms:0ms][2829 16ms:0ms][2830 16ms:0ms][2831 16ms:0ms][2832 16ms:0ms][2833 16ms:7ms][2834 16ms:0ms][2835 16ms:0ms][2836 16ms:0ms][2837 16ms:0ms]
+[2838 16ms:0ms][2839 16ms:11ms][2840 16ms:4ms][2841 16ms:7ms][2842 16ms:7ms][2843 15ms:7ms][2844 16ms:6ms][2845 16ms:7ms][2846 16ms:4ms][2847 15ms:6ms]
+[2848 16ms:6ms][2849 16ms:5ms][2850 16ms:8ms][2851 16ms:6ms][2852 16ms:6ms][2853 16ms:8ms][2854 16ms:4ms][2855 16ms:5ms][2856 15ms:4ms][2857 16ms:11ms]
+[2858 16ms:5ms][2859 16ms:7ms][2860 16ms:6ms][2861 16ms:6ms][2862 16ms:5ms][2863 16ms:6ms][2864 16ms:6ms][2865 16ms:6ms][2866 16ms:7ms][2867 16ms:0ms]
+[2868 16ms:0ms][2869 15ms:0ms][2870 16ms:0ms][2871 16ms:4ms][2872 16ms:0ms][2873 16ms:0ms][2874 16ms:0ms][2875 16ms:0ms][2876 16ms:0ms][2877 16ms:0ms]
+[2878 15ms:0ms][2879 16ms:0ms][2880 16ms:5ms][2881 15ms:0ms][2882 16ms:0ms][2883 16ms:0ms][2884 15ms:0ms][2885 16ms:0ms][2886 16ms:15ms][2887 15ms:7ms]
+[2888 16ms:3ms][2889 16ms:7ms][2890 16ms:5ms][2891 16ms:8ms][2892 15ms:8ms][2893 16ms:5ms][2894 16ms:7ms][2895 16ms:6ms][2896 16ms:5ms][2897 16ms:7ms]
+[2898 16ms:6ms][2899 16ms:6ms][2900 16ms:5ms][2901 16ms:5ms][2902 16ms:8ms][2903 15ms:7ms][2904 16ms:8ms][2905 16ms:7ms][2906 15ms:8ms][2907 16ms:7ms]
+[2908 16ms:7ms][2909 16ms:5ms][2910 16ms:8ms][2911 15ms:5ms][2912 16ms:5ms][2913 16ms:7ms][2914 15ms:0ms][2915 16ms:0ms][2916 16ms:0ms][2917 16ms:0ms]
+[2918 16ms:7ms][2919 16ms:0ms][2920 16ms:0ms][2921 16ms:0ms][2922 16ms:0ms][2923 15ms:0ms][2924 16ms:0ms][2925 16ms:0ms][2926 16ms:0ms]
+
+PULSE: 2927 [16ms:70ms]
+T37 (-16 +16ms): Layout Pass
+T37 (0 +0ms): CSS Pass
+T37 (0 +0ms): Layout Pass
+T37 (0 +0ms): Update bounds
+T37 (0 +0ms): Waiting for previous rendering
+T37 (0 +0ms): Copy state to render graph
+T34 (5 +0ms): Dirty Opts Computed
+T34 (5 +0ms): Painting
+T34 (6 +63ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 54
+	Nodes visited during render: 59
+
+
+PULSE: 2928 [16ms:54ms] Required No Rendering
+T37 (0 +0ms): CSS Pass
+
+
+PULSE: 2929 [15ms:38ms] Required No Rendering
+T37 (-15 +15ms): Layout Pass
+T37 (0 +0ms): CSS Pass
+
+
+PULSE: 2930 [16ms:22ms] Required No Rendering
+T37 (-16 +16ms): Layout Pass
+T37 (0 +0ms): CSS Pass
+
+[2931 16ms:6ms][2932 16ms:0ms][2933 16ms:10ms][2934 16ms:5ms][2935 16ms:7ms][2936 16ms:6ms][2937 16ms:6ms][2938 16ms:7ms][2939 16ms:8ms][2940 16ms:9ms]
+[2941 15ms:8ms][2942 16ms:8ms][2943 16ms:8ms][2944 16ms:6ms][2945 16ms:6ms][2946 16ms:7ms][2947 16ms:10ms][2948 16ms:8ms][2949 16ms:6ms][2950 15ms:6ms]
+[2951 15ms:5ms][2952 16ms:5ms][2953 16ms:6ms][2954 16ms:7ms][2955 16ms:6ms][2956 16ms:4ms][2957 16ms:6ms][2958 16ms:5ms][2959 16ms:6ms][2960 16ms:7ms]
+[2961 16ms:0ms][2962 16ms:0ms][2963 16ms:0ms][2964 16ms:0ms][2965 15ms:4ms][2966 16ms:0ms][2967 16ms:0ms][2968 16ms:0ms][2969 16ms:0ms][2970 16ms:0ms]
+[2971 15ms:0ms][2972 16ms:0ms][2973 16ms:0ms][2974 16ms:5ms][2975 15ms:0ms][2976 16ms:0ms][2977 16ms:0ms][2978 16ms:0ms][2979 16ms:0ms][2980 16ms:17ms]
+[2981 15ms:7ms][2982 16ms:4ms][2983 16ms:4ms][2984 16ms:9ms][2985 16ms:8ms][2986 16ms:7ms][2987 16ms:7ms][2988 16ms:6ms][2989 16ms:6ms][2990 16ms:7ms]
+[2991 16ms:7ms][2992 16ms:7ms][2993 16ms:6ms][2994 16ms:7ms][2995 16ms:7ms][2996 15ms:7ms][2997 16ms:7ms][2998 16ms:6ms][2999 16ms:5ms][3000 16ms:5ms]
+[3001 16ms:4ms][3002 16ms:4ms][3003 15ms:5ms][3004 16ms:5ms][3005 16ms:6ms][3006 16ms:4ms][3007 16ms:6ms][3008 16ms:0ms][3009 16ms:0ms][3010 16ms:0ms]
+[3011 16ms:0ms][3012 16ms:6ms][3013 16ms:0ms][3014 16ms:0ms][3015 16ms:0ms][3016 16ms:0ms][3017 16ms:0ms][3018 16ms:0ms][3019 16ms:0ms][3020 16ms:0ms]
+[3021 16ms:5ms][3022 16ms:0ms][3023 16ms:0ms][3024 16ms:0ms][3025 16ms:0ms][3026 16ms:0ms][3027 16ms:16ms][3028 16ms:8ms][3029 16ms:7ms][3030 16ms:9ms]
+[3031 15ms:8ms][3032 16ms:8ms][3033 16ms:7ms][3034 16ms:5ms][3035 16ms:8ms][3036 16ms:5ms][3037 16ms:6ms][3038 16ms:6ms][3039 16ms:5ms][3040 16ms:7ms]
+[3041 16ms:7ms][3042 16ms:4ms][3043 16ms:4ms][3044 16ms:13ms][3045 16ms:5ms][3046 16ms:6ms][3047 16ms:5ms][3048 16ms:6ms][3049 16ms:7ms][3050 16ms:6ms]
+[3051 16ms:8ms][3052 16ms:5ms][3053 16ms:6ms][3054 16ms:8ms][3055 16ms:0ms][3056 16ms:0ms][3057 16ms:0ms][3058 16ms:0ms][3059 16ms:3ms][3060 16ms:0ms]
+[3061 16ms:0ms][3062 16ms:0ms][3063 16ms:0ms][3064 16ms:0ms][3065 16ms:0ms][3066 16ms:0ms][3067 16ms:0ms][3068 15ms:4ms][3069 16ms:0ms][3070 16ms:0ms]
+[3071 16ms:0ms][3072 15ms:0ms][3073 16ms:0ms][3074 16ms:14ms][3075 15ms:8ms][3076 16ms:6ms][3077 16ms:8ms][3078 15ms:6ms][3079 16ms:10ms][3080 16ms:4ms]
+[3081 16ms:5ms][3082 16ms:6ms][3083 16ms:5ms][3084 16ms:6ms][3085 16ms:6ms][3086 16ms:7ms][3087 16ms:8ms][3088 16ms:7ms][3089 16ms:6ms][3090 16ms:5ms]
+[3091 16ms:7ms][3092 16ms:6ms][3093 16ms:5ms][3094 16ms:6ms][3095 16ms:6ms][3096 16ms:8ms][3097 16ms:8ms][3098 16ms:8ms][3099 16ms:5ms][3100 16ms:5ms]
+[3101 16ms:6ms][3102 15ms:0ms][3103 16ms:0ms][3104 16ms:0ms][3105 16ms:0ms][3106 15ms:7ms][3107 16ms:0ms][3108 16ms:0ms][3109 16ms:0ms][3110 16ms:0ms]
+[3111 16ms:0ms][3112 16ms:0ms][3113 16ms:0ms][3114 16ms:0ms][3115 16ms:6ms][3116 16ms:0ms][3117 16ms:0ms][3118 16ms:0ms][3119 16ms:0ms][3120 16ms:0ms]
+[3121 16ms:11ms][3122 16ms:4ms][3123 16ms:6ms][3124 15ms:6ms][3125 16ms:4ms][3126 16ms:4ms][3127 16ms:4ms][3128 16ms:4ms][3129 16ms:4ms][3130 16ms:6ms]
+[3131 15ms:5ms][3132 16ms:5ms][3133 16ms:4ms][3134 16ms:4ms][3135 16ms:6ms][3136 16ms:6ms][3137 16ms:6ms][3138 16ms:5ms][3139 16ms:7ms][3140 16ms:7ms]
+[3141 16ms:8ms][3142 16ms:5ms][3143 16ms:6ms][3144 16ms:7ms][3145 16ms:7ms][3146 15ms:8ms][3147 16ms:9ms][3148 16ms:7ms][3149 16ms:0ms][3150 16ms:0ms]
+[3151 16ms:0ms][3152 16ms:0ms][3153 16ms:6ms][3154 16ms:0ms][3155 16ms:0ms][3156 16ms:0ms][3157 16ms:0ms][3158 16ms:0ms][3159 16ms:0ms][3160 16ms:0ms]
+[3161 15ms:0ms][3162 16ms:8ms][3163 15ms:0ms][3164 16ms:0ms][3165 16ms:0ms][3166 16ms:0ms][3167 16ms:0ms]
+
+PULSE: 3168 [15ms:23ms]
+T37 (-15 +27ms): Layout Pass
+T37 (11 +0ms): CSS Pass
+T37 (11 +0ms): Layout Pass
+T37 (12 +0ms): Update bounds
+T37 (12 +0ms): Waiting for previous rendering
+T37 (12 +0ms): Copy state to render graph
+T34 (20 +0ms): Dirty Opts Computed
+T34 (20 +0ms): Painting
+T34 (20 +2ms): Presenting
+Counters:
+	Cached region background image used: 1
+	Nodes rendered: 58
+	Nodes visited during render: 63
+
+[3169 16ms:17ms][3170 16ms:10ms][3171 16ms:8ms][3172 16ms:7ms][3173 16ms:6ms][3174 16ms:8ms][3175 16ms:6ms][3176 16ms:6ms][3177 16ms:7ms][3178 16ms:8ms]
+[3179 16ms:7ms][3180 16ms:5ms][3181 16ms:6ms][3182 16ms:3ms][3183 16ms:3ms][3184 16ms:3ms][3185 16ms:6ms][3186 16ms:4ms][3187 16ms:7ms][3188 16ms:5ms]
+[3189 16ms:7ms][3190 16ms:7ms][3191 16ms:5ms][3192 16ms:5ms][3193 16ms:4ms][3194 16ms:8ms][3195 16ms:6ms][3196 16ms:0ms][3197 16ms:0ms][3198 16ms:0ms]
+[3199 16ms:0ms][3200 16ms:4ms][3201 16ms:0ms][3202 16ms:0ms][3203 16ms:0ms][3204 16ms:0ms][3205 16ms:0ms][3206 16ms:0ms][3207 16ms:0ms][3208 16ms:0ms]
+[3209 16ms:0ms][3210 16ms:6ms][3211 15ms:0ms][3212 16ms:0ms][3213 16ms:0ms][3214 16ms:0ms][3215 16ms:0ms][3216 16ms:17ms][3217 16ms:7ms][3218 15ms:4ms]
+[3219 16ms:7ms][3220 16ms:4ms][3221 16ms:6ms][3222 16ms:3ms][3223 16ms:3ms][3224 16ms:5ms][3225 16ms:5ms][3226 16ms:8ms][3227 16ms:6ms][3228 16ms:4ms]
+[3229 16ms:5ms][3230 16ms:6ms][3231 16ms:9ms][3232 15ms:4ms][3233 16ms:6ms][3234 16ms:5ms][3235 16ms:8ms][3236 16ms:7ms][3237 15ms:7ms][3238 16ms:3ms]
+[3239 16ms:5ms][3240 16ms:7ms][3241 16ms:8ms][3242 16ms:6ms][3243 16ms:7ms][3244 16ms:0ms][3245 15ms:0ms][3246 16ms:0ms][3247 16ms:0ms][3248 16ms:3ms]
+[3249 16ms:0ms][3250 16ms:0ms][3251 16ms:0ms][3252 16ms:0ms][3253 15ms:0ms][3254 16ms:0ms][3255 16ms:0ms][3256 16ms:0ms][3257 16ms:5ms][3258 15ms:0ms]
+[3259 16ms:0ms][3260 16ms:0ms][3261 16ms:0ms][3262 16ms:0ms][3263 16ms:11ms][3264 15ms:5ms][3265 16ms:4ms][3266 16ms:8ms][3267 16ms:7ms][3268 16ms:6ms]
+[3269 16ms:7ms][3270 16ms:9ms][3271 16ms:9ms][3272 16ms:7ms][3273 15ms:6ms][3274 16ms:8ms][3275 16ms:8ms][3276 16ms:5ms][3277 16ms:7ms][3278 16ms:5ms]
+[3279 16ms:9ms][3280 15ms:5ms][3281 16ms:12ms][3282 15ms:7ms][3283 16ms:6ms][3284 16ms:7ms][3285 15ms:6ms][3286 16ms:8ms][3287 16ms:7ms][3288 16ms:8ms]
+[3289 15ms:4ms][3290 16ms:7ms][3291 16ms:0ms][3292 16ms:0ms][3293 16ms:0ms][3294 16ms:0ms][3295 16ms:5ms][3296 16ms:0ms][3297 15ms:0ms][3298 16ms:0ms]
+[3299 16ms:0ms][3300 16ms:0ms][3301 16ms:0ms][3302 16ms:0ms][3303 16ms:0ms][3304 16ms:3ms][3305 16ms:0ms][3306 16ms:0ms][3307 16ms:0ms][3308 16ms:0ms]
+[3309 16ms:0ms][3310 16ms:7ms][3311 16ms:5ms][3312 16ms:6ms][3313 16ms:4ms][3314 16ms:4ms][3315 16ms:4ms][3316 16ms:5ms][3317 16ms:8ms][3318 16ms:5ms]
+[3319 16ms:5ms][3320 16ms:6ms][3321 16ms:6ms][3322 16ms:8ms][3323 16ms:7ms][3324 16ms:7ms][3325 16ms:6ms][3326 16ms:7ms][3327 16ms:6ms][3328 16ms:6ms]
+[3329 16ms:6ms][3330 16ms:7ms][3331 16ms:5ms][3332 16ms:6ms][3333 16ms:5ms][3334 16ms:5ms][3335 16ms:6ms][3336 16ms:8ms][3337 16ms:7ms][3338 16ms:0ms]
+[3339 16ms:0ms][3340 16ms:0ms][3341 16ms:0ms][3342 16ms:4ms][3343 16ms:0ms][3344 16ms:0ms][3345 16ms:0ms][3346 16ms:0ms][3347 16ms:0ms][3348 16ms:0ms]
+[3349 16ms:0ms][3350 16ms:0ms][3351 16ms:5ms][3352 16ms:0ms][3353 16ms:0ms][3354 15ms:0ms][3355 16ms:0ms][3356 16ms:0ms][3357 16ms:11ms][3358 16ms:3ms]
+[3359 16ms:4ms][3360 16ms:6ms][3361 16ms:7ms][3362 16ms:4ms][3363 16ms:9ms][3364 16ms:9ms][3365 16ms:4ms][3366 16ms:4ms][3367 16ms:5ms][3368 16ms:5ms]
+[3369 16ms:5ms][3370 16ms:4ms][3371 16ms:4ms][3372 15ms:6ms][3373 16ms:6ms][3374 16ms:6ms][3375 16ms:7ms][3376 16ms:5ms][3377 16ms:4ms][3378 16ms:7ms]
+[3379 16ms:7ms][3380 16ms:7ms][3381 16ms:6ms][3382 16ms:7ms][3383 16ms:6ms][3384 16ms:7ms][3385 16ms:0ms][3386 16ms:0ms][3387 16ms:0ms][3388 16ms:0ms]
+[3389 16ms:6ms][3390 15ms:0ms][3391 16ms:0ms][3392 16ms:0ms][3393 16ms:0ms][3394 16ms:0ms][3395 16ms:0ms][3396 16ms:0ms][3397 16ms:0ms][3398 16ms:7ms]
+[3399 15ms:0ms][3400 16ms:0ms][3401 16ms:0ms][3402 16ms:0ms][3403 16ms:0ms][3404 16ms:17ms][3405 15ms:6ms][3406 16ms:4ms][3407 16ms:4ms][3408 16ms:4ms]
+[3409 16ms:6ms][3410 16ms:5ms][3411 16ms:6ms][3412 16ms:7ms][3413 15ms:6ms][3414 16ms:6ms][3415 16ms:6ms][3416 16ms:6ms][3417 16ms:7ms][3418 16ms:5ms]
+[3419 16ms:6ms][3420 16ms:8ms][3421 16ms:7ms][3422 16ms:5ms][3423 16ms:7ms][3424 16ms:4ms][3425 16ms:6ms][3426 16ms:5ms][3427 16ms:5ms][3428 16ms:4ms]
+[3429 16ms:4ms][3430 16ms:4ms][3431 16ms:4ms][3432 16ms:0ms][3433 16ms:0ms][3434 16ms:0ms][3435 16ms:0ms][3436 16ms:4ms][3437 16ms:0ms][3438 16ms:0ms]
+[3439 16ms:0ms][3440 16ms:0ms][3441 16ms:0ms][3442 16ms:0ms][3443 16ms:0ms][3444 15ms:0ms][3445 16ms:0ms][3446 16ms:0ms][3447 16ms:0ms][3448 16ms:0ms]
+[3449 15ms:0ms][3450 16ms:0ms]Nov 01, 2026 4:45:10 PM net.stratalauncher.ui.AnimationBenchmark finish
+INFO: Animation benchmark report written to build/bench/before-profile.md
+
+
+PULSE: 3451 [16ms:40ms] Required No Rendering
+
+[3452 41ms:0ms]QuantumRenderer: shutdown

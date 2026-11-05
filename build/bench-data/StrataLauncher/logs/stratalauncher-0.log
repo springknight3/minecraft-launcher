@@ -1,0 +1,8 @@
+Nov 01, 2026 4:43:23 PM net.stratalauncher.ui.AnimationBenchmark finish
+INFO: Animation benchmark report written to build/bench/before-vsync-off.md
+Nov 01, 2026 4:45:10 PM net.stratalauncher.ui.AnimationBenchmark finish
+INFO: Animation benchmark report written to build/bench/before-profile.md
+Nov 01, 2026 5:10:30 PM net.stratalauncher.ui.AnimationBenchmark finish
+INFO: Animation benchmark report written to build/bench/after-vsync-off.md
+Nov 01, 2026 5:14:08 PM net.stratalauncher.ui.AnimationBenchmark finish
+INFO: Animation benchmark report written to build/bench/after-vsync-off.md

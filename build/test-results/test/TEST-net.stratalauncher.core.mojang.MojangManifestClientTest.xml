@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.stratalauncher.core.mojang.MojangManifestClientTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-11-01T23:19:33.753Z" hostname="arch" time="0.01">
+  <properties/>
+  <testcase name="rejectsManifestWithoutLatestReleaseEntry()" classname="net.stratalauncher.core.mojang.MojangManifestClientTest" time="0.005"/>
+  <testcase name="parsesVersionsAndSelectsTheLatestRelease()" classname="net.stratalauncher.core.mojang.MojangManifestClientTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

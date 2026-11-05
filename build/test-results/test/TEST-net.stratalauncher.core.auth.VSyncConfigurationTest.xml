@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.stratalauncher.core.auth.VSyncConfigurationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-11-01T23:19:32.584Z" hostname="arch" time="0.005">
+  <properties/>
+  <testcase name="resolvesOsDefaultConfigAndExplicitOverride()" classname="net.stratalauncher.core.auth.VSyncConfigurationTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

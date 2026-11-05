@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cmake_install.cmake",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/cmake_install.cmake",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/cmake_install.cmake",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/ui/cmake_install.cmake",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/cmake_install.cmake",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,230 @@
+[
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/strata_core_autogen/mocs_compilation.cpp.o -c /home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/mocs_compilation.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/mocs_compilation.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/strata_core_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/auth/AuthSettings.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/auth/AuthSettings.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/auth/AuthSettings.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/auth/AuthSettings.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/auth/AccountManager.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/auth/AccountManager.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/auth/AccountManager.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/auth/AccountManager.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/auth/MicrosoftAuthService.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuthService.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuthService.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/auth/MicrosoftAuthService.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/auth/NativeCredentialStore.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/auth/NativeCredentialStore.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/auth/NativeCredentialStore.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/auth/NativeCredentialStore.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/auth/OfflineAccountStore.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/auth/OfflineAccountStore.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/auth/OfflineAccountStore.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/auth/OfflineAccountStore.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/launch/GameLauncher.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/launch/GameLauncher.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/launch/GameLauncher.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/launch/GameLauncher.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/launch/GameProcess.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/launch/GameProcess.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/launch/GameProcess.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/launch/GameProcess.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/Paths.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/Paths.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/Paths.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/Paths.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/ThemeSettings.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/ThemeSettings.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/ThemeSettings.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/ThemeSettings.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/mojang/MojangManifestClient.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/mojang/MojangManifestClient.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/mojang/MojangManifestClient.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/mojang/MojangManifestClient.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/mojang/MinecraftInstaller.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/mojang/MinecraftInstaller.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/mojang/MinecraftInstaller.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/mojang/MinecraftInstaller.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/download/DownloadManager.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/download/DownloadManager.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/download/DownloadManager.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/download/DownloadManager.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/runtime/JavaRuntimeManager.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/runtime/JavaRuntimeManager.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/runtime/JavaRuntimeManager.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/runtime/JavaRuntimeManager.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/instance/Instance.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/instance/Instance.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/instance/Instance.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/instance/Instance.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/instance/InstanceManager.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/instance/InstanceManager.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/instance/InstanceManager.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/instance/InstanceManager.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/settings/InstanceSettings.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/settings/InstanceSettings.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/settings/InstanceSettings.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/settings/InstanceSettings.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/strata_core_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/core/CMakeFiles/strata_core.dir/logging/LauncherLogging.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/core/logging/LauncherLogging.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/core/logging/LauncherLogging.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core.dir/logging/LauncherLogging.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/ui/strata_ui_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/ui -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtQml -isystem /usr/include/qt6/QtQmlIntegration -isystem /usr/include/qt6/QtQuick -isystem /usr/include/qt6/QtOpenGL -isystem /usr/include/qt6/QtQuickControls2 -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/ui/CMakeFiles/strata_ui.dir/strata_ui_autogen/mocs_compilation.cpp.o -c /home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/ui/strata_ui_autogen/mocs_compilation.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/ui/strata_ui_autogen/mocs_compilation.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/ui/CMakeFiles/strata_ui.dir/strata_ui_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/ui/strata_ui_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/ui -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtQml -isystem /usr/include/qt6/QtQmlIntegration -isystem /usr/include/qt6/QtQuick -isystem /usr/include/qt6/QtOpenGL -isystem /usr/include/qt6/QtQuickControls2 -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/ui/CMakeFiles/strata_ui.dir/LauncherController.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/ui/LauncherController.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/ui/LauncherController.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/ui/CMakeFiles/strata_ui.dir/LauncherController.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/stratalauncher_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -I/home/eli/Projects/minecraft-launcher/cpp/ui -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtQml -isystem /usr/include/qt6/QtQmlIntegration -isystem /usr/include/qt6/QtQuick -isystem /usr/include/qt6/QtOpenGL -isystem /usr/include/qt6/QtQuickControls2 -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/app/CMakeFiles/stratalauncher.dir/stratalauncher_autogen/mocs_compilation.cpp.o -c /home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/stratalauncher_autogen/mocs_compilation.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/stratalauncher_autogen/mocs_compilation.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/CMakeFiles/stratalauncher.dir/stratalauncher_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/stratalauncher_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -I/home/eli/Projects/minecraft-launcher/cpp/ui -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtQml -isystem /usr/include/qt6/QtQmlIntegration -isystem /usr/include/qt6/QtQuick -isystem /usr/include/qt6/QtOpenGL -isystem /usr/include/qt6/QtQuickControls2 -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/app/CMakeFiles/stratalauncher.dir/main.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/app/main.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/app/main.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/CMakeFiles/stratalauncher.dir/main.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/stratalauncher_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -I/home/eli/Projects/minecraft-launcher/cpp/ui -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtQml -isystem /usr/include/qt6/QtQmlIntegration -isystem /usr/include/qt6/QtQuick -isystem /usr/include/qt6/QtOpenGL -isystem /usr/include/qt6/QtQuickControls2 -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/app/CMakeFiles/stratalauncher.dir/stratalauncher_autogen/EWIEGA46WW/qrc_resources.cpp.o -c /home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/stratalauncher_autogen/EWIEGA46WW/qrc_resources.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/stratalauncher_autogen/EWIEGA46WW/qrc_resources.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/CMakeFiles/stratalauncher.dir/stratalauncher_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/eli/Projects/minecraft-launcher/cpp/tests\\\" -DQT_TESTLIB_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_tests_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -I/home/eli/Projects/minecraft-launcher/cpp/ui -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtQml -isystem /usr/include/qt6/QtQmlIntegration -isystem /usr/include/qt6/QtQuick -isystem /usr/include/qt6/QtOpenGL -isystem /usr/include/qt6/QtQuickControls2 -isystem /usr/include/qt6/QtTest -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/tests/CMakeFiles/strata_tests.dir/strata_tests_autogen/mocs_compilation.cpp.o -c /home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_tests_autogen/mocs_compilation.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_tests_autogen/mocs_compilation.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_tests.dir/strata_tests_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/eli/Projects/minecraft-launcher/cpp/tests\\\" -DQT_TESTLIB_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_tests_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -I/home/eli/Projects/minecraft-launcher/cpp/ui -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtQml -isystem /usr/include/qt6/QtQmlIntegration -isystem /usr/include/qt6/QtQuick -isystem /usr/include/qt6/QtOpenGL -isystem /usr/include/qt6/QtQuickControls2 -isystem /usr/include/qt6/QtTest -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/tests/CMakeFiles/strata_tests.dir/LauncherQtTests.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/tests/LauncherQtTests.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/tests/LauncherQtTests.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_tests.dir/LauncherQtTests.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QML_LIB -DQT_QUICKCONTROLS2_LIB -DQT_QUICK_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/eli/Projects/minecraft-launcher/cpp/tests\\\" -DQT_TESTLIB_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_tests_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -I/home/eli/Projects/minecraft-launcher/cpp/ui -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtQml -isystem /usr/include/qt6/QtQmlIntegration -isystem /usr/include/qt6/QtQuick -isystem /usr/include/qt6/QtOpenGL -isystem /usr/include/qt6/QtQuickControls2 -isystem /usr/include/qt6/QtTest -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/tests/CMakeFiles/strata_tests.dir/strata_tests_autogen/7HN2WU36RA/qrc_resources.cpp.o -c /home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_tests_autogen/7HN2WU36RA/qrc_resources.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_tests_autogen/7HN2WU36RA/qrc_resources.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_tests.dir/strata_tests_autogen/7HN2WU36RA/qrc_resources.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/eli/Projects/minecraft-launcher/cpp/tests\\\" -DQT_TESTLIB_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m3_tests_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtTest -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/tests/CMakeFiles/strata_m3_tests.dir/strata_m3_tests_autogen/mocs_compilation.cpp.o -c /home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m3_tests_autogen/mocs_compilation.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m3_tests_autogen/mocs_compilation.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_m3_tests.dir/strata_m3_tests_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/eli/Projects/minecraft-launcher/cpp/tests\\\" -DQT_TESTLIB_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m3_tests_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtTest -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/tests/CMakeFiles/strata_m3_tests.dir/M3CoreTests.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/tests/M3CoreTests.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/tests/M3CoreTests.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_m3_tests.dir/M3CoreTests.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/eli/Projects/minecraft-launcher/cpp/tests\\\" -DQT_TESTLIB_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m4_tests_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtTest -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/tests/CMakeFiles/strata_m4_tests.dir/strata_m4_tests_autogen/mocs_compilation.cpp.o -c /home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m4_tests_autogen/mocs_compilation.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m4_tests_autogen/mocs_compilation.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_m4_tests.dir/strata_m4_tests_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/eli/Projects/minecraft-launcher/cpp/tests\\\" -DQT_TESTLIB_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m4_tests_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtTest -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/tests/CMakeFiles/strata_m4_tests.dir/M4InstallTests.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/tests/M4InstallTests.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/tests/M4InstallTests.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_m4_tests.dir/M4InstallTests.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_process_fixture_autogen/include -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -o cpp/tests/CMakeFiles/strata_process_fixture.dir/strata_process_fixture_autogen/mocs_compilation.cpp.o -c /home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_process_fixture_autogen/mocs_compilation.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_process_fixture_autogen/mocs_compilation.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_process_fixture.dir/strata_process_fixture_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_process_fixture_autogen/include -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -o cpp/tests/CMakeFiles/strata_process_fixture.dir/GameProcessFixture.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/tests/GameProcessFixture.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/tests/GameProcessFixture.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_process_fixture.dir/GameProcessFixture.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/eli/Projects/minecraft-launcher/cpp/tests\\\" -DQT_TESTLIB_LIB -DSTRATA_PROCESS_FIXTURE=\\\"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_process_fixture\\\" -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m5_tests_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtTest -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/tests/CMakeFiles/strata_m5_tests.dir/strata_m5_tests_autogen/mocs_compilation.cpp.o -c /home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m5_tests_autogen/mocs_compilation.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m5_tests_autogen/mocs_compilation.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_m5_tests.dir/strata_m5_tests_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/eli/Projects/minecraft-launcher/cpp/tests\\\" -DQT_TESTLIB_LIB -DSTRATA_PROCESS_FIXTURE=\\\"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_process_fixture\\\" -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m5_tests_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtTest -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/tests/CMakeFiles/strata_m5_tests.dir/M5LaunchTests.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/tests/M5LaunchTests.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/tests/M5LaunchTests.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_m5_tests.dir/M5LaunchTests.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/eli/Projects/minecraft-launcher/cpp/tests\\\" -DQT_TESTLIB_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m6_tests_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtTest -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/tests/CMakeFiles/strata_m6_tests.dir/strata_m6_tests_autogen/mocs_compilation.cpp.o -c /home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m6_tests_autogen/mocs_compilation.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m6_tests_autogen/mocs_compilation.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_m6_tests.dir/strata_m6_tests_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/eli/Projects/minecraft-launcher/cpp/tests\\\" -DQT_TESTLIB_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m6_tests_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtTest -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/tests/CMakeFiles/strata_m6_tests.dir/M6RuntimeTests.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/tests/M6RuntimeTests.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/tests/M6RuntimeTests.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_m6_tests.dir/M6RuntimeTests.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/eli/Projects/minecraft-launcher/cpp/tests\\\" -DQT_TESTLIB_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m7_tests_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtTest -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/tests/CMakeFiles/strata_m7_tests.dir/strata_m7_tests_autogen/mocs_compilation.cpp.o -c /home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m7_tests_autogen/mocs_compilation.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m7_tests_autogen/mocs_compilation.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_m7_tests.dir/strata_m7_tests_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_DBUS_LIB -DQT_NETWORK_LIB -DQT_TESTCASE_BUILDDIR=\\\"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests\\\" -DQT_TESTCASE_SOURCEDIR=\\\"/home/eli/Projects/minecraft-launcher/cpp/tests\\\" -DQT_TESTLIB_LIB -I/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m7_tests_autogen/include -I/home/eli/Projects/minecraft-launcher/cpp/core -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtDBus -isystem /usr/include/qt6/QtTest -O1 -g -fno-omit-frame-pointer -fsanitize=address,undefined -g -std=c++20 -mno-direct-extern-access -o cpp/tests/CMakeFiles/strata_m7_tests.dir/M7AuthTests.cpp.o -c /home/eli/Projects/minecraft-launcher/cpp/tests/M7AuthTests.cpp",
+  "file": "/home/eli/Projects/minecraft-launcher/cpp/tests/M7AuthTests.cpp",
+  "output": "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_m7_tests.dir/M7AuthTests.cpp.o"
+}
+]

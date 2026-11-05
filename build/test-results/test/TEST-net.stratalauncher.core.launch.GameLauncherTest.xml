@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.stratalauncher.core.launch.GameLauncherTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-01T23:19:33.481Z" hostname="arch" time="0.032">
+  <properties/>
+  <testcase name="rejectsConflictingGarbageCollectorsInCustomFlags()" classname="net.stratalauncher.core.launch.GameLauncherTest" time="0.004"/>
+  <testcase name="rejectsInvalidOfflineNamesBeforeNetworkRequests()" classname="net.stratalauncher.core.launch.GameLauncherTest" time="0.007"/>
+  <testcase name="replacesMetadataGarbageCollectorDefaultsWhenCustomCollectorIsSelected()" classname="net.stratalauncher.core.launch.GameLauncherTest" time="0.004"/>
+  <testcase name="resolvesInstanceJavaFlagsOverGlobalDefaults()" classname="net.stratalauncher.core.launch.GameLauncherTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

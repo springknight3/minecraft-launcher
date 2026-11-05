@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.stratalauncher.core.modrinth.ContentManagerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-01T23:19:33.631Z" hostname="arch" time="0.048">
+  <properties/>
+  <testcase name="validatesModrinthDownloadsAndRejectsUnsafeUrlsAndFilenames()" classname="net.stratalauncher.core.modrinth.ContentManagerTest" time="0.008"/>
+  <testcase name="listsOnlyWorldDirectoriesAsDataPackTargets()" classname="net.stratalauncher.core.modrinth.ContentManagerTest" time="0.009"/>
+  <testcase name="removesOnlyTrackedFilesInsideTheInstance()" classname="net.stratalauncher.core.modrinth.ContentManagerTest" time="0.021"/>
+  <testcase name="mapsEachContentCategoryToItsMinecraftDirectory()" classname="net.stratalauncher.core.modrinth.ContentManagerTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

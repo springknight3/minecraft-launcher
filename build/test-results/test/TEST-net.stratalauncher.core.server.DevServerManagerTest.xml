@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.stratalauncher.core.server.DevServerManagerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-01T23:19:33.807Z" hostname="arch" time="0.095">
+  <properties/>
+  <testcase name="createsIsolatedServerAndPersistsEulaAndJvmSettings()" classname="net.stratalauncher.core.server.DevServerManagerTest" time="0.023"/>
+  <testcase name="rejectsUnsafeNamesAndMultiLineJvmFlags()" classname="net.stratalauncher.core.server.DevServerManagerTest" time="0.01"/>
+  <testcase name="selectsNewestStablePaperBuildAndRejectsUnsafeDownloads()" classname="net.stratalauncher.core.server.DevServerManagerTest" time="0.004"/>
+  <testcase name="requiresEulaAndAnInstallationBeforeStart()" classname="net.stratalauncher.core.server.DevServerManagerTest" time="0.014"/>
+  <testcase name="persistsServerOptionsAndPreservesOtherProperties()" classname="net.stratalauncher.core.server.DevServerManagerTest" time="0.014"/>
+  <testcase name="deletesServerDirectoryAndRejectsLaterOperations()" classname="net.stratalauncher.core.server.DevServerManagerTest" time="0.007"/>
+  <testcase name="loadsOlderServerConfigWithDefaultsForNewSettings()" classname="net.stratalauncher.core.server.DevServerManagerTest" time="0.005"/>
+  <testcase name="savesServerPropertiesTextAndSynchronizesManagedSettings()" classname="net.stratalauncher.core.server.DevServerManagerTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

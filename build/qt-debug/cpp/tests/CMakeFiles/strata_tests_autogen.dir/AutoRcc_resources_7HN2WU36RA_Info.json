@@ -1,0 +1,29 @@
+{
+	"BUILD_DIR" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_tests_autogen",
+	"CMAKE_BINARY_DIR" : "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/eli/Projects/minecraft-launcher/cpp/tests",
+	"CMAKE_SOURCE_DIR" : "/home/eli/Projects/minecraft-launcher",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_tests_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/eli/Projects/minecraft-launcher/cpp/app/Motion.qml",
+		"/home/eli/Projects/minecraft-launcher/cpp/app/ThemeAwareIcon.qml",
+		"/home/eli/Projects/minecraft-launcher/cpp/app/FrameTimeOverlay.qml",
+		"/home/eli/Projects/minecraft-launcher/cpp/app/qmldir",
+		"/home/eli/Projects/minecraft-launcher/cpp/app/MainWindow.qml"
+	],
+	"LOCK_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_tests_autogen.dir/AutoRcc_resources_7HN2WU36RA_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "7HN2WU36RA",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_tests_autogen.dir/AutoRcc_resources_7HN2WU36RA_Used.txt",
+	"SOURCE" : "/home/eli/Projects/minecraft-launcher/cpp/app/resources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

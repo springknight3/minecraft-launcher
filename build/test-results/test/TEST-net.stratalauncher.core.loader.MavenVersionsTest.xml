@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.stratalauncher.core.loader.MavenVersionsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-01T23:19:33.547Z" hostname="arch" time="0.072">
+  <properties/>
+  <testcase name="rejectsXmlWithExternalEntityDeclarations()" classname="net.stratalauncher.core.loader.MavenVersionsTest" time="0.05"/>
+  <testcase name="mapsNeoForgeMinecraftVersionsToCompatibleMavenLines()" classname="net.stratalauncher.core.loader.MavenVersionsTest" time="0.006"/>
+  <testcase name="filtersByMinecraftPrefixAndSortsNewestFirst()" classname="net.stratalauncher.core.loader.MavenVersionsTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Fatal Error] :1:10: DOCTYPE is disallowed when the feature "http://apache.org/xml/features/disallow-doctype-decl" set to true.
+]]></system-err>
+</testsuite>

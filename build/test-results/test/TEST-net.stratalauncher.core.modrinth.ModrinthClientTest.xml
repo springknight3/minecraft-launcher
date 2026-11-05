@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.stratalauncher.core.modrinth.ModrinthClientTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-01T23:19:33.681Z" hostname="arch" time="0.071">
+  <properties/>
+  <testcase name="searchesPaperPluginsAndLoadsCompatibleServerVersions()" classname="net.stratalauncher.core.modrinth.ModrinthClientTest" time="0.028"/>
+  <testcase name="loadsCompatibleVersionsFromModrinthVersionEndpoint()" classname="net.stratalauncher.core.modrinth.ModrinthClientTest" time="0.01"/>
+  <testcase name="searchesWithProperUserAgentAndInstanceCompatibilityFacets()" classname="net.stratalauncher.core.modrinth.ModrinthClientTest" time="0.014"/>
+  <testcase name="excludesModVersionsForDifferentLoadersOrMinecraftVersions()" classname="net.stratalauncher.core.modrinth.ModrinthClientTest" time="0.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

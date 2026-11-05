@@ -1,0 +1,97 @@
+{
+	"BUILD_DIR" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m3_tests_autogen",
+	"CMAKE_BINARY_DIR" : "/home/eli/Projects/minecraft-launcher/build/qt-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/eli/Projects/minecraft-launcher/cpp/tests",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/eli/Projects/minecraft-launcher/cpp/tests/CMakeLists.txt",
+		"/home/eli/Projects/minecraft-launcher/cpp/app/resources.qrc"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/eli/Projects/minecraft-launcher",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m3_tests_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "strata_m3_tests_autogen/timestamp",
+	"HEADERS" : [],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m3_tests_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m3_tests_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_DBUS_LIB",
+		"QT_NETWORK_LIB",
+		"QT_TESTCASE_BUILDDIR=\"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests\"",
+		"QT_TESTCASE_SOURCEDIR=\"/home/eli/Projects/minecraft-launcher/cpp/tests\"",
+		"QT_TESTLIB_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/eli/Projects/minecraft-launcher/cpp/core",
+		"/usr/include/qt6/QtCore",
+		"/usr/include/qt6",
+		"/usr/lib/qt6/mkspecs/linux-g++",
+		"/usr/include/qt6/QtNetwork",
+		"/usr/include/qt6/QtDBus",
+		"/usr/include/qt6/QtTest",
+		"/usr/include",
+		"/usr/include/c++/16",
+		"/usr/include/c++/16/x86_64-pc-linux-gnu",
+		"/usr/include/c++/16/backward",
+		"/usr/lib/gcc/x86_64-pc-linux-gnu/16/include",
+		"/usr/local/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-std=c++20",
+		"-w",
+		"-dM",
+		"-E",
+		"/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m3_tests_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : 
+	[
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_tests_autogen/7HN2WU36RA/qrc_resources.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_tests_autogen/mocs_compilation.cpp"
+	],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_m3_tests_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 11,
+	"SETTINGS_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_m3_tests_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/tests/M3CoreTests.cpp",
+			"Mu",
+			null
+		]
+	],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

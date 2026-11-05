@@ -1,0 +1,9 @@
+-rootPath
+/home/eli/Projects/minecraft-launcher/cpp/app
+-cmake-output
+-output-file
+/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.qt/qml_imports/stratalauncher_conf.cmake
+-importPath
+/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app
+-importPath
+/usr/lib/qt6/qml

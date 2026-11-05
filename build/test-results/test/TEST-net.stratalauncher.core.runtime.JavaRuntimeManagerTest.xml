@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.stratalauncher.core.runtime.JavaRuntimeManagerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-01T23:19:33.765Z" hostname="arch" time="0.04">
+  <properties/>
+  <testcase name="usesVersionMetadataAndFallsBackForOlderMinecraftVersions()" classname="net.stratalauncher.core.runtime.JavaRuntimeManagerTest" time="0.003"/>
+  <testcase name="parsesRuntimeFilesAndRejectsTraversalPaths()" classname="net.stratalauncher.core.runtime.JavaRuntimeManagerTest" time="0.005"/>
+  <testcase name="selectsExternalRuntimeComponentFromTheSavedProvider()" classname="net.stratalauncher.core.runtime.JavaRuntimeManagerTest" time="0.005"/>
+  <testcase name="selectsTheNewestOfficialRuntimeForAPlatform()" classname="net.stratalauncher.core.runtime.JavaRuntimeManagerTest" time="0.003"/>
+  <testcase name="resolvesOnlyAnInstalledManagedJavaExecutableWithAMatchingChecksum()" classname="net.stratalauncher.core.runtime.JavaRuntimeManagerTest" time="0.009"/>
+  <testcase name="listsSharedRuntimesAndPreventsDeletingOneThatIsInUse()" classname="net.stratalauncher.core.runtime.JavaRuntimeManagerTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

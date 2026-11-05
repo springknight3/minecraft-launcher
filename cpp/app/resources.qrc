@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file>MainWindow.qml</file>
+        <file>Motion.qml</file>
+        <file>ThemeAwareIcon.qml</file>
+        <file>FrameTimeOverlay.qml</file>
+        <file>qmldir</file>
+    </qresource>
+</RCC>
