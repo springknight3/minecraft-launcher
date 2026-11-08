@@ -3,12 +3,11 @@ strata_m7_tests_autogen/timestamp: \
 	/home/eli/Projects/minecraft-launcher/cpp/app/resources.qrc \
 	/home/eli/Projects/minecraft-launcher/cpp/core/auth/Account.h \
 	/home/eli/Projects/minecraft-launcher/cpp/core/auth/AccountManager.h \
-	/home/eli/Projects/minecraft-launcher/cpp/core/auth/AuthSettings.h \
 	/home/eli/Projects/minecraft-launcher/cpp/core/auth/CredentialStore.h \
-	/home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuthService.h \
 	/home/eli/Projects/minecraft-launcher/cpp/core/auth/OfflineAccountStore.h \
 	/home/eli/Projects/minecraft-launcher/cpp/tests/CMakeLists.txt \
 	/home/eli/Projects/minecraft-launcher/cpp/tests/M7AuthTests.cpp \
+	/home/eli/Projects/minecraft-launcher/cpp/tests/M7AuthTests.h \
 	/usr/include/alloca.h \
 	/usr/include/asm-generic/bitsperlong.h \
 	/usr/include/asm-generic/errno-base.h \

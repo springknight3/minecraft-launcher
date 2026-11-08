@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'ThemeSettings.h'
 **
-** Created by: The Qt Meta Object Compiler version 69 (Qt 6.11.1)
+** Created by: The Qt Meta Object Compiler version 69 (Qt 6.12.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -18,7 +18,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'ThemeSettings.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 69
-#error "This file was generated using the moc from 6.11.1. It"
+#error "This file was generated using the moc from 6.12.0. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -42,11 +42,16 @@ template <> constexpr inline auto ThemeSettings::qt_create_metaobjectdata<qt_met
         "themeChanged",
         "",
         "reduceMotionChanged",
+        "diagnosticsChanged",
+        "settingsError",
+        "message",
         "save",
         "load",
         "toggleTheme",
         "theme",
-        "reduceMotion"
+        "reduceMotion",
+        "vsyncEnabled",
+        "frameTimeOverlayEnabled"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -54,18 +59,28 @@ template <> constexpr inline auto ThemeSettings::qt_create_metaobjectdata<qt_met
         QtMocHelpers::SignalData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'reduceMotionChanged'
         QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'diagnosticsChanged'
+        QtMocHelpers::SignalData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'settingsError'
+        QtMocHelpers::SignalData<void(const QString &)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 6 },
+        }}),
         // Method 'save'
-        QtMocHelpers::MethodData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::MethodData<void()>(7, 2, QMC::AccessPublic, QMetaType::Void),
         // Method 'load'
-        QtMocHelpers::MethodData<void()>(5, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::MethodData<void()>(8, 2, QMC::AccessPublic, QMetaType::Void),
         // Method 'toggleTheme'
-        QtMocHelpers::MethodData<void()>(6, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::MethodData<void()>(9, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
         // property 'theme'
-        QtMocHelpers::PropertyData<QString>(7, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 0),
+        QtMocHelpers::PropertyData<QString>(10, QMetaType::QString, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 0),
         // property 'reduceMotion'
-        QtMocHelpers::PropertyData<bool>(8, QMetaType::Bool, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 1),
+        QtMocHelpers::PropertyData<bool>(11, QMetaType::Bool, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 1),
+        // property 'vsyncEnabled'
+        QtMocHelpers::PropertyData<bool>(12, QMetaType::Bool, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 2),
+        // property 'frameTimeOverlayEnabled'
+        QtMocHelpers::PropertyData<bool>(13, QMetaType::Bool, QMC::DefaultPropertyFlags | QMC::Writable | QMC::StdCppSet, 2),
     };
     QtMocHelpers::UintData qt_enums {
     };
@@ -89,9 +104,11 @@ void ThemeSettings::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         switch (_id) {
         case 0: _t->themeChanged(); break;
         case 1: _t->reduceMotionChanged(); break;
-        case 2: _t->save(); break;
-        case 3: _t->load(); break;
-        case 4: _t->toggleTheme(); break;
+        case 2: _t->diagnosticsChanged(); break;
+        case 3: _t->settingsError((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 4: _t->save(); break;
+        case 5: _t->load(); break;
+        case 6: _t->toggleTheme(); break;
         default: ;
         }
     }
@@ -100,12 +117,18 @@ void ThemeSettings::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
             return;
         if (QtMocHelpers::indexOfMethod<void (ThemeSettings::*)()>(_a, &ThemeSettings::reduceMotionChanged, 1))
             return;
+        if (QtMocHelpers::indexOfMethod<void (ThemeSettings::*)()>(_a, &ThemeSettings::diagnosticsChanged, 2))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (ThemeSettings::*)(const QString & )>(_a, &ThemeSettings::settingsError, 3))
+            return;
     }
     if (_c == QMetaObject::ReadProperty) {
         void *_v = _a[0];
         switch (_id) {
         case 0: *reinterpret_cast<QString*>(_v) = _t->theme(); break;
         case 1: *reinterpret_cast<bool*>(_v) = _t->reduceMotion(); break;
+        case 2: *reinterpret_cast<bool*>(_v) = _t->vsyncEnabled(); break;
+        case 3: *reinterpret_cast<bool*>(_v) = _t->frameTimeOverlayEnabled(); break;
         default: break;
         }
     }
@@ -114,6 +137,8 @@ void ThemeSettings::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         switch (_id) {
         case 0: _t->setTheme(*reinterpret_cast<QString*>(_v)); break;
         case 1: _t->setReduceMotion(*reinterpret_cast<bool*>(_v)); break;
+        case 2: _t->setVsyncEnabled(*reinterpret_cast<bool*>(_v)); break;
+        case 3: _t->setFrameTimeOverlayEnabled(*reinterpret_cast<bool*>(_v)); break;
         default: break;
         }
     }
@@ -138,20 +163,20 @@ int ThemeSettings::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 7)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 7;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 7)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 5;
+        _id -= 7;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 4;
     }
     return _id;
 }
@@ -166,5 +191,17 @@ void ThemeSettings::themeChanged()
 void ThemeSettings::reduceMotionChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+}
+
+// SIGNAL 2
+void ThemeSettings::diagnosticsChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+}
+
+// SIGNAL 3
+void ThemeSettings::settingsError(const QString & _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 3, nullptr, _t1);
 }
 QT_WARNING_POP

@@ -229,9 +229,10 @@
 #define __DEC_EVAL_METHOD__ 2
 #define __FLT_MANT_DIG__ 24
 #define __LDBL_DECIMAL_DIG__ 21
-#define __VERSION__ "16.1.1 20260728"
+#define __VERSION__ "16.2.1 20260810"
 #define __UINT64_C(c) c ## UL
 #define __cpp_unicode_characters 201411L
+#define QT_DBUS_LIB 1
 #define __DEC64X_MIN__ 1E-6143D64x
 #define _STDC_PREDEF_H 1
 #define __INT_LEAST32_MAX__ 0x7fffffff
@@ -459,7 +460,7 @@
 #define __INTMAX_TYPE__ long int
 #define __FLT32X_HAS_QUIET_NAN__ 1
 #define __ATOMIC_CONSUME 1
-#define __GNUC_MINOR__ 1
+#define __GNUC_MINOR__ 2
 #define __UINTMAX_MAX__ 0xffffffffffffffffUL
 #define __PIE__ 2
 #define __FLT32X_DENORM_MIN__ 4.94065645841246544176568792868221372e-324F32x

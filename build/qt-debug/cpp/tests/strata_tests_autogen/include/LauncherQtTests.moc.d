@@ -3,6 +3,8 @@
   /home/eli/Projects/minecraft-launcher/cpp/core/ThemeSettings.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/auth/Account.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/auth/AccountManager.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/auth/CredentialStore.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuth.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/auth/OfflineAccountStore.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/download/DownloadManager.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/download/DownloadTask.h \
@@ -10,10 +12,20 @@
   /home/eli/Projects/minecraft-launcher/cpp/core/instance/InstanceManager.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/launch/GameLauncher.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/launch/GameProcess.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/loader/LoaderInstaller.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ContentManager.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ContentType.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ModrinthClient.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/mojang/MinecraftInstaller.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/mojang/MojangManifestClient.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/runtime/JavaRuntimeManager.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/server/DevServerManager.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/server/ServerDistribution.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/server/ServerProcess.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/settings/LauncherSettings.h \
   /home/eli/Projects/minecraft-launcher/cpp/ui/LauncherController.h \
+  /home/eli/Projects/minecraft-launcher/cpp/ui/content/ContentController.h \
+  /home/eli/Projects/minecraft-launcher/cpp/ui/settings/InstanceSettingsController.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -239,6 +251,7 @@
   /usr/include/c++/16/debug/assertions.h \
   /usr/include/c++/16/debug/debug.h \
   /usr/include/c++/16/exception \
+  /usr/include/c++/16/experimental/source_location \
   /usr/include/c++/16/ext/aligned_buffer.h \
   /usr/include/c++/16/ext/alloc_traits.h \
   /usr/include/c++/16/ext/atomicity.h \
@@ -270,6 +283,7 @@
   /usr/include/c++/16/ratio \
   /usr/include/c++/16/semaphore \
   /usr/include/c++/16/set \
+  /usr/include/c++/16/source_location \
   /usr/include/c++/16/sstream \
   /usr/include/c++/16/stdexcept \
   /usr/include/c++/16/stop_token \
@@ -327,11 +341,14 @@
   /usr/include/pthread.h \
   /usr/include/qt6/QtCore/QByteArray \
   /usr/include/qt6/QtCore/QDateTime \
+  /usr/include/qt6/QtCore/QElapsedTimer \
   /usr/include/qt6/QtCore/QEvent \
+  /usr/include/qt6/QtCore/QFile \
   /usr/include/qt6/QtCore/QFlags \
   /usr/include/qt6/QtCore/QHash \
   /usr/include/qt6/QtCore/QIODevice \
   /usr/include/qt6/QtCore/QJsonArray \
+  /usr/include/qt6/QtCore/QJsonDocument \
   /usr/include/qt6/QtCore/QJsonObject \
   /usr/include/qt6/QtCore/QList \
   /usr/include/qt6/QtCore/QMap \
@@ -355,6 +372,8 @@
   /usr/include/qt6/QtCore/QUrl \
   /usr/include/qt6/QtCore/QVariant \
   /usr/include/qt6/QtCore/QVariantList \
+  /usr/include/qt6/QtCore/QVariantMap \
+  /usr/include/qt6/QtCore/QVector \
   /usr/include/qt6/QtCore/QtTypes \
   /usr/include/qt6/QtCore/q17memory.h \
   /usr/include/qt6/QtCore/q20bit.h \
@@ -414,6 +433,7 @@
   /usr/include/qt6/QtCore/qdebug.h \
   /usr/include/qt6/QtCore/qdir.h \
   /usr/include/qt6/QtCore/qdirlisting.h \
+  /usr/include/qt6/QtCore/qelapsedtimer.h \
   /usr/include/qt6/QtCore/qendian.h \
   /usr/include/qt6/QtCore/qeventloop.h \
   /usr/include/qt6/QtCore/qexceptionhandling.h \
@@ -468,6 +488,8 @@
   /usr/include/qt6/QtCore/qpointer.h \
   /usr/include/qt6/QtCore/qprocess.h \
   /usr/include/qt6/QtCore/qprocessordetection.h \
+  /usr/include/qt6/QtCore/qproperty.h \
+  /usr/include/qt6/QtCore/qpropertyprivate.h \
   /usr/include/qt6/QtCore/qrect.h \
   /usr/include/qt6/QtCore/qrefcount.h \
   /usr/include/qt6/QtCore/qregularexpression.h \
@@ -531,20 +553,27 @@
   /usr/include/qt6/QtCore/quuid.h \
   /usr/include/qt6/QtCore/qvariant.h \
   /usr/include/qt6/QtCore/qvariantlist.h \
+  /usr/include/qt6/QtCore/qvariantmap.h \
   /usr/include/qt6/QtCore/qvarlengtharray.h \
+  /usr/include/qt6/QtCore/qvector.h \
   /usr/include/qt6/QtCore/qversionnumber.h \
   /usr/include/qt6/QtCore/qversiontagging.h \
   /usr/include/qt6/QtCore/qxpfunctional.h \
   /usr/include/qt6/QtCore/qxptype_traits.h \
   /usr/include/qt6/QtCore/qyieldcpu.h \
+  /usr/include/qt6/QtGui/QClipboard \
   /usr/include/qt6/QtGui/QGuiApplication \
   /usr/include/qt6/QtGui/QMatrix4x4 \
   /usr/include/qt6/QtGui/QTransform \
+  /usr/include/qt6/QtGui/qaccessible.h \
+  /usr/include/qt6/QtGui/qaccessible_base.h \
   /usr/include/qt6/QtGui/qbitmap.h \
+  /usr/include/qt6/QtGui/qclipboard.h \
   /usr/include/qt6/QtGui/qcolor.h \
   /usr/include/qt6/QtGui/qcursor.h \
   /usr/include/qt6/QtGui/qevent.h \
   /usr/include/qt6/QtGui/qeventpoint.h \
+  /usr/include/qt6/QtGui/qfont.h \
   /usr/include/qt6/QtGui/qgenericmatrix.h \
   /usr/include/qt6/QtGui/qguiapplication.h \
   /usr/include/qt6/QtGui/qguiapplication_platform.h \
@@ -627,7 +656,9 @@
   /usr/include/qt6/QtQml/qtqmlexports.h \
   /usr/include/qt6/QtQml/qtqmlglobal.h \
   /usr/include/qt6/QtQmlIntegration/qqmlintegration.h \
+  /usr/include/qt6/QtQuick/QQuickItem \
   /usr/include/qt6/QtQuick/QQuickWindow \
+  /usr/include/qt6/QtQuick/qquickitem.h \
   /usr/include/qt6/QtQuick/qquickwindow.h \
   /usr/include/qt6/QtQuick/qsggeometry.h \
   /usr/include/qt6/QtQuick/qsgnode.h \
@@ -670,6 +701,7 @@
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/float.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/limits.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdbool.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h

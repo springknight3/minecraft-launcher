@@ -1,32 +1,93 @@
-Start testing: Nov 02 17:38 CST
+Start testing: Nov 08 14:25 CST
 ----------------------------------------------------------
-6/6 Testing: strata_m7_tests
-6/6 Test: strata_m7_tests
-Command: "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m7_tests"
+1/10 Testing: strata_tests
+1/10 Test: strata_tests
+Command: "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_tests"
 Directory: /home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests
-"strata_m7_tests" start time: Nov 02 17:38 CST
+"strata_tests" start time: Nov 08 14:25 CST
 Output:
 ----------------------------------------------------------
-********* Start testing of M7AuthTests *********
-Config: Using QtTest library 6.11.1, Qt 6.11.1 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 16.1.1 20260430), arch unknown
-PASS   : M7AuthTests::initTestCase()
-PASS   : M7AuthTests::migratesExistingOfflineProfile()
-PASS   : M7AuthTests::persistsAndSelectsMultipleOfflineAccounts()
-PASS   : M7AuthTests::rejectsMalformedAccountRecords()
-PASS   : M7AuthTests::loadsJavaCompatibleCompactOfflineUuid()
-PASS   : M7AuthTests::persistsClientIdWithoutTokens()
-PASS   : M7AuthTests::completesDeviceCodeFlowAndProfileExchange()
-PASS   : M7AuthTests::storesMicrosoftTokensOutsideAccountMetadata()
-PASS   : M7AuthTests::cancelsDeviceCodeFlow()
-PASS   : M7AuthTests::cleanupTestCase()
-Totals: 10 passed, 0 failed, 0 skipped, 0 blacklisted, 2029ms
-********* Finished testing of M7AuthTests *********
+********* Start testing of ThemeSettingsTest *********
+Config: Using QtTest library 6.12.0, Qt 6.12.0 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 16.2.1 20260810), arch unknown
+PASS   : ThemeSettingsTest::initTestCase()
+PASS   : ThemeSettingsTest::roundTrip()
+PASS   : ThemeSettingsTest::launcherSettingsRoundTrip()
+PASS   : ThemeSettingsTest::invalidGlobalJavaFlagsAreRejected()
+PASS   : ThemeSettingsTest::migratesLegacyIniPreferences()
+PASS   : ThemeSettingsTest::bundledAssetsAreAvailable()
+PASS   : ThemeSettingsTest::cleanupTestCase()
+Totals: 7 passed, 0 failed, 0 skipped, 0 blacklisted, 15ms
+********* Finished testing of ThemeSettingsTest *********
+********* Start testing of MotionCurveTest *********
+Config: Using QtTest library 6.12.0, Qt 6.12.0 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 16.2.1 20260810), arch unknown
+PASS   : MotionCurveTest::initTestCase()
+PASS   : MotionCurveTest::curveConstants()
+PASS   : MotionCurveTest::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 1ms
+********* Finished testing of MotionCurveTest *********
+********* Start testing of QmlSmokeTest *********
+Config: Using QtTest library 6.12.0, Qt 6.12.0 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 16.2.1 20260810), arch unknown
+PASS   : QmlSmokeTest::initTestCase()
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() Could not attach Keys property to:  MainWindow_QMLTYPE_71(0x7c1ae0a45440)  is not an Item
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qrc:/qml/ThemeAwareIcon.qml:12:5: QML QQuickImage: Cannot open: qrc:/assets/icons/-light.svg
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qt.qpa.wayland.textinput: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Trying to disable 0x7b8ae0b9de20 but 0x0 is focused
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qt.qpa.wayland.textinput: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Trying to disable 0x7b8ae0b9de20 but 0x0 is focused
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qt.qpa.wayland.textinput: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Trying to disable 0x7b8ae0b9de20 but 0x0 is focused
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qt.qpa.wayland.textinput: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Trying to disable 0x7b8ae0b9de20 but 0x0 is focused
+QWARN  : QmlSmokeTest::smokeLoadMainWindow() qt.qpa.wayland.textinput: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Trying to disable 0x7b8ae0b9de20 but 0x0 is focused
+PASS   : QmlSmokeTest::smokeLoadMainWindow()
+PASS   : QmlSmokeTest::cleanupTestCase()
+Totals: 3 passed, 0 failed, 0 skipped, 0 blacklisted, 2595ms
+********* Finished testing of QmlSmokeTest *********
 <end of output>
-Test time =   2.09 sec
+Test time =   3.11 sec
 ----------------------------------------------------------
 Test Passed.
-"strata_m7_tests" end time: Nov 02 17:38 CST
-"strata_m7_tests" time elapsed: 00:00:02
+"strata_tests" end time: Nov 08 14:25 CST
+"strata_tests" time elapsed: 00:00:03
 ----------------------------------------------------------
 
-End testing: Nov 02 17:38 CST
+End testing: Nov 08 14:25 CST

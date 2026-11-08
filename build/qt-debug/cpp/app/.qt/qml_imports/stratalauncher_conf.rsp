@@ -6,4 +6,9 @@
 -importPath
 /home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app
 -importPath
+/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/StrataLauncher
+-importPath
 /usr/lib/qt6/qml
+-qrcFiles
+/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.qt/rcc/qmake_StrataLauncher.qrc
+/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.qt/rcc/stratalauncher_raw_qml_0.qrc

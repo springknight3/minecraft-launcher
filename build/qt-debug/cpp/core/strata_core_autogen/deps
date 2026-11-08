@@ -5,18 +5,18 @@ strata_core_autogen/timestamp: \
 	/home/eli/Projects/minecraft-launcher/cpp/core/Paths.h \
 	/home/eli/Projects/minecraft-launcher/cpp/core/ThemeSettings.cpp \
 	/home/eli/Projects/minecraft-launcher/cpp/core/ThemeSettings.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/auth/Account.h \
 	/home/eli/Projects/minecraft-launcher/cpp/core/auth/AccountManager.cpp \
 	/home/eli/Projects/minecraft-launcher/cpp/core/auth/AccountManager.h \
-	/home/eli/Projects/minecraft-launcher/cpp/core/auth/AuthSettings.cpp \
-	/home/eli/Projects/minecraft-launcher/cpp/core/auth/AuthSettings.h \
-	/home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuthService.cpp \
-	/home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuthService.h \
-	/home/eli/Projects/minecraft-launcher/cpp/core/auth/NativeCredentialStore.cpp \
-	/home/eli/Projects/minecraft-launcher/cpp/core/auth/NativeCredentialStore.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/auth/CredentialStore.cpp \
+	/home/eli/Projects/minecraft-launcher/cpp/core/auth/CredentialStore.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuth.cpp \
+	/home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuth.h \
 	/home/eli/Projects/minecraft-launcher/cpp/core/auth/OfflineAccountStore.cpp \
 	/home/eli/Projects/minecraft-launcher/cpp/core/auth/OfflineAccountStore.h \
 	/home/eli/Projects/minecraft-launcher/cpp/core/download/DownloadManager.cpp \
 	/home/eli/Projects/minecraft-launcher/cpp/core/download/DownloadManager.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/download/DownloadTask.h \
 	/home/eli/Projects/minecraft-launcher/cpp/core/instance/Instance.cpp \
 	/home/eli/Projects/minecraft-launcher/cpp/core/instance/Instance.h \
 	/home/eli/Projects/minecraft-launcher/cpp/core/instance/InstanceManager.cpp \
@@ -25,16 +25,41 @@ strata_core_autogen/timestamp: \
 	/home/eli/Projects/minecraft-launcher/cpp/core/launch/GameLauncher.h \
 	/home/eli/Projects/minecraft-launcher/cpp/core/launch/GameProcess.cpp \
 	/home/eli/Projects/minecraft-launcher/cpp/core/launch/GameProcess.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/loader/LoaderInstaller.cpp \
+	/home/eli/Projects/minecraft-launcher/cpp/core/loader/LoaderInstaller.h \
 	/home/eli/Projects/minecraft-launcher/cpp/core/logging/LauncherLogging.cpp \
 	/home/eli/Projects/minecraft-launcher/cpp/core/logging/LauncherLogging.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ContentManager.cpp \
+	/home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ContentManager.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ContentType.cpp \
+	/home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ContentType.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ModrinthClient.cpp \
+	/home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ModrinthClient.h \
 	/home/eli/Projects/minecraft-launcher/cpp/core/mojang/MinecraftInstaller.cpp \
 	/home/eli/Projects/minecraft-launcher/cpp/core/mojang/MinecraftInstaller.h \
 	/home/eli/Projects/minecraft-launcher/cpp/core/mojang/MojangManifestClient.cpp \
 	/home/eli/Projects/minecraft-launcher/cpp/core/mojang/MojangManifestClient.h \
 	/home/eli/Projects/minecraft-launcher/cpp/core/runtime/JavaRuntimeManager.cpp \
 	/home/eli/Projects/minecraft-launcher/cpp/core/runtime/JavaRuntimeManager.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/server/DevServerManager.cpp \
+	/home/eli/Projects/minecraft-launcher/cpp/core/server/DevServerManager.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/server/ServerDistribution.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/server/ServerProcess.cpp \
+	/home/eli/Projects/minecraft-launcher/cpp/core/server/ServerProcess.h \
 	/home/eli/Projects/minecraft-launcher/cpp/core/settings/InstanceSettings.cpp \
 	/home/eli/Projects/minecraft-launcher/cpp/core/settings/InstanceSettings.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/settings/LauncherSettings.cpp \
+	/home/eli/Projects/minecraft-launcher/cpp/core/settings/LauncherSettings.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/settings/MinecraftControls.cpp \
+	/home/eli/Projects/minecraft-launcher/cpp/core/settings/MinecraftControls.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/settings/MinecraftOptionValues.cpp \
+	/home/eli/Projects/minecraft-launcher/cpp/core/settings/MinecraftOptionValues.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/settings/NbtFile.cpp \
+	/home/eli/Projects/minecraft-launcher/cpp/core/settings/NbtFile.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/settings/OptionsFile.cpp \
+	/home/eli/Projects/minecraft-launcher/cpp/core/settings/OptionsFile.h \
+	/home/eli/Projects/minecraft-launcher/cpp/core/settings/ServerListStore.cpp \
+	/home/eli/Projects/minecraft-launcher/cpp/core/settings/ServerListStore.h \
 	/usr/include/alloca.h \
 	/usr/include/asm-generic/bitsperlong.h \
 	/usr/include/asm-generic/errno-base.h \
@@ -126,6 +151,7 @@ strata_core_autogen/timestamp: \
 	/usr/include/c++/16/bits/allocated_ptr.h \
 	/usr/include/c++/16/bits/allocator.h \
 	/usr/include/c++/16/bits/atomic_base.h \
+	/usr/include/c++/16/bits/atomic_futex.h \
 	/usr/include/c++/16/bits/atomic_lockfree_defines.h \
 	/usr/include/c++/16/bits/atomic_wait.h \
 	/usr/include/c++/16/bits/basic_ios.h \
@@ -195,6 +221,8 @@ strata_core_autogen/timestamp: \
 	/usr/include/c++/16/bits/sstream.tcc \
 	/usr/include/c++/16/bits/std_abs.h \
 	/usr/include/c++/16/bits/std_function.h \
+	/usr/include/c++/16/bits/std_mutex.h \
+	/usr/include/c++/16/bits/std_thread.h \
 	/usr/include/c++/16/bits/stdexcept_except.h \
 	/usr/include/c++/16/bits/stdexcept_throw.h \
 	/usr/include/c++/16/bits/stdexcept_throwfwd.h \
@@ -226,6 +254,7 @@ strata_core_autogen/timestamp: \
 	/usr/include/c++/16/bits/string_view.tcc \
 	/usr/include/c++/16/bits/stringfwd.h \
 	/usr/include/c++/16/bits/uniform_int_dist.h \
+	/usr/include/c++/16/bits/unique_lock.h \
 	/usr/include/c++/16/bits/unique_ptr.h \
 	/usr/include/c++/16/bits/unordered_map.h \
 	/usr/include/c++/16/bits/unordered_set.h \
@@ -244,6 +273,7 @@ strata_core_autogen/timestamp: \
 	/usr/include/c++/16/cmath \
 	/usr/include/c++/16/compare \
 	/usr/include/c++/16/concepts \
+	/usr/include/c++/16/condition_variable \
 	/usr/include/c++/16/cstddef \
 	/usr/include/c++/16/cstdint \
 	/usr/include/c++/16/cstdio \
@@ -264,6 +294,7 @@ strata_core_autogen/timestamp: \
 	/usr/include/c++/16/ext/type_traits.h \
 	/usr/include/c++/16/format \
 	/usr/include/c++/16/functional \
+	/usr/include/c++/16/future \
 	/usr/include/c++/16/initializer_list \
 	/usr/include/c++/16/ios \
 	/usr/include/c++/16/iosfwd \
@@ -273,6 +304,7 @@ strata_core_autogen/timestamp: \
 	/usr/include/c++/16/list \
 	/usr/include/c++/16/map \
 	/usr/include/c++/16/memory \
+	/usr/include/c++/16/mutex \
 	/usr/include/c++/16/new \
 	/usr/include/c++/16/numeric \
 	/usr/include/c++/16/optional \
@@ -281,9 +313,11 @@ strata_core_autogen/timestamp: \
 	/usr/include/c++/16/pstl/glue_numeric_defs.h \
 	/usr/include/c++/16/pstl/pstl_config.h \
 	/usr/include/c++/16/ratio \
+	/usr/include/c++/16/semaphore \
 	/usr/include/c++/16/set \
 	/usr/include/c++/16/sstream \
 	/usr/include/c++/16/stdexcept \
+	/usr/include/c++/16/stop_token \
 	/usr/include/c++/16/streambuf \
 	/usr/include/c++/16/string \
 	/usr/include/c++/16/string_view \
@@ -338,15 +372,21 @@ strata_core_autogen/timestamp: \
 	/usr/include/pthread.h \
 	/usr/include/qt6/QtCore/QByteArray \
 	/usr/include/qt6/QtCore/QDateTime \
+	/usr/include/qt6/QtCore/QElapsedTimer \
 	/usr/include/qt6/QtCore/QJsonArray \
 	/usr/include/qt6/QtCore/QJsonObject \
+	/usr/include/qt6/QtCore/QList \
 	/usr/include/qt6/QtCore/QMap \
+	/usr/include/qt6/QtCore/QMutex \
 	/usr/include/qt6/QtCore/QObject \
 	/usr/include/qt6/QtCore/QProcess \
-	/usr/include/qt6/QtCore/QSettings \
 	/usr/include/qt6/QtCore/QString \
 	/usr/include/qt6/QtCore/QStringList \
+	/usr/include/qt6/QtCore/QThreadPool \
 	/usr/include/qt6/QtCore/QTimer \
+	/usr/include/qt6/QtCore/QUrl \
+	/usr/include/qt6/QtCore/QVector \
+	/usr/include/qt6/QtCore/QtTypes \
 	/usr/include/qt6/QtCore/q17memory.h \
 	/usr/include/qt6/QtCore/q20bit.h \
 	/usr/include/qt6/QtCore/q20functional.h \
@@ -369,6 +409,7 @@ strata_core_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qbasicatomic.h \
 	/usr/include/qt6/QtCore/qbasictimer.h \
 	/usr/include/qt6/QtCore/qbindingstorage.h \
+	/usr/include/qt6/QtCore/qbitarray.h \
 	/usr/include/qt6/QtCore/qbytearray.h \
 	/usr/include/qt6/QtCore/qbytearrayalgorithms.h \
 	/usr/include/qt6/QtCore/qbytearraylist.h \
@@ -392,6 +433,7 @@ strata_core_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qdatetime.h \
 	/usr/include/qt6/QtCore/qdeadlinetimer.h \
 	/usr/include/qt6/QtCore/qdebug.h \
+	/usr/include/qt6/QtCore/qelapsedtimer.h \
 	/usr/include/qt6/QtCore/qendian.h \
 	/usr/include/qt6/QtCore/qeventloop.h \
 	/usr/include/qt6/QtCore/qexceptionhandling.h \
@@ -424,6 +466,7 @@ strata_core_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qmetacontainer.h \
 	/usr/include/qt6/QtCore/qmetatype.h \
 	/usr/include/qt6/QtCore/qminmax.h \
+	/usr/include/qt6/QtCore/qmutex.h \
 	/usr/include/qt6/QtCore/qnamespace.h \
 	/usr/include/qt6/QtCore/qnumeric.h \
 	/usr/include/qt6/QtCore/qobject.h \
@@ -436,10 +479,10 @@ strata_core_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qprocessordetection.h \
 	/usr/include/qt6/QtCore/qrefcount.h \
 	/usr/include/qt6/QtCore/qregularexpression.h \
+	/usr/include/qt6/QtCore/qrunnable.h \
 	/usr/include/qt6/QtCore/qscopedpointer.h \
 	/usr/include/qt6/QtCore/qscopeguard.h \
 	/usr/include/qt6/QtCore/qset.h \
-	/usr/include/qt6/QtCore/qsettings.h \
 	/usr/include/qt6/QtCore/qshareddata.h \
 	/usr/include/qt6/QtCore/qshareddata_impl.h \
 	/usr/include/qt6/QtCore/qsharedpointer.h \
@@ -471,11 +514,14 @@ strata_core_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qtenvironmentvariables.h \
 	/usr/include/qt6/QtCore/qtextstream.h \
 	/usr/include/qt6/QtCore/qtformat_impl.h \
+	/usr/include/qt6/QtCore/qthread.h \
+	/usr/include/qt6/QtCore/qthreadpool.h \
 	/usr/include/qt6/QtCore/qtimer.h \
 	/usr/include/qt6/QtCore/qtmetamacros.h \
 	/usr/include/qt6/QtCore/qtnoop.h \
 	/usr/include/qt6/QtCore/qtpreprocessorsupport.h \
 	/usr/include/qt6/QtCore/qtresource.h \
+	/usr/include/qt6/QtCore/qtsan_impl.h \
 	/usr/include/qt6/QtCore/qttranslation.h \
 	/usr/include/qt6/QtCore/qttypetraits.h \
 	/usr/include/qt6/QtCore/qtversion.h \
@@ -487,6 +533,7 @@ strata_core_autogen/timestamp: \
 	/usr/include/qt6/QtCore/quuid.h \
 	/usr/include/qt6/QtCore/qvariant.h \
 	/usr/include/qt6/QtCore/qvarlengtharray.h \
+	/usr/include/qt6/QtCore/qvector.h \
 	/usr/include/qt6/QtCore/qversiontagging.h \
 	/usr/include/qt6/QtCore/qxptype_traits.h \
 	/usr/include/qt6/QtCore/qyieldcpu.h \
@@ -504,10 +551,44 @@ strata_core_autogen/timestamp: \
 	/usr/include/time.h \
 	/usr/include/wchar.h \
 	/usr/include/wctype.h \
+	/usr/lib/cmake/Qt6Core/Qt6CoreConfig.cmake \
+	/usr/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake \
+	/usr/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake \
+	/usr/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake \
+	/usr/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake \
+	/usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake \
+	/usr/lib/cmake/Qt6Core/Qt6CoreTargetsPrecheck.cmake \
+	/usr/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake \
+	/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake \
+	/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake \
+	/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake \
+	/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake \
+	/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake \
+	/usr/lib/cmake/Qt6DBus/Qt6DBusConfig.cmake \
+	/usr/lib/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake \
+	/usr/lib/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake \
+	/usr/lib/cmake/Qt6DBus/Qt6DBusDependencies.cmake \
+	/usr/lib/cmake/Qt6DBus/Qt6DBusMacros.cmake \
+	/usr/lib/cmake/Qt6DBus/Qt6DBusTargetsPrecheck.cmake \
+	/usr/lib/cmake/Qt6DBus/Qt6DBusVersionlessAliasTargets.cmake \
+	/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake \
+	/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake \
+	/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake \
+	/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake \
+	/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargetsPrecheck.cmake \
+	/usr/lib/cmake/Qt6Keychain/Qt6KeychainConfig.cmake \
+	/usr/lib/cmake/Qt6Keychain/Qt6KeychainConfigVersion.cmake \
+	/usr/lib/cmake/Qt6Keychain/Qt6KeychainLibraryDepends-noconfig.cmake \
+	/usr/lib/cmake/Qt6Keychain/Qt6KeychainLibraryDepends.cmake \
+	/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/limits.h \
 	/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
 	/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdbool.h \
 	/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h \
+	/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake \
 	/usr/share/cmake/Modules/FindLibArchive.cmake \
 	/usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake \
 	/usr/share/cmake/Modules/FindPackageMessage.cmake \
+	/usr/share/cmake/Modules/FindZLIB.cmake \
+	/usr/share/cmake/Modules/MacroAddFileDependencies.cmake \
+	/usr/share/cmake/Modules/SelectLibraryConfigurations.cmake \
 	/usr/bin/cmake

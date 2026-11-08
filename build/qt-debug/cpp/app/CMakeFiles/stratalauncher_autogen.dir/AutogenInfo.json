@@ -7,6 +7,11 @@
 	"CMAKE_LIST_FILES" : 
 	[
 		"/home/eli/Projects/minecraft-launcher/cpp/app/CMakeLists.txt",
+		"/usr/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
+		"/usr/lib/cmake/Qt6Qml/Qt6QmlModuleDirMappingTemplate.qrc.in",
+		"/usr/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
+		"/usr/share/cmake/Modules/GNUInstallDirs.cmake",
+		"/usr/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
 		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.qt/qml_imports/stratalauncher_conf.cmake",
 		"/home/eli/Projects/minecraft-launcher/cpp/app/resources.qrc"
 	],
@@ -28,7 +33,8 @@
 		"QT_QMLINTEGRATION_LIB",
 		"QT_QML_LIB",
 		"QT_QUICKCONTROLS2_LIB",
-		"QT_QUICK_LIB"
+		"QT_QUICK_LIB",
+		"STRATA_VERSION=\"0.1.0\""
 	],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -39,16 +45,17 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/home/eli/Projects/minecraft-launcher/cpp/app",
 		"/home/eli/Projects/minecraft-launcher/cpp/core",
 		"/home/eli/Projects/minecraft-launcher/cpp/ui",
-		"/usr/include/qt6/QtCore",
+		"/usr/include/qt6/QtQml",
 		"/usr/include/qt6",
+		"/usr/include/qt6/QtCore",
 		"/usr/lib/qt6/mkspecs/linux-g++",
+		"/usr/include/qt6/QtQmlIntegration",
 		"/usr/include/qt6/QtNetwork",
 		"/usr/include/qt6/QtDBus",
 		"/usr/include/qt6/QtGui",
-		"/usr/include/qt6/QtQml",
-		"/usr/include/qt6/QtQmlIntegration",
 		"/usr/include/qt6/QtQuick",
 		"/usr/include/qt6/QtOpenGL",
 		"/usr/include/qt6/QtQuickControls2",
@@ -68,7 +75,7 @@
 		"Q_GADGET_EXPORT",
 		"Q_ENUM_NS"
 	],
-	"MOC_OPTIONS" : [],
+	"MOC_OPTIONS" : [ "--output-json" ],
 	"MOC_PATH_PREFIX" : false,
 	"MOC_PREDEFS_CMD" : 
 	[
@@ -81,14 +88,36 @@
 	],
 	"MOC_PREDEFS_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/stratalauncher_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
-	"MOC_SKIP" : [],
+	"MOC_SKIP" : 
+	[
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.qt/rcc/qrc_qmake_StrataLauncher.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.qt/rcc/qrc_stratalauncher_raw_qml_0.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_ContentSelectionBox_qml.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_FrameTimeOverlay_qml.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_MainWindow_qml.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_Motion_qml.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_StaggeredFade_qml.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_StatusLight_qml.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_StrataButton_qml.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_StrataCheckBox_qml.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_StrataComboBox_qml.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_StrataSpinBox_qml.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_StrataSwitch_qml.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_StrataTabButton_qml.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_StrataTextArea_qml.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_StrataTextField_qml.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_ThemeAwareIcon_qml.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_Theme_qml.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/.rcc/qmlcache/stratalauncher_qmlcache_loader.cpp",
+		"/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/stratalauncher_qmltyperegistrations.cpp"
+	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 4,
 	"PARSE_CACHE_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/CMakeFiles/stratalauncher_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 6,
-	"QT_VERSION_MINOR" : 11,
+	"QT_VERSION_MINOR" : 12,
 	"SETTINGS_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/app/CMakeFiles/stratalauncher_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[

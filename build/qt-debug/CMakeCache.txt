@@ -304,6 +304,24 @@ COVERAGE_COMMAND:FILEPATH=/usr/bin/gcov
 //Extra command line flags to pass to the coverage tool
 COVERAGE_EXTRA_FLAGS:STRING=-l
 
+//Enable to build RPM source packages
+CPACK_SOURCE_RPM:BOOL=OFF
+
+//Enable to build TBZ2 source packages
+CPACK_SOURCE_TBZ2:BOOL=ON
+
+//Enable to build TGZ source packages
+CPACK_SOURCE_TGZ:BOOL=ON
+
+//Enable to build TXZ source packages
+CPACK_SOURCE_TXZ:BOOL=ON
+
+//Enable to build TZ source packages
+CPACK_SOURCE_TZ:BOOL=ON
+
+//Enable to build ZIP source packages
+CPACK_SOURCE_ZIP:BOOL=OFF
+
 //How many times to retry timed-out CTest submissions.
 CTEST_SUBMIT_RETRY_COUNT:STRING=3
 
@@ -385,6 +403,9 @@ QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH:STRING=
 
 //Additional directories where find(Qt6 ...) components are searched
 QT_ADDITIONAL_PACKAGES_PREFIX_PATH:STRING=
+
+//Path to a program.
+QT_INTERNAL_QML_PREVIEW_PATH:FILEPATH=/usr/lib/qt6/bin/qmlpreview
 
 //The directory containing a CMake configuration file for Qt6CoreTools.
 Qt6CoreTools_DIR:PATH=/usr/lib/cmake/Qt6CoreTools
@@ -476,6 +497,15 @@ Vulkan_INCLUDE_DIR:PATH=/usr/include
 //Path to a library.
 Vulkan_LIBRARY:FILEPATH=/usr/lib/libvulkan.so
 
+//Path to a file.
+ZLIB_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+ZLIB_LIBRARY_DEBUG:FILEPATH=ZLIB_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+ZLIB_LIBRARY_RELEASE:FILEPATH=/usr/lib/libz.so
+
 
 ########################
 # INTERNAL cache entries
@@ -492,7 +522,7 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=4
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=4
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=2
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=5
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/usr/bin/cmake
 //Path to cpack program executable.
@@ -677,6 +707,18 @@ CMAKE_WARN_DEPRECATED:INTERNAL=ON
 COVERAGE_COMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: COVERAGE_EXTRA_FLAGS
 COVERAGE_EXTRA_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_RPM
+CPACK_SOURCE_RPM-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TBZ2
+CPACK_SOURCE_TBZ2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TGZ
+CPACK_SOURCE_TGZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TXZ
+CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TZ
+CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_ZIP
+CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CTEST_SUBMIT_RETRY_COUNT
 CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CTEST_SUBMIT_RETRY_DELAY
@@ -684,7 +726,7 @@ CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //Details about finding LibArchive
-FIND_PACKAGE_MESSAGE_DETAILS_LibArchive:INTERNAL=[/usr/lib/libarchive.so][/usr/include][v3.8.9()]
+FIND_PACKAGE_MESSAGE_DETAILS_LibArchive:INTERNAL=[/usr/lib/libarchive.so][/usr/include][v3.8.11()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/libOpenGL.so][/usr/lib/libGLX.so][/usr/include][ ][v()]
 //Details about finding Threads
@@ -695,6 +737,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_WrapAtomic:INTERNAL=[1][v()]
 FIND_PACKAGE_MESSAGE_DETAILS_WrapOpenGL:INTERNAL=[ON][v()]
 //Details about finding WrapVulkanHeaders
 FIND_PACKAGE_MESSAGE_DETAILS_WrapVulkanHeaders:INTERNAL=[/usr/include][v()]
+//Details about finding ZLIB
+FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[/usr/lib/libz.so][/usr/include][ ][v1.3.2()]
 //ADVANCED property for variable: GITCOMMAND
 GITCOMMAND-ADVANCED:INTERNAL=1
 //Test HAVE_STDATOMIC
@@ -797,6 +841,8 @@ QT_FEATURE_brotli:INTERNAL=ON
 QT_FEATURE_cborstreamreader:INTERNAL=ON
 //Qt feature: cborstreamwriter (from target Qt6::Core)
 QT_FEATURE_cborstreamwriter:INTERNAL=ON
+//Qt feature: clang_module_maps (from target Qt6::Core)
+QT_FEATURE_clang_module_maps:INTERNAL=OFF
 //Qt feature: clipboard (from target Qt6::Gui)
 QT_FEATURE_clipboard:INTERNAL=ON
 //Qt feature: clock_gettime (from target Qt6::Core)
@@ -981,10 +1027,14 @@ QT_FEATURE_gssapi:INTERNAL=ON
 QT_FEATURE_gui:INTERNAL=ON
 //Qt feature: harfbuzz (from target Qt6::Gui)
 QT_FEATURE_harfbuzz:INTERNAL=ON
+//Qt feature: harmony_dnsresolver (from target Qt6::Network)
+QT_FEATURE_harmony_dnsresolver:INTERNAL=OFF
 //Qt feature: highdpiscaling (from target Qt6::Gui)
 QT_FEATURE_highdpiscaling:INTERNAL=ON
 //Qt feature: hijricalendar (from target Qt6::Core)
 QT_FEATURE_hijricalendar:INTERNAL=ON
+//Qt feature: hostinfocache (from target Qt6::Network)
+QT_FEATURE_hostinfocache:INTERNAL=OFF
 //Qt feature: http (from target Qt6::Network)
 QT_FEATURE_http:INTERNAL=ON
 //Qt feature: ico (from target Qt6::Gui)
@@ -1132,7 +1182,7 @@ QT_FEATURE_opengles32:INTERNAL=OFF
 //Qt feature: openssl (from target Qt6::Core)
 QT_FEATURE_openssl:INTERNAL=ON
 //Qt feature: openssl_hash (from target Qt6::Core)
-QT_FEATURE_openssl_hash:INTERNAL=OFF
+QT_FEATURE_openssl_hash:INTERNAL=ON
 //Qt feature: openssl_linked (from target Qt6::Core)
 QT_FEATURE_openssl_linked:INTERNAL=ON
 //Qt feature: opensslv11 (from target Qt6::Core)
@@ -1141,6 +1191,8 @@ QT_FEATURE_opensslv11:INTERNAL=OFF
 QT_FEATURE_opensslv30:INTERNAL=ON
 //Qt feature: openvg (from target Qt6::Gui)
 QT_FEATURE_openvg:INTERNAL=OFF
+//Qt feature: optimized_tools (from target Qt6::Core)
+QT_FEATURE_optimized_tools:INTERNAL=OFF
 //Qt feature: pcre2 (from target Qt6::Core)
 QT_FEATURE_pcre2:INTERNAL=ON
 //Qt feature: pdf (from target Qt6::Gui)
@@ -1197,6 +1249,8 @@ QT_FEATURE_qml_animation:INTERNAL=ON
 QT_FEATURE_qml_debug:INTERNAL=ON
 //Qt feature: qml_delegate_model (from target Qt6::QmlModels)
 QT_FEATURE_qml_delegate_model:INTERNAL=ON
+//Qt feature: qml_designsupport (from target Qt6::Qml)
+QT_FEATURE_qml_designsupport:INTERNAL=ON
 //Qt feature: qml_itemmodel (from target Qt6::Qml)
 QT_FEATURE_qml_itemmodel:INTERNAL=ON
 //Qt feature: qml_jit (from target Qt6::Qml)
@@ -1235,6 +1289,8 @@ QT_FEATURE_qml_xml_http_request:INTERNAL=ON
 QT_FEATURE_qml_xmllistmodel:INTERNAL=ON
 //Qt feature: qmlcontextpropertydump (from target Qt6::Qml)
 QT_FEATURE_qmlcontextpropertydump:INTERNAL=ON
+//Qt feature: qqnx_eventfd (from target Qt6::Core)
+QT_FEATURE_qqnx_eventfd:INTERNAL=OFF
 //Qt feature: qqnx_imf (from target Qt6::Gui)
 QT_FEATURE_qqnx_imf:INTERNAL=OFF
 //Qt feature: qqnx_pps (from target Qt6::Core)
@@ -1312,6 +1368,10 @@ QT_FEATURE_quicktemplates2_container:INTERNAL=ON
 QT_FEATURE_quicktemplates2_hover:INTERNAL=ON
 //Qt feature: quicktemplates2_multitouch (from target Qt6::QuickTemplates2)
 QT_FEATURE_quicktemplates2_multitouch:INTERNAL=ON
+//Qt feature: randomgenerator_disable_fallback (from target Qt6::Core)
+QT_FEATURE_randomgenerator_disable_fallback:INTERNAL=OFF
+//Qt feature: rangemodel (from target Qt6::Core)
+QT_FEATURE_rangemodel:INTERNAL=ON
 //Qt feature: raster_64bit (from target Qt6::Gui)
 QT_FEATURE_raster_64bit:INTERNAL=ON
 //Qt feature: raster_fp (from target Qt6::Gui)
@@ -1394,12 +1454,16 @@ QT_FEATURE_stack_protector:INTERNAL=ON
 QT_FEATURE_standarditemmodel:INTERNAL=ON
 //Qt feature: static (from target Qt6::Core)
 QT_FEATURE_static:INTERNAL=OFF
+//Qt feature: static_compiler_runtime (from target Qt6::Core)
+QT_FEATURE_static_compiler_runtime:INTERNAL=OFF
 //Qt feature: std_atomic64 (from target Qt6::Core)
 QT_FEATURE_std_atomic64:INTERNAL=ON
 //Qt feature: stdlib_libcpp (from target Qt6::Core)
 QT_FEATURE_stdlib_libcpp:INTERNAL=OFF
 //Qt feature: stringlistmodel (from target Qt6::Core)
 QT_FEATURE_stringlistmodel:INTERNAL=ON
+//Qt feature: swift_interop (from target Qt6::Core)
+QT_FEATURE_swift_interop:INTERNAL=OFF
 //Qt feature: syslog (from target Qt6::Core)
 QT_FEATURE_syslog:INTERNAL=OFF
 //Qt feature: system_doubleconversion (from target Qt6::Core)
@@ -1436,6 +1500,10 @@ QT_FEATURE_sysv_shm:INTERNAL=ON
 QT_FEATURE_tabletevent:INTERNAL=ON
 //Qt feature: temporaryfile (from target Qt6::Core)
 QT_FEATURE_temporaryfile:INTERNAL=ON
+//Qt feature: test_auto (from target Qt6::Core)
+QT_FEATURE_test_auto:INTERNAL=ON
+//Qt feature: test_baseline (from target Qt6::Core)
+QT_FEATURE_test_baseline:INTERNAL=OFF
 //Qt feature: test_gui (from target Qt6::Core)
 QT_FEATURE_test_gui:INTERNAL=ON
 //Qt feature: test_squish (from target Qt6::Core)
@@ -1562,6 +1630,8 @@ QT_FEATURE_wheelevent:INTERNAL=ON
 QT_FEATURE_widgets:INTERNAL=ON
 //Qt feature: windows_ioring (from target Qt6::Core)
 QT_FEATURE_windows_ioring:INTERNAL=OFF
+//Qt feature: windows_ioring_runtime (from target Qt6::Core)
+QT_FEATURE_windows_ioring_runtime:INTERNAL=OFF
 //Qt feature: windows_ioring_skip_builder_param_checks (from target
 // Qt6::Core)
 QT_FEATURE_windows_ioring_skip_builder_param_checks:INTERNAL=OFF
@@ -1581,6 +1651,8 @@ QT_FEATURE_xcb_glx_plugin:INTERNAL=ON
 QT_FEATURE_xcb_sm:INTERNAL=ON
 //Qt feature: xcb_xlib (from target Qt6::Gui)
 QT_FEATURE_xcb_xlib:INTERNAL=ON
+//Qt feature: xdg_desktop_portal_file_transfer (from target Qt6::Gui)
+QT_FEATURE_xdg_desktop_portal_file_transfer:INTERNAL=ON
 //Qt feature: xkbcommon (from target Qt6::Gui)
 QT_FEATURE_xkbcommon:INTERNAL=ON
 //Qt feature: xkbcommon_x11 (from target Qt6::Gui)
@@ -1607,6 +1679,12 @@ Vulkan_GLSLC_EXECUTABLE-ADVANCED:INTERNAL=1
 Vulkan_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Vulkan_LIBRARY
 Vulkan_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ZLIB_INCLUDE_DIR
+ZLIB_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ZLIB_LIBRARY_DEBUG
+ZLIB_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ZLIB_LIBRARY_RELEASE
+ZLIB_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 __qt_qml_macros_module_base_dir:INTERNAL=/usr/lib/cmake/Qt6Qml

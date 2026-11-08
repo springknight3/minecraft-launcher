@@ -13,7 +13,15 @@
 	"CROSS_CONFIG" : false,
 	"DEP_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m7_tests_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "strata_m7_tests_autogen/timestamp",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/tests/M7AuthTests.h",
+			"Mu",
+			"EWIEGA46WW/moc_M7AuthTests.cpp",
+			null
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m7_tests_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m7_tests_autogen/mocs_compilation.cpp",
@@ -87,7 +95,7 @@
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 6,
-	"QT_VERSION_MINOR" : 11,
+	"QT_VERSION_MINOR" : 12,
 	"SETTINGS_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/CMakeFiles/strata_m7_tests_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[

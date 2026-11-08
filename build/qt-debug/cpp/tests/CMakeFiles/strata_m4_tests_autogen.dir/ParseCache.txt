@@ -338,6 +338,7 @@
  mdp:/usr/include/qt6/QtCore/qatomic_cxx11.h
  mdp:/usr/include/qt6/QtCore/qbasicatomic.h
  mdp:/usr/include/qt6/QtCore/qbindingstorage.h
+ mdp:/usr/include/qt6/QtCore/qbitarray.h
  mdp:/usr/include/qt6/QtCore/qbytearray.h
  mdp:/usr/include/qt6/QtCore/qbytearrayalgorithms.h
  mdp:/usr/include/qt6/QtCore/qbytearraylist.h

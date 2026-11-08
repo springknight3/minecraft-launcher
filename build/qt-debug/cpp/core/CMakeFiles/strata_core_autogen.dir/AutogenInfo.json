@@ -9,6 +9,51 @@
 		"/home/eli/Projects/minecraft-launcher/cpp/core/CMakeLists.txt",
 		"/usr/share/cmake/Modules/FindLibArchive.cmake",
 		"/usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake/Modules/FindPackageMessage.cmake",
+		"/usr/lib/cmake/Qt6Keychain/Qt6KeychainConfigVersion.cmake",
+		"/usr/lib/cmake/Qt6Keychain/Qt6KeychainConfig.cmake",
+		"/usr/lib/cmake/Qt6Keychain/Qt6KeychainLibraryDepends.cmake",
+		"/usr/lib/cmake/Qt6Keychain/Qt6KeychainLibraryDepends-noconfig.cmake",
+		"/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake",
+		"/usr/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake",
+		"/usr/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
+		"/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
+		"/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake",
+		"/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake",
+		"/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake",
+		"/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake",
+		"/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake",
+		"/usr/lib/cmake/Qt6Core/Qt6CoreTargetsPrecheck.cmake",
+		"/usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+		"/usr/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake",
+		"/usr/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake",
+		"/usr/lib/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake",
+		"/usr/lib/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake",
+		"/usr/lib/cmake/Qt6DBus/Qt6DBusConfig.cmake",
+		"/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib/cmake/Qt6DBus/Qt6DBusDependencies.cmake",
+		"/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake",
+		"/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake",
+		"/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake",
+		"/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake",
+		"/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake",
+		"/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake",
+		"/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake",
+		"/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake",
+		"/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake",
+		"/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargetsPrecheck.cmake",
+		"/usr/lib/cmake/Qt6DBus/Qt6DBusTargetsPrecheck.cmake",
+		"/usr/lib/cmake/Qt6DBus/Qt6DBusMacros.cmake",
+		"/usr/share/cmake/Modules/MacroAddFileDependencies.cmake",
+		"/usr/lib/cmake/Qt6DBus/Qt6DBusVersionlessAliasTargets.cmake",
+		"/usr/share/cmake/Modules/FindZLIB.cmake",
+		"/usr/share/cmake/Modules/SelectLibraryConfigurations.cmake",
+		"/usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake",
 		"/usr/share/cmake/Modules/FindPackageMessage.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/eli/Projects/minecraft-launcher",
@@ -36,21 +81,15 @@
 			null
 		],
 		[
-			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/AuthSettings.h",
+			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/CredentialStore.h",
 			"Mu",
-			"RDF3ATUBBW/moc_AuthSettings.cpp",
+			"RDF3ATUBBW/moc_CredentialStore.cpp",
 			null
 		],
 		[
-			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuthService.h",
+			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuth.h",
 			"Mu",
-			"RDF3ATUBBW/moc_MicrosoftAuthService.cpp",
-			null
-		],
-		[
-			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/NativeCredentialStore.h",
-			"Mu",
-			"RDF3ATUBBW/moc_NativeCredentialStore.cpp",
+			"RDF3ATUBBW/moc_MicrosoftAuth.cpp",
 			null
 		],
 		[
@@ -90,9 +129,33 @@
 			null
 		],
 		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/loader/LoaderInstaller.h",
+			"Mu",
+			"JZE6GUNDX3/moc_LoaderInstaller.cpp",
+			null
+		],
+		[
 			"/home/eli/Projects/minecraft-launcher/cpp/core/logging/LauncherLogging.h",
 			"Mu",
 			"SHPYQPRM5Q/moc_LauncherLogging.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ContentManager.h",
+			"Mu",
+			"H4WVNFD4VV/moc_ContentManager.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ContentType.h",
+			"Mu",
+			"H4WVNFD4VV/moc_ContentType.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ModrinthClient.h",
+			"Mu",
+			"H4WVNFD4VV/moc_ModrinthClient.cpp",
 			null
 		],
 		[
@@ -114,9 +177,57 @@
 			null
 		],
 		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/server/DevServerManager.h",
+			"Mu",
+			"ORNZQ2F6DW/moc_DevServerManager.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/server/ServerProcess.h",
+			"Mu",
+			"ORNZQ2F6DW/moc_ServerProcess.cpp",
+			null
+		],
+		[
 			"/home/eli/Projects/minecraft-launcher/cpp/core/settings/InstanceSettings.h",
 			"Mu",
 			"YPB6MEUM2W/moc_InstanceSettings.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/settings/LauncherSettings.h",
+			"Mu",
+			"YPB6MEUM2W/moc_LauncherSettings.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/settings/MinecraftControls.h",
+			"Mu",
+			"YPB6MEUM2W/moc_MinecraftControls.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/settings/MinecraftOptionValues.h",
+			"Mu",
+			"YPB6MEUM2W/moc_MinecraftOptionValues.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/settings/NbtFile.h",
+			"Mu",
+			"YPB6MEUM2W/moc_NbtFile.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/settings/OptionsFile.h",
+			"Mu",
+			"YPB6MEUM2W/moc_OptionsFile.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/settings/ServerListStore.h",
+			"Mu",
+			"YPB6MEUM2W/moc_ServerListStore.cpp",
 			null
 		]
 	],
@@ -175,7 +286,7 @@
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 6,
-	"QT_VERSION_MINOR" : 11,
+	"QT_VERSION_MINOR" : 12,
 	"SETTINGS_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/core/CMakeFiles/strata_core_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
@@ -195,17 +306,12 @@
 			null
 		],
 		[
-			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/AuthSettings.cpp",
+			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/CredentialStore.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuthService.cpp",
-			"Mu",
-			null
-		],
-		[
-			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/NativeCredentialStore.cpp",
+			"/home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuth.cpp",
 			"Mu",
 			null
 		],
@@ -240,7 +346,27 @@
 			null
 		],
 		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/loader/LoaderInstaller.cpp",
+			"Mu",
+			null
+		],
+		[
 			"/home/eli/Projects/minecraft-launcher/cpp/core/logging/LauncherLogging.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ContentManager.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ContentType.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ModrinthClient.cpp",
 			"Mu",
 			null
 		],
@@ -260,7 +386,47 @@
 			null
 		],
 		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/server/DevServerManager.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/server/ServerProcess.cpp",
+			"Mu",
+			null
+		],
+		[
 			"/home/eli/Projects/minecraft-launcher/cpp/core/settings/InstanceSettings.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/settings/LauncherSettings.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/settings/MinecraftControls.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/settings/MinecraftOptionValues.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/settings/NbtFile.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/settings/OptionsFile.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/core/settings/ServerListStore.cpp",
 			"Mu",
 			null
 		]

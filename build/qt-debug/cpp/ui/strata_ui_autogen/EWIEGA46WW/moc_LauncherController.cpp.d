@@ -3,7 +3,7 @@
   /home/eli/Projects/minecraft-launcher/cpp/core/auth/Account.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/auth/AccountManager.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/auth/CredentialStore.h \
-  /home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuthService.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuth.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/auth/OfflineAccountStore.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/download/DownloadManager.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/download/DownloadTask.h \
@@ -11,9 +11,19 @@
   /home/eli/Projects/minecraft-launcher/cpp/core/instance/InstanceManager.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/launch/GameLauncher.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/launch/GameProcess.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/loader/LoaderInstaller.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ContentManager.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ContentType.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ModrinthClient.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/mojang/MinecraftInstaller.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/mojang/MojangManifestClient.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/runtime/JavaRuntimeManager.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/server/DevServerManager.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/server/ServerDistribution.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/server/ServerProcess.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/settings/LauncherSettings.h \
+  /home/eli/Projects/minecraft-launcher/cpp/ui/content/ContentController.h \
+  /home/eli/Projects/minecraft-launcher/cpp/ui/settings/InstanceSettingsController.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -326,8 +336,10 @@
   /usr/include/pthread.h \
   /usr/include/qt6/QtCore/QByteArray \
   /usr/include/qt6/QtCore/QDateTime \
+  /usr/include/qt6/QtCore/QElapsedTimer \
   /usr/include/qt6/QtCore/QHash \
   /usr/include/qt6/QtCore/QJsonArray \
+  /usr/include/qt6/QtCore/QJsonDocument \
   /usr/include/qt6/QtCore/QJsonObject \
   /usr/include/qt6/QtCore/QList \
   /usr/include/qt6/QtCore/QMap \
@@ -342,6 +354,8 @@
   /usr/include/qt6/QtCore/QUrl \
   /usr/include/qt6/QtCore/QVariant \
   /usr/include/qt6/QtCore/QVariantList \
+  /usr/include/qt6/QtCore/QVariantMap \
+  /usr/include/qt6/QtCore/QVector \
   /usr/include/qt6/QtCore/QtTypes \
   /usr/include/qt6/QtCore/q17memory.h \
   /usr/include/qt6/QtCore/q20bit.h \
@@ -365,6 +379,7 @@
   /usr/include/qt6/QtCore/qbasicatomic.h \
   /usr/include/qt6/QtCore/qbasictimer.h \
   /usr/include/qt6/QtCore/qbindingstorage.h \
+  /usr/include/qt6/QtCore/qbitarray.h \
   /usr/include/qt6/QtCore/qbytearray.h \
   /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
   /usr/include/qt6/QtCore/qbytearraylist.h \
@@ -388,6 +403,7 @@
   /usr/include/qt6/QtCore/qdatetime.h \
   /usr/include/qt6/QtCore/qdeadlinetimer.h \
   /usr/include/qt6/QtCore/qdebug.h \
+  /usr/include/qt6/QtCore/qelapsedtimer.h \
   /usr/include/qt6/QtCore/qendian.h \
   /usr/include/qt6/QtCore/qeventloop.h \
   /usr/include/qt6/QtCore/qexceptionhandling.h \
@@ -488,7 +504,9 @@
   /usr/include/qt6/QtCore/quuid.h \
   /usr/include/qt6/QtCore/qvariant.h \
   /usr/include/qt6/QtCore/qvariantlist.h \
+  /usr/include/qt6/QtCore/qvariantmap.h \
   /usr/include/qt6/QtCore/qvarlengtharray.h \
+  /usr/include/qt6/QtCore/qvector.h \
   /usr/include/qt6/QtCore/qversiontagging.h \
   /usr/include/qt6/QtCore/qxptype_traits.h \
   /usr/include/qt6/QtCore/qyieldcpu.h \
@@ -506,6 +524,7 @@
   /usr/include/time.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/limits.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdbool.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h

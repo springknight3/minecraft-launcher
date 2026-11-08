@@ -16,6 +16,18 @@
 			"Mu",
 			"EWIEGA46WW/moc_LauncherController.cpp",
 			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/ui/content/ContentController.h",
+			"Mu",
+			"VC6WTN73GF/moc_ContentController.cpp",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/ui/settings/InstanceSettingsController.h",
+			"Mu",
+			"YPB6MEUM2W/moc_InstanceSettingsController.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -91,12 +103,22 @@
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 6,
-	"QT_VERSION_MINOR" : 11,
+	"QT_VERSION_MINOR" : 12,
 	"SETTINGS_FILE" : "/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/ui/CMakeFiles/strata_ui_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
 			"/home/eli/Projects/minecraft-launcher/cpp/ui/LauncherController.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/ui/content/ContentController.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/eli/Projects/minecraft-launcher/cpp/ui/settings/InstanceSettingsController.cpp",
 			"Mu",
 			null
 		]

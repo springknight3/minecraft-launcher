@@ -2,10 +2,10 @@
   /home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_m7_tests_autogen/moc_predefs.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/auth/Account.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/auth/AccountManager.h \
-  /home/eli/Projects/minecraft-launcher/cpp/core/auth/AuthSettings.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/auth/CredentialStore.h \
-  /home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuthService.h \
+  /home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuth.h \
   /home/eli/Projects/minecraft-launcher/cpp/core/auth/OfflineAccountStore.h \
+  /home/eli/Projects/minecraft-launcher/cpp/tests/M7AuthTests.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -318,14 +318,10 @@
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/qt6/QtCore/QDateTime \
-  /usr/include/qt6/QtCore/QDir \
   /usr/include/qt6/QtCore/QFile \
-  /usr/include/qt6/QtCore/QFileInfo \
   /usr/include/qt6/QtCore/QFlags \
   /usr/include/qt6/QtCore/QHash \
   /usr/include/qt6/QtCore/QIODevice \
-  /usr/include/qt6/QtCore/QJsonArray \
-  /usr/include/qt6/QtCore/QJsonDocument \
   /usr/include/qt6/QtCore/QJsonObject \
   /usr/include/qt6/QtCore/QList \
   /usr/include/qt6/QtCore/QMetaType \
@@ -336,6 +332,7 @@
   /usr/include/qt6/QtCore/QTemporaryDir \
   /usr/include/qt6/QtCore/QUrl \
   /usr/include/qt6/QtCore/QVariant \
+  /usr/include/qt6/QtCore/QVariantList \
   /usr/include/qt6/QtCore/q17memory.h \
   /usr/include/qt6/QtCore/q20bit.h \
   /usr/include/qt6/QtCore/q20functional.h \
@@ -414,7 +411,6 @@
   /usr/include/qt6/QtCore/qiodevicebase.h \
   /usr/include/qt6/QtCore/qiterable.h \
   /usr/include/qt6/QtCore/qiterator.h \
-  /usr/include/qt6/QtCore/qjsonarray.h \
   /usr/include/qt6/QtCore/qjsondocument.h \
   /usr/include/qt6/QtCore/qjsonobject.h \
   /usr/include/qt6/QtCore/qjsonparseerror.h \
@@ -500,6 +496,7 @@
   /usr/include/qt6/QtCore/qutf8stringview.h \
   /usr/include/qt6/QtCore/quuid.h \
   /usr/include/qt6/QtCore/qvariant.h \
+  /usr/include/qt6/QtCore/qvariantlist.h \
   /usr/include/qt6/QtCore/qvarlengtharray.h \
   /usr/include/qt6/QtCore/qversiontagging.h \
   /usr/include/qt6/QtCore/qxpfunctional.h \
@@ -512,8 +509,6 @@
   /usr/include/qt6/QtNetwork/QNetworkRequest \
   /usr/include/qt6/QtNetwork/QSslConfiguration \
   /usr/include/qt6/QtNetwork/QSslPreSharedKeyAuthenticator \
-  /usr/include/qt6/QtNetwork/QTcpServer \
-  /usr/include/qt6/QtNetwork/QTcpSocket \
   /usr/include/qt6/QtNetwork/qabstractsocket.h \
   /usr/include/qt6/QtNetwork/qhostaddress.h \
   /usr/include/qt6/QtNetwork/qhttpheaders.h \
@@ -527,7 +522,6 @@
   /usr/include/qt6/QtNetwork/qsslerror.h \
   /usr/include/qt6/QtNetwork/qsslpresharedkeyauthenticator.h \
   /usr/include/qt6/QtNetwork/qsslsocket.h \
-  /usr/include/qt6/QtNetwork/qtcpserver.h \
   /usr/include/qt6/QtNetwork/qtcpsocket.h \
   /usr/include/qt6/QtNetwork/qtnetwork-config.h \
   /usr/include/qt6/QtNetwork/qtnetworkexports.h \
@@ -558,6 +552,7 @@
   /usr/include/time.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/limits.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdbool.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h

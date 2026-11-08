@@ -1,6 +1,9 @@
 {
   "name": "stratalauncher",
   "version-string": "0.1.0",
-  "builtin-baseline": "0000000000000000000000000000000000000000",
-  "dependencies": []
+  "builtin-baseline": "ec48c11eae9448c8c6e7739d93e06fa2433aa95f",
+  "dependencies": [
+    "libarchive",
+    "zlib"
+  ]
 }

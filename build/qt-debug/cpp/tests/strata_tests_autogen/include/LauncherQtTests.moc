@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'LauncherQtTests.cpp'
 **
-** Created by: The Qt Meta Object Compiler version 69 (Qt 6.11.1)
+** Created by: The Qt Meta Object Compiler version 69 (Qt 6.12.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -17,7 +17,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'LauncherQtTests.cpp' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 69
-#error "This file was generated using the moc from 6.11.1. It"
+#error "This file was generated using the moc from 6.12.0. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -39,12 +39,24 @@ template <> constexpr inline auto ThemeSettingsTest::qt_create_metaobjectdata<qt
     QtMocHelpers::StringRefStorage qt_stringData {
         "ThemeSettingsTest",
         "roundTrip",
-        ""
+        "",
+        "launcherSettingsRoundTrip",
+        "invalidGlobalJavaFlagsAreRejected",
+        "migratesLegacyIniPreferences",
+        "bundledAssetsAreAvailable"
     };
 
     QtMocHelpers::UintData qt_methods {
         // Slot 'roundTrip'
         QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'launcherSettingsRoundTrip'
+        QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'invalidGlobalJavaFlagsAreRejected'
+        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'migratesLegacyIniPreferences'
+        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'bundledAssetsAreAvailable'
+        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -69,6 +81,10 @@ void ThemeSettingsTest::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->roundTrip(); break;
+        case 1: _t->launcherSettingsRoundTrip(); break;
+        case 2: _t->invalidGlobalJavaFlagsAreRejected(); break;
+        case 3: _t->migratesLegacyIniPreferences(); break;
+        case 4: _t->bundledAssetsAreAvailable(); break;
         default: ;
         }
     }
@@ -94,14 +110,14 @@ int ThemeSettingsTest::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 5;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 1;
+        _id -= 5;
     }
     return _id;
 }

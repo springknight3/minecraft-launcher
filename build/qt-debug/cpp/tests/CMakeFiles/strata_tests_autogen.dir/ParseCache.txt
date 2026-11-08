@@ -4,14 +4,32 @@
  mid:LauncherQtTests.moc
  mdp:/home/eli/Projects/minecraft-launcher/build/qt-debug/cpp/tests/strata_tests_autogen/moc_predefs.h
  mdp:/home/eli/Projects/minecraft-launcher/cpp/core/ThemeSettings.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/core/auth/Account.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/core/auth/AccountManager.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/core/auth/CredentialStore.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/core/auth/MicrosoftAuth.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/core/auth/OfflineAccountStore.h
  mdp:/home/eli/Projects/minecraft-launcher/cpp/core/download/DownloadManager.h
  mdp:/home/eli/Projects/minecraft-launcher/cpp/core/download/DownloadTask.h
  mdp:/home/eli/Projects/minecraft-launcher/cpp/core/instance/Instance.h
  mdp:/home/eli/Projects/minecraft-launcher/cpp/core/instance/InstanceManager.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/core/launch/GameLauncher.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/core/launch/GameProcess.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/core/loader/LoaderInstaller.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ContentManager.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ContentType.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/core/modrinth/ModrinthClient.h
  mdp:/home/eli/Projects/minecraft-launcher/cpp/core/mojang/MinecraftInstaller.h
  mdp:/home/eli/Projects/minecraft-launcher/cpp/core/mojang/MojangManifestClient.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/core/runtime/JavaRuntimeManager.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/core/server/DevServerManager.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/core/server/ServerDistribution.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/core/server/ServerProcess.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/core/settings/LauncherSettings.h
  mdp:/home/eli/Projects/minecraft-launcher/cpp/tests/LauncherQtTests.cpp
  mdp:/home/eli/Projects/minecraft-launcher/cpp/ui/LauncherController.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/ui/content/ContentController.h
+ mdp:/home/eli/Projects/minecraft-launcher/cpp/ui/settings/InstanceSettingsController.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/bitsperlong.h
  mdp:/usr/include/asm-generic/errno-base.h
@@ -237,6 +255,7 @@
  mdp:/usr/include/c++/16/debug/assertions.h
  mdp:/usr/include/c++/16/debug/debug.h
  mdp:/usr/include/c++/16/exception
+ mdp:/usr/include/c++/16/experimental/source_location
  mdp:/usr/include/c++/16/ext/aligned_buffer.h
  mdp:/usr/include/c++/16/ext/alloc_traits.h
  mdp:/usr/include/c++/16/ext/atomicity.h
@@ -268,6 +287,7 @@
  mdp:/usr/include/c++/16/ratio
  mdp:/usr/include/c++/16/semaphore
  mdp:/usr/include/c++/16/set
+ mdp:/usr/include/c++/16/source_location
  mdp:/usr/include/c++/16/sstream
  mdp:/usr/include/c++/16/stdexcept
  mdp:/usr/include/c++/16/stop_token
@@ -323,15 +343,25 @@
  mdp:/usr/include/linux/types.h
  mdp:/usr/include/locale.h
  mdp:/usr/include/pthread.h
+ mdp:/usr/include/qt6/QtCore/QByteArray
  mdp:/usr/include/qt6/QtCore/QDateTime
+ mdp:/usr/include/qt6/QtCore/QElapsedTimer
  mdp:/usr/include/qt6/QtCore/QEvent
+ mdp:/usr/include/qt6/QtCore/QFile
  mdp:/usr/include/qt6/QtCore/QFlags
+ mdp:/usr/include/qt6/QtCore/QHash
  mdp:/usr/include/qt6/QtCore/QIODevice
+ mdp:/usr/include/qt6/QtCore/QJsonArray
+ mdp:/usr/include/qt6/QtCore/QJsonDocument
+ mdp:/usr/include/qt6/QtCore/QJsonObject
  mdp:/usr/include/qt6/QtCore/QList
+ mdp:/usr/include/qt6/QtCore/QMap
  mdp:/usr/include/qt6/QtCore/QMargins
  mdp:/usr/include/qt6/QtCore/QMetaType
  mdp:/usr/include/qt6/QtCore/QMutex
  mdp:/usr/include/qt6/QtCore/QObject
+ mdp:/usr/include/qt6/QtCore/QPointer
+ mdp:/usr/include/qt6/QtCore/QProcess
  mdp:/usr/include/qt6/QtCore/QRect
  mdp:/usr/include/qt6/QtCore/QRectF
  mdp:/usr/include/qt6/QtCore/QSettings
@@ -339,11 +369,15 @@
  mdp:/usr/include/qt6/QtCore/QSize
  mdp:/usr/include/qt6/QtCore/QSizeF
  mdp:/usr/include/qt6/QtCore/QString
+ mdp:/usr/include/qt6/QtCore/QStringList
  mdp:/usr/include/qt6/QtCore/QTemporaryDir
  mdp:/usr/include/qt6/QtCore/QThreadPool
+ mdp:/usr/include/qt6/QtCore/QTimer
  mdp:/usr/include/qt6/QtCore/QUrl
  mdp:/usr/include/qt6/QtCore/QVariant
  mdp:/usr/include/qt6/QtCore/QVariantList
+ mdp:/usr/include/qt6/QtCore/QVariantMap
+ mdp:/usr/include/qt6/QtCore/QVector
  mdp:/usr/include/qt6/QtCore/QtTypes
  mdp:/usr/include/qt6/QtCore/q17memory.h
  mdp:/usr/include/qt6/QtCore/q20bit.h
@@ -403,6 +437,7 @@
  mdp:/usr/include/qt6/QtCore/qdebug.h
  mdp:/usr/include/qt6/QtCore/qdir.h
  mdp:/usr/include/qt6/QtCore/qdirlisting.h
+ mdp:/usr/include/qt6/QtCore/qelapsedtimer.h
  mdp:/usr/include/qt6/QtCore/qendian.h
  mdp:/usr/include/qt6/QtCore/qeventloop.h
  mdp:/usr/include/qt6/QtCore/qexceptionhandling.h
@@ -424,6 +459,11 @@
  mdp:/usr/include/qt6/QtCore/qiterable.h
  mdp:/usr/include/qt6/QtCore/qiterable_impl.h
  mdp:/usr/include/qt6/QtCore/qiterator.h
+ mdp:/usr/include/qt6/QtCore/qjsonarray.h
+ mdp:/usr/include/qt6/QtCore/qjsondocument.h
+ mdp:/usr/include/qt6/QtCore/qjsonobject.h
+ mdp:/usr/include/qt6/QtCore/qjsonparseerror.h
+ mdp:/usr/include/qt6/QtCore/qjsonvalue.h
  mdp:/usr/include/qt6/QtCore/qlatin1stringview.h
  mdp:/usr/include/qt6/QtCore/qline.h
  mdp:/usr/include/qt6/QtCore/qlist.h
@@ -450,7 +490,10 @@
  mdp:/usr/include/qt6/QtCore/qpair.h
  mdp:/usr/include/qt6/QtCore/qpoint.h
  mdp:/usr/include/qt6/QtCore/qpointer.h
+ mdp:/usr/include/qt6/QtCore/qprocess.h
  mdp:/usr/include/qt6/QtCore/qprocessordetection.h
+ mdp:/usr/include/qt6/QtCore/qproperty.h
+ mdp:/usr/include/qt6/QtCore/qpropertyprivate.h
  mdp:/usr/include/qt6/QtCore/qrect.h
  mdp:/usr/include/qt6/QtCore/qrefcount.h
  mdp:/usr/include/qt6/QtCore/qregularexpression.h
@@ -495,6 +538,7 @@
  mdp:/usr/include/qt6/QtCore/qtformat_impl.h
  mdp:/usr/include/qt6/QtCore/qthread.h
  mdp:/usr/include/qt6/QtCore/qthreadpool.h
+ mdp:/usr/include/qt6/QtCore/qtimer.h
  mdp:/usr/include/qt6/QtCore/qtimezone.h
  mdp:/usr/include/qt6/QtCore/qtmetamacros.h
  mdp:/usr/include/qt6/QtCore/qtnoop.h
@@ -513,20 +557,27 @@
  mdp:/usr/include/qt6/QtCore/quuid.h
  mdp:/usr/include/qt6/QtCore/qvariant.h
  mdp:/usr/include/qt6/QtCore/qvariantlist.h
+ mdp:/usr/include/qt6/QtCore/qvariantmap.h
  mdp:/usr/include/qt6/QtCore/qvarlengtharray.h
+ mdp:/usr/include/qt6/QtCore/qvector.h
  mdp:/usr/include/qt6/QtCore/qversionnumber.h
  mdp:/usr/include/qt6/QtCore/qversiontagging.h
  mdp:/usr/include/qt6/QtCore/qxpfunctional.h
  mdp:/usr/include/qt6/QtCore/qxptype_traits.h
  mdp:/usr/include/qt6/QtCore/qyieldcpu.h
+ mdp:/usr/include/qt6/QtGui/QClipboard
  mdp:/usr/include/qt6/QtGui/QGuiApplication
  mdp:/usr/include/qt6/QtGui/QMatrix4x4
  mdp:/usr/include/qt6/QtGui/QTransform
+ mdp:/usr/include/qt6/QtGui/qaccessible.h
+ mdp:/usr/include/qt6/QtGui/qaccessible_base.h
  mdp:/usr/include/qt6/QtGui/qbitmap.h
+ mdp:/usr/include/qt6/QtGui/qclipboard.h
  mdp:/usr/include/qt6/QtGui/qcolor.h
  mdp:/usr/include/qt6/QtGui/qcursor.h
  mdp:/usr/include/qt6/QtGui/qevent.h
  mdp:/usr/include/qt6/QtGui/qeventpoint.h
+ mdp:/usr/include/qt6/QtGui/qfont.h
  mdp:/usr/include/qt6/QtGui/qgenericmatrix.h
  mdp:/usr/include/qt6/QtGui/qguiapplication.h
  mdp:/usr/include/qt6/QtGui/qguiapplication_platform.h
@@ -609,7 +660,9 @@
  mdp:/usr/include/qt6/QtQml/qtqmlexports.h
  mdp:/usr/include/qt6/QtQml/qtqmlglobal.h
  mdp:/usr/include/qt6/QtQmlIntegration/qqmlintegration.h
+ mdp:/usr/include/qt6/QtQuick/QQuickItem
  mdp:/usr/include/qt6/QtQuick/QQuickWindow
+ mdp:/usr/include/qt6/QtQuick/qquickitem.h
  mdp:/usr/include/qt6/QtQuick/qquickwindow.h
  mdp:/usr/include/qt6/QtQuick/qsggeometry.h
  mdp:/usr/include/qt6/QtQuick/qsgnode.h
@@ -652,6 +705,7 @@
  mdp:/usr/include/wchar.h
  mdp:/usr/include/wctype.h
  mdp:/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/float.h
+ mdp:/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/limits.h
  mdp:/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h
  mdp:/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdbool.h
  mdp:/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h
