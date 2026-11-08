@@ -1,5 +1,6 @@
 #include "GameLauncher.h"
 
+#include "../loader/LoaderInstaller.h"
 #include "../settings/InstanceSettings.h"
 
 #include <archive.h>
@@ -19,6 +20,7 @@
 
 #include <algorithm>
 #include <memory>
+#include <optional>
 #include <stdexcept>
 
 namespace strata::launch
@@ -300,10 +302,33 @@ namespace strata::launch
                                        const QString& dataDirectory, const QString& javaExecutable,
                                        const QStringList& globalJavaArguments)
     {
-        auth::OfflineAccountStore::validateUsername(account.name);
-        if (account.uuid != auth::OfflineAccountStore::offlineUuid(account.name))
+        return buildPlan(
+            instance,
+            LaunchAccount{
+                account.name, account.uuid, QStringLiteral("0"), {}, auth::Account::Type::Offline},
+            dataDirectory, javaExecutable, globalJavaArguments);
+    }
+
+    LaunchPlan GameLauncher::buildPlan(const strata::Instance& instance,
+                                       const LaunchAccount& account, const QString& dataDirectory,
+                                       const QString& javaExecutable,
+                                       const QStringList& globalJavaArguments)
+    {
+        if (account.type == auth::Account::Type::Offline)
         {
-            throwLaunchError(QStringLiteral("Offline account UUID does not match the player name"));
+            auth::OfflineAccountStore::validateUsername(account.name);
+            if (account.uuid != auth::OfflineAccountStore::offlineUuid(account.name))
+            {
+                throwLaunchError(
+                    QStringLiteral("Offline account UUID does not match the player name"));
+            }
+        }
+        else if (!QRegularExpression(QStringLiteral("(?i)^[0-9a-f]{32}$"))
+                      .match(account.uuid)
+                      .hasMatch() ||
+                 account.accessToken.isEmpty())
+        {
+            throwLaunchError(QStringLiteral("Microsoft account credentials are invalid"));
         }
 
         const QString versionId = instance.versionId;
@@ -319,12 +344,6 @@ namespace strata::launch
             safePath(QDir(gameDirectory).filePath(QStringLiteral("versions")), versionId);
         const QString metadataPath =
             QDir(versionDirectory).filePath(versionId + QStringLiteral(".json"));
-        const QString clientJar =
-            QDir(versionDirectory).filePath(versionId + QStringLiteral(".jar"));
-        if (!QFileInfo(clientJar).isFile())
-        {
-            throwLaunchError(QStringLiteral("Minecraft client is not installed for this instance"));
-        }
         const QString marker =
             QDir(gameDirectory).filePath(QStringLiteral(".stratalauncher-installed"));
         QFile installedMarker(marker);
@@ -335,7 +354,35 @@ namespace strata::launch
                 "Minecraft installation is incomplete. Install or repair the instance first."));
         }
 
-        const QJsonObject metadata = readJsonObject(metadataPath);
+        QJsonObject metadata = readJsonObject(metadataPath);
+        const std::optional<loader::LoaderProfile> loaderProfile =
+            loader::LoaderInstaller::installedProfile(instance);
+        QString launchVersion = versionId;
+        if (loaderProfile.has_value())
+        {
+            metadata = loader::LoaderInstaller::mergeMetadata(metadata, loaderProfile.value());
+            launchVersion = loaderProfile->profileVersionId;
+        }
+        QString clientJarVersion = versionId;
+        const QJsonValue jarVersion = metadata.value(QStringLiteral("jar"));
+        if (!jarVersion.isUndefined())
+        {
+            if (!jarVersion.isString() || !versionPattern.match(jarVersion.toString()).hasMatch() ||
+                jarVersion.toString().contains(QStringLiteral("..")))
+            {
+                throwLaunchError(
+                    QStringLiteral("Loader profile has an invalid client JAR version"));
+            }
+            clientJarVersion = jarVersion.toString();
+        }
+        const QString clientJarDirectory =
+            safePath(QDir(gameDirectory).filePath(QStringLiteral("versions")), clientJarVersion);
+        const QString clientJar =
+            QDir(clientJarDirectory).filePath(clientJarVersion + QStringLiteral(".jar"));
+        if (!QFileInfo(clientJar).isFile())
+        {
+            throwLaunchError(QStringLiteral("Minecraft client is not installed for this instance"));
+        }
         const QString mainClass = requiredString(metadata, QStringLiteral("mainClass"));
         const QJsonObject assetIndex = metadata.value(QStringLiteral("assetIndex")).toObject();
         const QString assetIndexId = requiredString(assetIndex, QStringLiteral("id"));
@@ -413,15 +460,17 @@ namespace strata::launch
         extractNativeArchives(nativeArchives, nativesDirectory);
         QMap<QString, QString> substitutions{
             {QStringLiteral("auth_player_name"), account.name},
-            {QStringLiteral("version_name"), versionId},
+            {QStringLiteral("version_name"), launchVersion},
             {QStringLiteral("game_directory"), gameDirectory},
             {QStringLiteral("assets_root"), assetsRoot},
             {QStringLiteral("assets_index_name"), assetIndexId},
             {QStringLiteral("auth_uuid"), account.uuid},
-            {QStringLiteral("auth_access_token"), QStringLiteral("0")},
+            {QStringLiteral("auth_access_token"), account.accessToken},
             {QStringLiteral("clientid"), QString()},
-            {QStringLiteral("auth_xuid"), QString()},
-            {QStringLiteral("user_type"), QStringLiteral("legacy")},
+            {QStringLiteral("auth_xuid"), account.xuid},
+            {QStringLiteral("user_type"), account.type == auth::Account::Type::Microsoft
+                                              ? QStringLiteral("msa")
+                                              : QStringLiteral("legacy")},
             {QStringLiteral("version_type"), QStringLiteral("StrataLauncher")},
             {QStringLiteral("natives_directory"), nativesDirectory},
             {QStringLiteral("library_directory"), librariesRoot},

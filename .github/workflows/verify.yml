@@ -1,0 +1,128 @@
+name: Verify
+
+on:
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: 'Target platform(s) to build and verify'
+        required: true
+        default: 'windows'
+        type: choice
+        options:
+          - windows
+          - linux
+          - macos
+          - all
+
+jobs:
+  build-windows:
+    if: inputs.platform == 'windows' || inputs.platform == 'all'
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install Qt 6.8
+        uses: jurplel/install-qt-action@v3
+        with:
+          version: '6.8.0'
+          host: 'windows'
+          target: 'desktop'
+          arch: 'win64_msvc2022_64'
+          modules: 'qtquickcontrols2'
+          cache: true
+
+      - name: Setup MSVC
+        uses: ilammy/msvc-dev-cmd@v1
+
+      - name: Setup Ninja
+        uses: ashutoshvarma/setup-ninja@v1
+
+      - name: Build and Package with build-windows.ps1
+        shell: powershell
+        run: |
+          .\scripts\build-windows.ps1
+
+      - name: Run Windows Automated Smoke Test
+        shell: powershell
+        run: |
+          $installer = Get-ChildItem -Path dist -Filter "stratalauncher-*-windows-*.exe" | Select-Object -First 1
+          if (-not $installer) {
+            throw "Installer not found in dist"
+          }
+          .\scripts\windows-smoke.ps1 -InstallerPath $installer.FullName -ExpectedVersion 0.1.0
+
+      - name: Upload Windows Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: stratalauncher-windows-x86_64
+          path: |
+            dist/*.exe
+            dist/*.sha256
+            scripts/windows-smoke.ps1
+            docs/WINDOWS_MANUAL_TEST.md
+
+  build-linux:
+    if: inputs.platform == 'linux' || inputs.platform == 'all'
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            cmake ninja-build file \
+            qt6-base-dev qt6-declarative-dev qt6-declarative-dev-tools \
+            qml6-module-qtquick-controls qml6-module-qtquick-layouts \
+            qml6-module-qtquick-templates libqt6svg6-dev \
+            libarchive-dev zlib1g-dev \
+            libgl1-mesa-dev libxkbcommon-dev libwayland-dev \
+            qt6-wayland libqt6waylandclient6
+
+      - name: Run package.sh linux
+        run: |
+          chmod +x scripts/package.sh packaging/AppRun
+          ./scripts/package.sh linux
+
+      - name: Upload Linux Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: stratalauncher-linux-x86_64
+          path: |
+            dist/*linux*
+
+  build-macos:
+    if: inputs.platform == 'macos' || inputs.platform == 'all'
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install Qt 6.8
+        uses: jurplel/install-qt-action@v3
+        with:
+          version: '6.8.0'
+          host: 'mac'
+          target: 'desktop'
+          modules: 'qtquickcontrols2'
+          cache: true
+
+      - name: Run package.sh macos
+        run: |
+          chmod +x scripts/package.sh
+          ./scripts/package.sh macos
+
+      - name: Upload macOS Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: stratalauncher-macos
+          path: |
+            dist/*macos*

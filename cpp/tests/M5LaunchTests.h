@@ -10,6 +10,7 @@ private slots:
     void offlineAccountPersistsJavaCompatibleUuid();
     void rulesAndArgumentsRespectConditionsAndBoundaries();
     void launchPlanUsesOfflineSubstitutionsAndArgumentLists();
+    void launchPlanUsesMicrosoftTokensAndIdentity();
     void nativeExtractionRejectsTraversal();
     void processTracksReadyExitCrashAndStop();
 };

@@ -2,8 +2,81 @@
     <qresource prefix="/qml">
         <file>MainWindow.qml</file>
         <file>Motion.qml</file>
+        <file>ContentSelectionBox.qml</file>
+        <file>StrataButton.qml</file>
+        <file>StrataCheckBox.qml</file>
+        <file>StrataComboBox.qml</file>
+        <file>StrataSpinBox.qml</file>
+        <file>StatusLight.qml</file>
+        <file>StrataSwitch.qml</file>
+        <file>StrataTextArea.qml</file>
+        <file>StrataTextField.qml</file>
+        <file>StrataTabButton.qml</file>
+        <file>StaggeredFade.qml</file>
+        <file>Theme.qml</file>
         <file>ThemeAwareIcon.qml</file>
         <file>FrameTimeOverlay.qml</file>
         <file>qmldir</file>
+    </qresource>
+    <qresource prefix="/assets">
+        <file alias="fonts/DMSans-VariableFont_opsz,wght.ttf">assets/fonts/DMSans-VariableFont_opsz,wght.ttf</file>
+        <file alias="fonts/Outfit-VariableFont_wght.ttf">assets/fonts/Outfit-VariableFont_wght.ttf</file>
+        <file alias="fonts/JetBrainsMono-VariableFont_wght.ttf">assets/fonts/JetBrainsMono-VariableFont_wght.ttf</file>
+        <file alias="icons/account-add-dark.svg">assets/icons/account-add-dark.svg</file>
+        <file alias="icons/account-add-light.svg">assets/icons/account-add-light.svg</file>
+        <file alias="icons/add-dark.svg">assets/icons/add-dark.svg</file>
+        <file alias="icons/add-light.svg">assets/icons/add-light.svg</file>
+        <file alias="icons/close-dark.svg">assets/icons/close-dark.svg</file>
+        <file alias="icons/close-light.svg">assets/icons/close-light.svg</file>
+        <file alias="icons/console-dark.svg">assets/icons/console-dark.svg</file>
+        <file alias="icons/console-light.svg">assets/icons/console-light.svg</file>
+        <file alias="icons/controls-dark.svg">assets/icons/controls-dark.svg</file>
+        <file alias="icons/controls-light.svg">assets/icons/controls-light.svg</file>
+        <file alias="icons/dangerous-dark.svg">assets/icons/dangerous-dark.svg</file>
+        <file alias="icons/dangerous-light.svg">assets/icons/dangerous-light.svg</file>
+        <file alias="icons/delete-dark.svg">assets/icons/delete-dark.svg</file>
+        <file alias="icons/delete-light.svg">assets/icons/delete-light.svg</file>
+        <file alias="icons/download-dark.svg">assets/icons/download-dark.svg</file>
+        <file alias="icons/download-light.svg">assets/icons/download-light.svg</file>
+        <file alias="icons/duplicate-dark.svg">assets/icons/duplicate-dark.svg</file>
+        <file alias="icons/duplicate-light.svg">assets/icons/duplicate-light.svg</file>
+        <file alias="icons/favorite-dark.svg">assets/icons/favorite-dark.svg</file>
+        <file alias="icons/favorite-light.svg">assets/icons/favorite-light.svg</file>
+        <file alias="icons/flags-dark.svg">assets/icons/flags-dark.svg</file>
+        <file alias="icons/flags-light.svg">assets/icons/flags-light.svg</file>
+        <file alias="icons/home-dark.svg">assets/icons/home-dark.svg</file>
+        <file alias="icons/home-light.svg">assets/icons/home-light.svg</file>
+        <file alias="icons/instances-dark.svg">assets/icons/instances-dark.svg</file>
+        <file alias="icons/instances-light.svg">assets/icons/instances-light.svg</file>
+        <file alias="icons/menu-dark.svg">assets/icons/menu-dark.svg</file>
+        <file alias="icons/menu-light.svg">assets/icons/menu-light.svg</file>
+        <file alias="icons/options-dark.svg">assets/icons/options-dark.svg</file>
+        <file alias="icons/options-light.svg">assets/icons/options-light.svg</file>
+        <file alias="icons/reduce-motion-dark.svg">assets/icons/reduce-motion-dark.svg</file>
+        <file alias="icons/reduce-motion-light.svg">assets/icons/reduce-motion-light.svg</file>
+        <file alias="icons/redundant-dark.svg">assets/icons/redundant-dark.svg</file>
+        <file alias="icons/redundant-light.svg">assets/icons/redundant-light.svg</file>
+        <file alias="icons/reference-toggleswitch-off.svg">assets/icons/reference-toggleswitch-off.svg</file>
+        <file alias="icons/reference-toggleswitch-on.svg">assets/icons/reference-toggleswitch-on.svg</file>
+        <file alias="icons/refresh-dark.svg">assets/icons/refresh-dark.svg</file>
+        <file alias="icons/refresh-light.svg">assets/icons/refresh-light.svg</file>
+        <file alias="icons/runtime-dark.svg">assets/icons/runtime-dark.svg</file>
+        <file alias="icons/runtime-light.svg">assets/icons/runtime-light.svg</file>
+        <file alias="icons/save-dark.svg">assets/icons/save-dark.svg</file>
+        <file alias="icons/save-light.svg">assets/icons/save-light.svg</file>
+        <file alias="icons/secure-dark.svg">assets/icons/secure-dark.svg</file>
+        <file alias="icons/secure-light.svg">assets/icons/secure-light.svg</file>
+        <file alias="icons/secure-off-dark.svg">assets/icons/secure-off-dark.svg</file>
+        <file alias="icons/secure-off-light.svg">assets/icons/secure-off-light.svg</file>
+        <file alias="icons/server-dark.svg">assets/icons/server-dark.svg</file>
+        <file alias="icons/server-light.svg">assets/icons/server-light.svg</file>
+        <file alias="icons/settings-dark.svg">assets/icons/settings-dark.svg</file>
+        <file alias="icons/settings-light.svg">assets/icons/settings-light.svg</file>
+        <file alias="icons/start-dark.svg">assets/icons/start-dark.svg</file>
+        <file alias="icons/start-light.svg">assets/icons/start-light.svg</file>
+        <file alias="icons/stop-dark.svg">assets/icons/stop-dark.svg</file>
+        <file alias="icons/stop-light.svg">assets/icons/stop-light.svg</file>
+        <file alias="icons/terminate-dark.svg">assets/icons/terminate-dark.svg</file>
+        <file alias="icons/terminate-light.svg">assets/icons/terminate-light.svg</file>
     </qresource>
 </RCC>

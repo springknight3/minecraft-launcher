@@ -69,12 +69,17 @@ namespace strata::runtime
         void setPreferences(RuntimePreferences preferences) const;
         QString install(const strata::Instance& instance, const QJsonObject& versionMetadata,
                         ProgressCallback progress = {}) const;
+        QString javaExecutableForInstaller(const strata::Instance& instance,
+                                           const QJsonObject& versionMetadata,
+                                           ProgressCallback progress = {}) const;
         QString install(const QString& ownerDirectory, const QString& versionId,
                         const QJsonObject& versionMetadata, RuntimeVendor vendor, bool redundant,
                         ProgressCallback progress = {}) const;
         QString runtimeComponent(RuntimeVendor vendor, const QJsonObject& metadata,
                                  const QString& versionId) const;
         QString javaExecutable(const strata::Instance& instance) const;
+        QString javaExecutable(const QString& ownerDirectory, const QString& versionId,
+                               const QString& component, bool redundant) const;
         QList<InstalledRuntime> listInstalledRuntimes(const QList<RuntimeOwner>& owners) const;
         void deleteRuntime(const InstalledRuntime& runtime,
                            const QList<RuntimeOwner>& owners) const;
@@ -103,8 +108,6 @@ namespace strata::runtime
         QString installExternal(const QString& ownerDirectory, const QString& versionId,
                                 const QJsonObject& metadata, RuntimeVendor vendor, bool redundant,
                                 const ProgressCallback& progress) const;
-        QString javaExecutable(const QString& ownerDirectory, const QString& versionId,
-                               const QString& component, bool redundant) const;
         QString fetchRuntimeMetadata(const QUrl& url, const QString& expectedSha1 = {}) const;
         QString managedRuntimeDirectory(const QString& ownerDirectory, const QString& component,
                                         bool redundant) const;

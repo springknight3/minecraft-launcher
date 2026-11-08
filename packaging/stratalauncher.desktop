@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=StrataLauncher
+Comment=Manage and launch Minecraft instances
+Exec=stratalauncher
+Icon=stratalauncher
+Categories=Game;
+Terminal=false

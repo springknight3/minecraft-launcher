@@ -137,6 +137,61 @@ void M5LaunchTests::launchPlanUsesOfflineSubstitutionsAndArgumentLists()
     QVERIFY(!plan.arguments.contains(QStringLiteral("Player Name")));
 }
 
+void M5LaunchTests::launchPlanUsesMicrosoftTokensAndIdentity()
+{
+    QTemporaryDir temporaryDirectory;
+    QVERIFY(temporaryDirectory.isValid());
+    const QString instanceDirectory =
+        QDir(temporaryDirectory.path()).filePath(QStringLiteral("instance-config"));
+    const QString gameDirectory = QDir(instanceDirectory).filePath(QStringLiteral("game"));
+    const QString versionId = QStringLiteral("microsoft-test");
+    const QString versionDirectory =
+        QDir(gameDirectory).filePath(QStringLiteral("versions/%1").arg(versionId));
+    QVERIFY(QDir().mkpath(versionDirectory));
+    QFile client(QDir(versionDirectory).filePath(versionId + QStringLiteral(".jar")));
+    QVERIFY(client.open(QIODevice::WriteOnly));
+    QVERIFY(client.write("fixture") > 0);
+    client.close();
+
+    const QJsonObject metadata{
+        {QStringLiteral("mainClass"), QStringLiteral("example.Main")},
+        {QStringLiteral("assetIndex"),
+         QJsonObject{{QStringLiteral("id"), QStringLiteral("test-assets")}}},
+        {QStringLiteral("arguments"),
+         QJsonObject{{QStringLiteral("jvm"),
+                      QJsonArray{QStringLiteral("-cp"), QStringLiteral("${classpath}")}},
+                     {QStringLiteral("game"), QJsonArray{QStringLiteral("${auth_access_token}"),
+                                                         QStringLiteral("${auth_xuid}"),
+                                                         QStringLiteral("${user_type}")}}}}};
+    QFile metadataFile(QDir(versionDirectory).filePath(versionId + QStringLiteral(".json")));
+    QVERIFY(metadataFile.open(QIODevice::WriteOnly));
+    QVERIFY(metadataFile.write(QJsonDocument(metadata).toJson()) > 0);
+    metadataFile.close();
+    const QString assetIndexPath =
+        temporaryDirectory.filePath(QStringLiteral("assets/indexes/test-assets.json"));
+    QVERIFY(QDir().mkpath(QFileInfo(assetIndexPath).absolutePath()));
+    QFile assetIndex(assetIndexPath);
+    QVERIFY(assetIndex.open(QIODevice::WriteOnly));
+    QCOMPARE(assetIndex.write("{}"), qint64(2));
+    assetIndex.close();
+    QFile marker(QDir(gameDirectory).filePath(QStringLiteral(".stratalauncher-installed")));
+    QVERIFY(marker.open(QIODevice::WriteOnly));
+    QCOMPARE(marker.write(versionId.toUtf8()), qint64(versionId.size()));
+    marker.close();
+
+    const Instance instance{
+        QStringLiteral("id"), QStringLiteral("Test"), versionId, {}, instanceDirectory, false};
+    const launch::LaunchAccount account{QStringLiteral("Player"),
+                                        QStringLiteral("0123456789abcdef0123456789abcdef"),
+                                        QStringLiteral("minecraft-secret"),
+                                        QStringLiteral("xuid-123"), auth::Account::Type::Microsoft};
+    const auto plan = launch::GameLauncher::buildPlan(instance, account, temporaryDirectory.path(),
+                                                      QStringLiteral("/usr/bin/java"));
+    QVERIFY(plan.arguments.contains(QStringLiteral("minecraft-secret")));
+    QVERIFY(plan.arguments.contains(QStringLiteral("xuid-123")));
+    QVERIFY(plan.arguments.contains(QStringLiteral("msa")));
+}
+
 void M5LaunchTests::nativeExtractionRejectsTraversal()
 {
     QTemporaryDir temporaryDirectory;

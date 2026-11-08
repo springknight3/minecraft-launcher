@@ -1,6 +1,10 @@
 add_library(strata_ui STATIC
+    content/ContentController.cpp
+    content/ContentController.h
     LauncherController.cpp
     LauncherController.h
+    settings/InstanceSettingsController.cpp
+    settings/InstanceSettingsController.h
 )
 
 target_include_directories(strata_ui

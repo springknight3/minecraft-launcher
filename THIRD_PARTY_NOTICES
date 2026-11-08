@@ -1,0 +1,26 @@
+StrataLauncher Third-Party Software Notices and Licenses
+========================================================
+
+This project bundles and links against third-party libraries:
+
+1. Qt (LGPL-3.0-only or GPL-3.0-only)
+   Copyright (C) The Qt Company Ltd and other contributors.
+   Licensed under GNU Lesser General Public License version 3.0.
+
+2. QtKeychain (BSD-2-Clause)
+   Copyright (C) 2011-2016 Frank Osterfeld <frank.osterfeld@gmail.com>
+   Licensed under BSD 2-Clause License.
+
+3. libarchive (BSD-2-Clause)
+   Copyright (C) Tim Kientzle and other contributors.
+   Licensed under BSD 2-Clause License.
+
+4. zlib (Zlib License)
+   Copyright (C) Jean-loup Gailly and Mark Adler.
+   Licensed under the Zlib license.
+
+5. OpenSSL / libcrypto (Apache-2.0)
+   Copyright (C) OpenSSL Authors.
+   Licensed under Apache License 2.0.
+
+See the LICENSES/ directory for the full text of all included licenses.

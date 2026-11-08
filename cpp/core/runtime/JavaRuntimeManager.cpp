@@ -92,6 +92,27 @@ namespace strata::runtime
             return pattern.match(component).hasMatch();
         }
 
+        bool isApprovedRuntimeOwner(const QString& ownerDirectory, const QString& dataDirectory)
+        {
+            const QString data = QDir::cleanPath(QFileInfo(dataDirectory).absoluteFilePath());
+            const QFileInfo owner(ownerDirectory);
+            const QString instancesRoot = QDir(data).filePath(QStringLiteral("instances"));
+            if (QDir::cleanPath(owner.dir().absolutePath()) == QDir::cleanPath(instancesRoot))
+            {
+                return true;
+            }
+
+            static const QRegularExpression serverIdPattern(
+                QStringLiteral("^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"),
+                QRegularExpression::CaseInsensitiveOption);
+            const QDir serverDirectory = owner.dir();
+            const QFileInfo serverRoot(serverDirectory.absolutePath());
+            return owner.fileName() == QStringLiteral("server") &&
+                   serverIdPattern.match(serverRoot.fileName()).hasMatch() &&
+                   QDir::cleanPath(serverRoot.dir().absolutePath()) ==
+                       QDir::cleanPath(QDir(data).filePath(QStringLiteral("servers")));
+        }
+
         bool hasSymlinkBetween(const QString& boundary, const QString& path)
         {
             const QString root = QDir::cleanPath(QFileInfo(boundary).absoluteFilePath());
@@ -637,6 +658,18 @@ namespace strata::runtime
                        current.redundantRuntimes, std::move(progress));
     }
 
+    QString JavaRuntimeManager::javaExecutableForInstaller(const strata::Instance& instance,
+                                                           const QJsonObject& versionMetadata,
+                                                           ProgressCallback progress) const
+    {
+        const RuntimePreferences current = preferences();
+        const QString component =
+            install(instance.directory, instance.versionId, versionMetadata, current.vendor,
+                    current.redundantRuntimes, std::move(progress));
+        return javaExecutable(instance.directory, instance.versionId, component,
+                              current.redundantRuntimes);
+    }
+
     QString JavaRuntimeManager::install(const QString& ownerDirectory, const QString& versionId,
                                         const QJsonObject& versionMetadata, RuntimeVendor vendor,
                                         bool redundant, ProgressCallback progress) const
@@ -808,14 +841,12 @@ namespace strata::runtime
         }
         const QString path = requestedPath;
         const QString dataRoot = QDir::cleanPath(QFileInfo(m_dataDirectory).absoluteFilePath());
-        const QString instancesRoot = QDir(dataRoot).filePath(QStringLiteral("instances"));
         const QString runtimeRoot = QDir::cleanPath(QFileInfo(path).dir().absolutePath());
         const QString ownerDirectory = QDir::cleanPath(QFileInfo(runtimeRoot).dir().absolutePath());
         const bool shared = runtimeRoot == QDir(dataRoot).filePath(QStringLiteral("java-runtimes"));
         const bool instanceCopy =
             QFileInfo(runtimeRoot).fileName() == QStringLiteral("java-runtimes") &&
-            QDir::cleanPath(QFileInfo(ownerDirectory).dir().absolutePath()) ==
-                QDir::cleanPath(instancesRoot);
+            isApprovedRuntimeOwner(ownerDirectory, dataRoot);
         if ((!shared && !instanceCopy) || !safeComponent(QFileInfo(path).fileName()) ||
             hasSymlinkBetween(dataRoot, path))
         {
@@ -1114,11 +1145,10 @@ namespace strata::runtime
         }
         const QString owner = QDir::cleanPath(QFileInfo(ownerDirectory).absoluteFilePath());
         const QString data = QDir::cleanPath(QFileInfo(dataDirectory).absoluteFilePath());
-        const QString instancesRoot = QDir(data).filePath(QStringLiteral("instances"));
-        if (QDir::cleanPath(QFileInfo(owner).dir().absolutePath()) !=
-            QDir::cleanPath(instancesRoot))
+        if (!isApprovedRuntimeOwner(owner, data) || hasSymlinkBetween(data, owner))
         {
-            fail(QStringLiteral("Java runtime owner is outside the launcher instances directory."));
+            fail(QStringLiteral(
+                "Java runtime owner is outside the launcher instances and server directories."));
         }
         const QString root = redundant ? QDir(owner).filePath(QStringLiteral("java-runtimes"))
                                        : QDir(data).filePath(QStringLiteral("java-runtimes"));

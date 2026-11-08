@@ -14,9 +14,10 @@ Item {
         width: root.size
         height: root.size
         fillMode: Image.PreserveAspectFit
+        objectName: "themeAwareIconImage"
         source: {
-            const themeSuffix = ThemeSettings.theme === "dark" ? "dark" : "light";
-            return "file:///home/eli/Projects/minecraft-launcher/TEMPORARY%20ASSETS/" + root.iconName + "-" + themeSuffix + ".svg";
+            const themeSuffix = ThemeSettings.theme === "dark" ? "light" : "dark";
+            return "qrc:/assets/icons/" + root.iconName + "-" + themeSuffix + ".svg";
         }
     }
 }

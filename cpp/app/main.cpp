@@ -5,14 +5,18 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QQuickStyle>
 #include <QQuickWindow>
+#include <QSurfaceFormat>
 #include <QTextStream>
 #include <QUrl>
 #include <QVariantList>
 
 #include <algorithm>
 #include <cmath>
+#include <iostream>
 #include <numeric>
+#include <string_view>
 
 #include "LauncherController.h"
 #include "Paths.h"
@@ -136,18 +140,37 @@ namespace
 
 int main(int argc, char* argv[])
 {
+    bool smokeTest = false;
+    for (int index = 1; index < argc; ++index)
+    {
+        if (std::string_view(argv[index]) == "--version")
+        {
+            std::cout << "StrataLauncher " << STRATA_VERSION << '\n';
+            return 0;
+        }
+        smokeTest = smokeTest || std::string_view(argv[index]) == "--smoke-test";
+    }
+
+    if (smokeTest && qEnvironmentVariableIsEmpty("QT_QPA_PLATFORM"))
+    {
+        qputenv("QT_QPA_PLATFORM", "offscreen");
+    }
+
     QGuiApplication app(argc, argv);
+    QQuickStyle::setStyle(QStringLiteral("Basic"));
     app.setApplicationName(QStringLiteral("StrataLauncher"));
+    app.setApplicationVersion(QStringLiteral(STRATA_VERSION));
     app.setOrganizationName(QStringLiteral("StrataLauncher"));
     app.setOrganizationDomain(QStringLiteral("stratalauncher.net"));
 
+    const QStringList args = app.arguments();
     QString loggingError;
-    if (!strata::LauncherLogging::configure(strata::Paths::dataDirectory(), &loggingError))
+    if (!smokeTest &&
+        !strata::LauncherLogging::configure(strata::Paths::dataDirectory(), &loggingError))
     {
         qWarning().noquote() << loggingError;
     }
 
-    const QStringList args = app.arguments();
     bool debugFrameTime = false;
     bool benchMode = false;
     for (const QString& arg : args)
@@ -168,22 +191,25 @@ int main(int argc, char* argv[])
         return 0;
     }
 
+    const bool forcedDebugFrameTime = debugFrameTime;
     ThemeSettings themeSettings;
+    QSurfaceFormat surfaceFormat = QSurfaceFormat::defaultFormat();
+    surfaceFormat.setSwapInterval(themeSettings.vsyncEnabled() ? 1 : 0);
+    QSurfaceFormat::setDefaultFormat(surfaceFormat);
     strata::ui::LauncherController launcherController;
-    loadFont(QStringLiteral("/home/eli/Projects/minecraft-launcher/TEMPORARY "
-                            "ASSETS/DM_Sans/DMSans-VariableFont_opsz,wght.ttf"),
+    debugFrameTime = debugFrameTime || themeSettings.frameTimeOverlayEnabled();
+    loadFont(QStringLiteral(":/assets/fonts/DMSans-VariableFont_opsz,wght.ttf"),
              QStringLiteral("DM Sans"));
-    loadFont(QStringLiteral("/home/eli/Projects/minecraft-launcher/TEMPORARY "
-                            "ASSETS/Outfit/Outfit-VariableFont_wght.ttf"),
+    loadFont(QStringLiteral(":/assets/fonts/Outfit-VariableFont_wght.ttf"),
              QStringLiteral("Outfit"));
-    loadFont(QStringLiteral("/home/eli/Projects/minecraft-launcher/TEMPORARY "
-                            "ASSETS/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf"),
+    loadFont(QStringLiteral(":/assets/fonts/JetBrainsMono-VariableFont_wght.ttf"),
              QStringLiteral("JetBrains Mono"));
 
     qInfo().noquote() << "Qt version:" << qVersion();
     qInfo().noquote() << "Platform plugin:" << QGuiApplication::platformName();
     qInfo().noquote() << "Graphics backend:" << graphicsApiName();
     qInfo().noquote() << "Effective theme:" << themeSettings.theme();
+    qInfo().noquote() << "VSync enabled:" << themeSettings.vsyncEnabled();
     qInfo().noquote() << "Frame-time overlay enabled:" << debugFrameTime;
 
     QQmlApplicationEngine engine;
@@ -191,6 +217,10 @@ int main(int argc, char* argv[])
     engine.rootContext()->setContextProperty(QStringLiteral("LauncherController"),
                                              &launcherController);
     engine.rootContext()->setContextProperty(QStringLiteral("AppDebugFrameTime"), debugFrameTime);
+    engine.rootContext()->setContextProperty(QStringLiteral("AppDebugFrameTimeForced"),
+                                             forcedDebugFrameTime);
+    engine.rootContext()->setContextProperty(QStringLiteral("AppVersion"),
+                                             QCoreApplication::applicationVersion());
     engine.addImportPath(QStringLiteral("qrc:/qml"));
     engine.load(QUrl(QStringLiteral("qrc:/qml/MainWindow.qml")));
 
@@ -204,6 +234,11 @@ int main(int argc, char* argv[])
     if (rootWindow != nullptr)
     {
         rootWindow->setTitle(QStringLiteral("StrataLauncher"));
+    }
+
+    if (smokeTest)
+    {
+        return 0;
     }
 
     return app.exec();

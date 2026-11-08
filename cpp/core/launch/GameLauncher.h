@@ -1,5 +1,6 @@
 #pragma once
 
+#include "../auth/Account.h"
 #include "../auth/OfflineAccountStore.h"
 #include "../instance/Instance.h"
 
@@ -18,11 +19,24 @@ namespace strata::launch
         QString logFile;
     };
 
+    struct LaunchAccount
+    {
+        QString name;
+        QString uuid;
+        QString accessToken;
+        QString xuid;
+        auth::Account::Type type = auth::Account::Type::Offline;
+    };
+
     class GameLauncher
     {
     public:
         static LaunchPlan buildPlan(const strata::Instance& instance,
                                     const auth::OfflineAccount& account,
+                                    const QString& dataDirectory,
+                                    const QString& javaExecutable = QString(),
+                                    const QStringList& globalJavaArguments = {});
+        static LaunchPlan buildPlan(const strata::Instance& instance, const LaunchAccount& account,
                                     const QString& dataDirectory,
                                     const QString& javaExecutable = QString(),
                                     const QStringList& globalJavaArguments = {});
