@@ -97,6 +97,3 @@ build/
 
 # Release artifacts
 dist/
-
-# Windows VM handoff staging
-windows-disk/
